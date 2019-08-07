@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/seguimiento_compromisos.iml" filepath="$PROJECT_DIR$/.idea/seguimiento_compromisos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/progrmas_presupuestales.iml" filepath="$PROJECT_DIR$/.idea/progrmas_presupuestales.iml" />
     </modules>
   </component>
 </project>
