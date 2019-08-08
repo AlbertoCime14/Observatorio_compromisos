@@ -68,7 +68,7 @@
                     <div class="header-column">
                         <div class="header-row">
                             <div class="header-logo">
-                                <a href="Index_compromisos.html">
+                                <a href="<?=base_url()?>control_pagina/index">
                                     <img alt="Porto" width="82" height="40" src="<?=base_url();?>img/logo-default-slim.png">
                                 </a>
                             </div>
@@ -82,12 +82,12 @@
                                     <nav class="collapse">
                                         <ul class="nav nav-pills" id="mainNav">
                                             <li class="dropdown">
-                                                <a class="dropdown-item dropdown-toggle active" href="index.html">
+                                                <a class="dropdown-item dropdown-toggle active" href="<?=base_url()?>control_pagina/index">
                                                     Inicio
                                                 </a>
                                             </li>
                                             <li class="dropdown dropdown-mega">
-                                                <a class="dropdown-item dropdown-toggle" href="listado_compromisos.html">
+                                                <a class="dropdown-item dropdown-toggle" href="<?=base_url()?>compromisos/listar">
                                                     Compromisos
                                                 </a>
                                             </li>

@@ -53,7 +53,7 @@ $route['default_controller'] = 'control_pagina/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 //======================Alberto====================================//
-$route['listado_compromisos/listar'] = 'C_compromisos/index';
+$route['compromisos/listar'] = 'C_compromisos/index';
 $route['formatos/frm_7'] = 'C_Frm_7/index';
 $route['formatos/frm_8'] = 'C_Frm_8/index';
 $route['formatos/frm_9'] = 'C_Frm_9/index';

@@ -60,7 +60,7 @@
                         <a href="descripcion_compromiso.html">
 										<span class="thumb-info thumb-info-lighten border-radius-0">
 											<span class="thumb-info-wrapper border-radius-0">
-												<img src="img/projects/project.jpg" class="img-fluid border-radius-0"
+												<img src="<?=base_url();?>img/projects/project.jpg" class="img-fluid border-radius-0"
                                                      alt="">
 
 												<span class="thumb-info-title">
@@ -84,7 +84,7 @@
                         <a href="portfolio-single-wide-slider.html">
 										<span class="thumb-info thumb-info-lighten border-radius-0">
 											<span class="thumb-info-wrapper border-radius-0">
-												<img src="img/projects/project.jpg" class="img-fluid border-radius-0"
+												<img src="<?=base_url();?>img/projects/project.jpg" class="img-fluid border-radius-0"
                                                      alt="">
 
 												<span class="thumb-info-title">
@@ -109,7 +109,7 @@
                         <a href="portfolio-single-wide-slider.html">
 										<span class="thumb-info thumb-info-lighten border-radius-0">
 											<span class="thumb-info-wrapper border-radius-0">
-												<img src="img/projects/project.jpg" class="img-fluid border-radius-0"
+												<img src="<?=base_url();?>img/projects/project.jpg" class="img-fluid border-radius-0"
                                                      alt="">
 
 												<span class="thumb-info-title">
@@ -133,7 +133,7 @@
                         <a href="portfolio-single-wide-slider.html">
 										<span class="thumb-info thumb-info-lighten border-radius-0">
 											<span class="thumb-info-wrapper border-radius-0">
-												<img src="img/projects/project.jpg" class="img-fluid border-radius-0"
+												<img src="<?=base_url();?>img/projects/project.jpg" class="img-fluid border-radius-0"
                                                      alt="">
 
 												<span class="thumb-info-title">
@@ -157,7 +157,7 @@
                         <a href="portfolio-single-wide-slider.html">
 										<span class="thumb-info thumb-info-lighten border-radius-0">
 											<span class="thumb-info-wrapper border-radius-0">
-												<img src="img/projects/project.jpg" class="img-fluid border-radius-0"
+												<img src="<?=base_url();?>img/projects/project.jpg" class="img-fluid border-radius-0"
                                                      alt="">
 
 												<span class="thumb-info-title">
@@ -181,7 +181,7 @@
                         <a href="portfolio-single-wide-slider.html">
 										<span class="thumb-info thumb-info-lighten border-radius-0">
 											<span class="thumb-info-wrapper border-radius-0">
-												<img src="img/projects/project.jpg" class="img-fluid border-radius-0"
+												<img src="<?=base_url();?>img/projects/project.jpg" class="img-fluid border-radius-0"
                                                      alt="">
 
 												<span class="thumb-info-title">
@@ -205,7 +205,7 @@
                         <a href="portfolio-single-wide-slider.html">
 										<span class="thumb-info thumb-info-lighten border-radius-0">
 											<span class="thumb-info-wrapper border-radius-0">
-												<img src="img/projects/project.jpg" class="img-fluid border-radius-0"
+												<img src="<?=base_url();?>img/projects/project.jpg" class="img-fluid border-radius-0"
                                                      alt="">
 
 												<span class="thumb-info-title">
@@ -229,7 +229,7 @@
                         <a href="portfolio-single-wide-slider.html">
 										<span class="thumb-info thumb-info-lighten border-radius-0">
 											<span class="thumb-info-wrapper border-radius-0">
-												<img src="img/projects/project.jpg" class="img-fluid border-radius-0"
+												<img src="<?=base_url();?>img/projects/project.jpg" class="img-fluid border-radius-0"
                                                      alt="">
 
 												<span class="thumb-info-title">
