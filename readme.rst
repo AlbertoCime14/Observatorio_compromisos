@@ -1,5 +1,5 @@
 ###################
-Programas presupuestales
+Observatorio de compromisos
 ###################
 
 Pagina web de la Secretaría Tecnica de planeación Y Evaluación Seplan del gobierno del estado de Yucatán.
@@ -9,7 +9,6 @@ Release Information
 *******************
 
 Desarrollado por:
-Carlos Cristobal Cauich Alvarez y
 Alberto Cime Castellanos
 
 **************************

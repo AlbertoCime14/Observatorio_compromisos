@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd08836-e397-48df-8e8f-7c10f2487fae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/controllers/C_compromisos_descripcion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.rst" beforeDir="false" afterPath="$PROJECT_DIR$/readme.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,13 +57,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/V_listado_compromisos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="59" column="49" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+            <state relative-caret-position="170">
+              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
     </leaf>
@@ -117,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/yucatan.gob.mx/gobierno/detalle754d.html" />
         <option value="$PROJECT_DIR$/application/controllers/C_Frm_20.php" />
         <option value="$PROJECT_DIR$/application/models/M_Problemas.php" />
         <option value="$PROJECT_DIR$/application/views/V_frm_21.php" />
@@ -168,6 +167,7 @@
         <option value="$PROJECT_DIR$/application/views/V_listado_compromisos.php" />
         <option value="$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php" />
         <option value="$PROJECT_DIR$/application/views/masterpage/head.php" />
+        <option value="$PROJECT_DIR$/readme.rst" />
       </list>
     </option>
   </component>
@@ -365,15 +365,16 @@
       <workItem from="1564066139624" duration="15353000" />
       <workItem from="1564418235047" duration="309000" />
       <workItem from="1565275780484" duration="9831000" />
-      <workItem from="1565286751542" duration="4198000" />
+      <workItem from="1565286751542" duration="4380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295726000" />
+    <option name="totallyTimeSpent" value="295908000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -401,7 +402,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/C_Problemas.php" />
     <entry file="file://$PROJECT_DIR$/js/app.js" />
     <entry file="file://$PROJECT_DIR$/application/views/V_poblacionComplemento.php" />
     <entry file="file://$PROJECT_DIR$/js/frm12.js" />
@@ -664,10 +664,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/V_listado_compromisos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="59" column="49" lean-forward="true" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+        <state relative-caret-position="170">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
 </project>
