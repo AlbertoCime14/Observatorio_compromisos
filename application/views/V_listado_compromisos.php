@@ -57,7 +57,7 @@
 
                 <div class="col-sm-6 col-lg-3 isotope-item brands">
                     <div class="portfolio-item">
-                        <a href="descripcion_compromiso.html">
+                        <a href="<?=base_url();?>compromisos/descripcion">
 										<span class="thumb-info thumb-info-lighten border-radius-0">
 											<span class="thumb-info-wrapper border-radius-0">
 												<img src="<?=base_url();?>img/projects/project.jpg" class="img-fluid border-radius-0"
