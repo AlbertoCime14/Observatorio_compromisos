@@ -2,27 +2,817 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd08836-e397-48df-8e8f-7c10f2487fae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/views/V_index_compromiso.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_10.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_11.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_13.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_14.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_15.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_16.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_17.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_20.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_21.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_5.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_6.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_7.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_8.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_Frm_9.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Controladores antiguos/C_frm_12.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/C_Diagnostico.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/C_Focalizacion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/C_Objetivo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/C_Poblaciones.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/C_Problemas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/C_Programa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/C_fuentes_otros.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/C_otros_criterios.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Control_login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Control_pagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Control_pagina.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_Problemas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_Programa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_ServiciosBienes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_frm12.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_fuentes_otros.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_objetivos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_otro_criterios.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/M_poblaciones.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Nuevo documento de texto.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_Focalizacion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_Objetivos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_Problemas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_bienessys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_diagnostico.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_fuentes_otros.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_otros_criterios.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_poblacionComplemento.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_poblaciones.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/error_404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/error_db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/error_exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/error_general.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/error_php.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/cli/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/error_404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/error_db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/error_exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/error_general.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/error_php.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/errors/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/example.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_10.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_11.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_12.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_13.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_14.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_15.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_16.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_17.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_20.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_21.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/V_frm_9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/frm_18.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/formatos anteriores/frm_19.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/listadoprogamas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/masterpage/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/masterpage/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/masterpage/navegacion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/welcome_message.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/404.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/advbuttons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/alertmessage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/animate1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/animated-masonry-gallery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/blueimp-gallery.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/buttons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/buttons_sass.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/calendar_custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/calendar_custom2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/chartist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/complex_forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/advanced_modals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/amcharts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/bootstrap_tables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/chartjs-charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/circle_sliders.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/complex_forms2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/custom_map.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/dashboard1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/dashboard1_timeline.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/dashboard2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/datatables_custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/dropify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/flot_charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/fontawesome_icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/form2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/form3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/glyphicons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/grids_layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/image_filters.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/imagemagnifier_custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/img_hover.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/insignia_custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/invoice.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/metisMenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/multiplefile_upload.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/nvd3_charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/radio_checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/realtime_form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/responsive_datatables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/simple_themify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-blue-gray.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-grape-gray.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-grape.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-lavender-gray.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-lavender.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-mint-gray.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-mint.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-pink-gray.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-sunflower-gray.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/skins/skin-sunflower.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/sweet_alert2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/toastr_notificatons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/user_profile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/widgets1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom_css/wizard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/datatable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/forgot_password.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/form_editors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/form_layouts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/formelements.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/gmaps_cust.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/highlight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/icon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/animated-overlay.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_flat_55_fbec88_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_glass_75_d0e5f5_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_glass_85_dfeffc_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_inset-hard_100_f5f8f9_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_217bc0_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_469bdd_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_6da8d5_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_d8e7f3_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_f9bd01_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/inlinedit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/animated-overlay.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-bg_flat_100_e6e7e8_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-bg_flat_100_f56954_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-bg_flat_55_f39c12_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-bg_flat_65_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-bg_flat_75_dadada_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-bg_flat_75_e6e6e6_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/jquery-ui-1.10.3.custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jQueryUI/jquery-ui-1.10.3.custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/layouts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/lockscreen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/menubarfold.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/nestable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/passtrength/passtrength.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pickers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/portlet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/select2-bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/select2-spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/select2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/session_timeout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/tab.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/tables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/timeline.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/animated-masonry-gallery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/backstretch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/adduser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/advanced_datatables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/advanced_maps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/advanced_modals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/advanceddate_pickers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/amcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/bootstrap_tables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/button_main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/calendar_custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/calendar_custom2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/chartist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/chartjs-charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/circle_sliders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/complex_form2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/complex_forms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/custom_elements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/custommaps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/datatables_custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/datepickers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/dimple.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/draggable_portlets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/dropify_custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/flot_charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/fontawesome_icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/forgot_password.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/form2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/form3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/form_editors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/form_elements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/form_layouts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/form_validations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/form_wizards.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/glyphicons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/gridstack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/image_filters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/image_magnifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/insignia_custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/invoice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/layout_custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/leftmenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/menubarfold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/nestable_list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/notifications.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/nvd3_charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/pickers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/radio_checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/realtime_form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/reset_password.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/responsive_datatables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/rightside_bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/session_timeout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/simple-table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/simple_line_icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/sparkline/jquery.flot.spline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/stream_layers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/sweetalert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/tabs_accordions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/themify_icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/time_line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/toastr_notifications.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/transitions_custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/users_custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/vector-maps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/widgets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/widgets1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom_js/x-editable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dashboard1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dashboard2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/demo-mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/OtrosCriterios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/bienesyservicios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/formatocriterios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/formatodiagnostico.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/formatoprincipal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/fuentes_criterios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/poblaciones.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/frm12.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/funciones_objetivos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/go.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.isotope.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.sessionTimeout.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jqueryfull.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lockscreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/metisMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/nvd3/d3.v3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/passtrength/passtrength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/Buttons/css/buttons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/Buttons/js/buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/advanced_newsTicker/css/newsticker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/advanced_newsTicker/js/newsTicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/airdatepicker/css/datepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/airdatepicker/js/datepicker.en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/airdatepicker/js/datepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/amcharts/css/export.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/amcharts/js/amcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/amcharts/js/export.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/amcharts/js/light.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/amcharts/js/serial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/animate/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/awesomebootstrapcheckbox/css/awesome-bootstrap-checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-canvas-to-blob/js/canvas-to-blob.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/css/jquery.fileupload-noscript.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/css/jquery.fileupload-ui-noscript.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/css/jquery.fileupload-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/css/jquery.fileupload.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/js/jquery.fileupload-audio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/js/jquery.fileupload-image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/js/jquery.fileupload-process.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/js/jquery.fileupload-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/js/jquery.fileupload-validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/js/jquery.fileupload-video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/js/jquery.fileupload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/js/jquery.iframe-transport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-file-upload/js/jquery.ui.widget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-gallery-with-desc/css/blueimp-gallery.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-gallery-with-desc/js/jquery.blueimp-gallery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimp-tmpl/js/tmpl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimploadimage/js/load-image.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/blueimploadimage/js/load-image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/css/calendar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/img/dark_wood.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/img/slide-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/img/tick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/calendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/ar-SA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/bg-BG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/bs-BA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/ca-ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/cs-CZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/da-DK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/de-AT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/de-DE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/el-GR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/es-CO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/es-ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/es-MX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/fi-FI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/fr-FR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/hr-HR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/hu-HU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/id-ID.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/it-IT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/ja-JP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/ko-KR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/ms-MY.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/nl-NL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/no-NO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/pl-PL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/ro-RO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/ru-RU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/sk-SR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/sl-SL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/sv-SE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/th-TH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/tr-TR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/js/language/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/tmpls/day.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/tmpls/events-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/tmpls/modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/tmpls/month-day.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/tmpls/month.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/tmpls/week-days.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/tmpls/week.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/tmpls/year-month.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-calendar/tmpls/year.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-datepicker/css/bootstrap-datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-fileinput/css/fileinput.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-fileinput/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-fileinput/js/fileinput.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-magnify/css/bootstrap-magnify.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-magnify/js/bootstrap-magnify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-maxlength/js/bootstrap-maxlength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-multiselect/css/bootstrap-multiselect.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-multiselect/js/bootstrap-multiselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-switch/css/bootstrap-switch.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-switch/js/bootstrap-switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-table/css/bootstrap-table.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-table/js/bootstrap-table.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-touchspin/css/jquery.bootstrap-touchspin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap-touchspin/js/jquery.bootstrap-touchspin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap3-wysihtml5-bower/css/bootstrap3-wysihtml5.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap3-wysihtml5-bower/js/bootstrap3-wysihtml5.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap3-wysihtml5-bower/js/bootstrap3-wysihtml5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrapvalidator/css/bootstrapValidator.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrapvalidator/js/bootstrapValidator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrapwizard/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrapwizard/js/jquery.bootstrap.wizard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bower-jvectormap/css/jquery-jvectormap-1.2.2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bower-jvectormap/js/jquery-jvectormap-1.2.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bower-jvectormap/js/jquery-jvectormap-world-mill-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/c3/c3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/c3/c3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/card/jquery.card.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/chartist/css/chartist.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/chartist/js/chartist.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/chartjs/js/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/circliful/css/jquery.circliful.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/circliful/js/jquery.circliful.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/clockface/css/clockface.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/clockface/js/clockface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/clockpicker/css/bootstrap-clockpicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/clockpicker/js/bootstrap-clockpicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/colorpicker/css/bootstrap-colorpicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/colorpicker/img/bootstrap-colorpicker/alpha-horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/colorpicker/img/bootstrap-colorpicker/alpha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/colorpicker/img/bootstrap-colorpicker/hue-horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/colorpicker/img/bootstrap-colorpicker/hue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/colorpicker/img/bootstrap-colorpicker/saturation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/colorpicker/js/bootstrap-colorpicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/countUp.js/js/countUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/countupcircle/js/jquery.countupcircle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/1977.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/1977.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/aden.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/aden.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/amaro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/amaro.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/brannan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/brannan.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/brooklyn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/brooklyn.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/clarendon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/clarendon.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/cssgram.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/cssgram.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/earlybird.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/earlybird.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/gingham.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/gingham.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/hudson.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/hudson.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/inkwell.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/inkwell.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/kelvin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/kelvin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/lark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/lark.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/lofi.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/lofi.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/maven.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/maven.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/mayfair.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/mayfair.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/moon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/moon.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/nashville.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/nashville.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/perpetua.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/perpetua.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/reyes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/reyes.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/rise.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/rise.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/slumber.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/slumber.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/stinson.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/toaster.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/toaster.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/valencia.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/valencia.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/walden.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/walden.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/willow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/willow.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/xpro2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/cssgram/css/xpro2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/d3/d3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/d3v4/d3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/css/buttons.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/css/colReorder.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/css/dataTables.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/css/rowReorder.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/css/scroller.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/buttons.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/buttons.colVis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/buttons.html5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/buttons.print.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/buttons.print.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/dataTables.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/dataTables.buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/dataTables.colReorder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/dataTables.responsive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/dataTables.rowReorder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/dataTables.scroller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatables/js/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatablesmark.js/css/datatables.mark.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datatablesmark.js/js/datatables.mark.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datedropper/datedropper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datedropper/datedropper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datedropper/dd-icon/dd-icon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datedropper/dd-icon/dd-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datedropper/dd-icon/dd-icon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datedropper/dd-icon/dd-icon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/daterangepicker/css/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/daterangepicker/js/daterangepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datetime/css/jquery.datetimepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datetime/js/jquery.datetimepicker.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datetimepicker/css/bootstrap-datetimepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/datetimepicker/js/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/dimple/js/dimple.latest.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/dropify/css/dropify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/dropify/fonts/dropify.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/dropify/fonts/dropify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/dropify/fonts/dropify.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/dropify/fonts/dropify.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/dropify/js/dropify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/editable-table/js/mindmup-editabletable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/fancybox_loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/fancybox_loading@2x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/fancybox_overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/fancybox_sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/fancybox_sprite@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/helpers/fancybox_buttons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/helpers/jquery.fancybox-buttons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/helpers/jquery.fancybox-buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/helpers/jquery.fancybox-media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/helpers/jquery.fancybox-thumbs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/helpers/jquery.fancybox-thumbs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/jquery.fancybox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/jquery.fancybox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fancybox/jquery.fancybox.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flip/js/jquery.flip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flot.tooltip/js/jquery.flot.tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flotchart/js/jquery.flot.categories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flotchart/js/jquery.flot.crosshair.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flotchart/js/jquery.flot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flotchart/js/jquery.flot.pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flotchart/js/jquery.flot.resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flotchart/js/jquery.flot.selection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flotchart/js/jquery.flot.stack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flotchart/js/jquery.flot.symbol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flotchart/js/jquery.flot.time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/flotspline/js/jquery.flot.spline.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fullcalendar/css/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fullcalendar/css/fullcalendar.print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/fullcalendar/js/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/gmaps/js/gmaps.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/granim/js/granim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/gridforms/css/gridforms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/gridforms/js/gridforms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/gridstack/css/gridstack.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/gridstack/js/gridstack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/hover/css/hover-min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/aero@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/blue@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/flat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/flat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/flat@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/grey@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/orange@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/pink@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/purple@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/red@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/flat/yellow@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/futurico/futurico.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/futurico/futurico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/futurico/futurico@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/line.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/line@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/line/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/aero@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/blue@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/grey@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/minimal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/minimal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/minimal@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/orange@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/pink@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/purple@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/red@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/minimal/yellow@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/polaris/polaris.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/polaris/polaris.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/polaris/polaris@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/aero@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/blue@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/grey@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/orange@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/pink@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/purple@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/red@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/square.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/square@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/css/square/yellow@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/iCheck/js/icheck.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/ihover/css/ihover.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/imagehover/css/imagehover.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/inputmask/inputmask.date.extensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/inputmask/inputmask.dependencyLib.jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/inputmask/inputmask.extensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/inputmask/inputmask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/inputmask/inputmask.numeric.extensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/inputmask/inputmask.phone.extensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/inputmask/inputmask.regex.extensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/inputmask/jquery.inputmask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/jquery.inputmask.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/min/inputmask/inputmask.date.extensions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/min/inputmask/inputmask.dependencyLib.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/min/inputmask/inputmask.extensions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/min/inputmask/inputmask.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/min/inputmask/inputmask.numeric.extensions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/min/inputmask/inputmask.phone.extensions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/min/inputmask/inputmask.regex.extensions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/min/inputmask/jquery.inputmask.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/inputmask/min/jquery.inputmask.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/insignia/css/insignia.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/insignia/js/insignia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jasny-bootstrap/css/jasny-bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jasny-bootstrap/js/jasny-bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jquery-knob/js/jquery.knob.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jquery-mockjax/js/jquery.mockjax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jquerydaterangepicker/css/daterangepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jquerydaterangepicker/js/jquery.daterangepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jquerylabel/css/images/input-checked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jquerylabel/css/images/input-unchecked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jquerylabel/css/jquery-labelauty.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jquerylabel/js/jquery-labelauty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/css/jqvmap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.asia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.australia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.europe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.germany.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.north-america.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.russia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.sampledata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.south-america.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.usa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/jqvmap/js/jquery.vmap.world.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/laddabootstrap/css/ladda-themeless.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/laddabootstrap/js/ladda.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/laddabootstrap/js/spin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/lcswitch/css/lc_switch.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/lcswitch/js/lc_switch.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/leaflet/css/images/layers-2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/leaflet/css/images/layers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/leaflet/css/images/marker-icon-2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/leaflet/css/images/marker-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/leaflet/css/images/marker-shadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/leaflet/css/leaflet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/leaflet/js/leaflet-src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/lodash/js/lodash.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/mark.js/jquery.mark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/metrojs/css/MetroJs.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/metrojs/js/MetroJs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/moment/js/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/nestable-list/jquery.nestable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/nvd3/css/nv.d3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/nvd3/js/nv.d3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/css/pnotify.brighttheme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/css/pnotify.buttons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/css/pnotify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/css/pnotify.history.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/css/pnotify.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/js/pnotify.animate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/js/pnotify.buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/js/pnotify.callbacks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/js/pnotify.confirm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/js/pnotify.desktop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/js/pnotify.history.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/js/pnotify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/js/pnotify.mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/pnotify/js/pnotify.nonblock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/prettycheckable/css/prettyCheckable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/prettycheckable/img/sprites-sfa68604977.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/prettycheckable/js/prettyCheckable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/screenfull/js/screenfull.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/select2/css/select2-bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/select2/css/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/select2/js/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/selectize/css/selectize.bootstrap3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/selectize/css/selectize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/selectize/js/selectize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/selectize/js/standalone/selectize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/selectric/css/selectric.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/selectric/js/jquery.selectric.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/simple-line-icons/css/simple-line-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/simple-line-icons/fonts/Simple-Line-Icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/simple-line-icons/fonts/Simple-Line-Icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/simple-line-icons/fonts/Simple-Line-Icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/simple-line-icons/fonts/Simple-Line-Icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/simple-line-icons/fonts/Simple-Line-Icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/summernote/summernote.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/summernote/summernote.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/sweetalert2/css/sweetalert2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/sweetalert2/js/sweetalert2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/swiper/css/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/swiper/js/swiper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/tableExport.jquery.plugin/tableExport.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/themify/css/themify-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/themify/fonts/themify.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/themify/fonts/themify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/themify/fonts/themify.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/themify/fonts/themify.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/timedropper/css/timedropper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/timedropper/js/timedropper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/toastr/css/toastr.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/toastr/js/toastr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/toolbar/css/jquery.toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/toolbar/js/jquery.toolbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/trumbowyg/css/trumbowyg.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/trumbowyg/js/trumbowyg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/trumbowyg/js/ui/icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/underscore/js/underscore-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/weathericon/css/weather-icons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/weathericon/font/weathericons-regular-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/weathericon/font/weathericons-regular-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/weathericon/font/weathericons-regular-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/weathericon/font/weathericons-regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/weathericon/font/weathericons-regular-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/wenk/wenk.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/wow/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/x-editable/css/bootstrap-editable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/x-editable/css/typeahead.js-bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/x-editable/img/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/x-editable/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/x-editable/js/address.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/x-editable/js/bootstrap-editable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/x-editable/js/typeahead.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/x-editable/js/typeaheadjs.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,16 +828,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML/Index_compromisos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3891">
-              <caret line="508" column="19" selection-start-line="508" selection-start-column="13" selection-end-line="508" selection-end-column="19" />
+            <state relative-caret-position="508">
+              <caret line="528" column="38" lean-forward="true" selection-start-line="528" selection-start-column="38" selection-end-line="528" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#1;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML/listado_compromisos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1834">
+              <caret line="383" column="10" lean-forward="true" selection-start-line="111" selection-start-column="3" selection-end-line="383" selection-end-column="10" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -60,28 +907,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+        <entry file="file://$PROJECT_DIR$/application/views/V_index_compromiso.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="43" column="61" lean-forward="true" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
+            <state relative-caret-position="1052">
+              <caret line="348" column="6" selection-start-line="348" selection-start-column="6" selection-end-line="348" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/C_Diagnostico.php">
+        <entry file="file://$PROJECT_DIR$/application/views/V_listado_compromisos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/V_diagnostico.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+            <state relative-caret-position="1530">
+              <caret line="272" column="6" selection-start-line="272" selection-start-column="6" selection-end-line="272" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,61 +960,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Control_pagina.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/listadoprogamas.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="267" column="42" lean-forward="true" selection-start-line="267" selection-start-column="42" selection-end-line="267" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/formatos/formatoprincipal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-459">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-              <folding>
-                <element signature="n#!!block;n#eliminarprograma#0" />
-                <element signature="e#2468#3902#0" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="561">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/masterpage/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="92" lean-forward="true" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="78" column="29" lean-forward="true" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/masterpage/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -182,6 +1007,8 @@
       <find>noti</find>
       <find>url</find>
       <find>fuentes</find>
+      <find>img</find>
+      <find>go</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,10 +1017,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/V_frm_11.php" />
-        <option value="$PROJECT_DIR$/application/views/masterpage/navegacion.php" />
-        <option value="$PROJECT_DIR$/application/views/V_frm_6.php" />
-        <option value="$PROJECT_DIR$/application/views/V_frm_1.php" />
         <option value="$PROJECT_DIR$/application/views/V_frm_8.php" />
         <option value="$PROJECT_DIR$/application/views/V_frm_7.php" />
         <option value="$PROJECT_DIR$/jstree/www.jstree.com/static/funciones.js" />
@@ -234,17 +1057,75 @@
         <option value="$PROJECT_DIR$/application/models/M_fuentes_otros.php" />
         <option value="$PROJECT_DIR$/application/controllers/C_Poblaciones.php" />
         <option value="$PROJECT_DIR$/application/views/V_otros_criterios.php" />
-        <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/controllers/C_fuentes_otros.php" />
         <option value="$PROJECT_DIR$/application/views/V_fuentes_otros.php" />
         <option value="$PROJECT_DIR$/js/formatos/formatocriterios.js" />
         <option value="$PROJECT_DIR$/js/formatos/fuentes_criterios.js" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
+        <option value="$PROJECT_DIR$/application/views/masterpage/head.php" />
+        <option value="$PROJECT_DIR$/application/views/masterpage/footer.php" />
+        <option value="$PROJECT_DIR$/application/views/V_index_compromiso.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Control_pagina.php" />
+        <option value="$PROJECT_DIR$/application/views/V_listado_compromisos.php" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/twentytwenty/css" />
+      <path value="$PROJECT_DIR$/vendor/owl.carousel/assets" />
+      <path value="$PROJECT_DIR$/vendor/nivo-slider/themes" />
+      <path value="$PROJECT_DIR$/vendor/circle-flip-slideshow/js" />
+      <path value="$PROJECT_DIR$/vendor/linea-icons/linea-basic-elaboration" />
+      <path value="$PROJECT_DIR$/vendor/linea-icons/linea-basic" />
+      <path value="$PROJECT_DIR$/vendor/circle-flip-slideshow/css" />
+      <path value="$PROJECT_DIR$/vendor/linea-icons/linea-software" />
+      <path value="$PROJECT_DIR$/vendor/linea-icons/linea-music" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap-star-rating/js" />
+      <path value="$PROJECT_DIR$/vendor/linea-icons/linea-ecommerce" />
+      <path value="$PROJECT_DIR$/vendor/linea-icons/linea-arrows" />
+      <path value="$PROJECT_DIR$/vendor/jquery.pin/images" />
+      <path value="$PROJECT_DIR$/vendor/jquery.pin/css" />
+      <path value="$PROJECT_DIR$/vendor/rs-plugin/php" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap-star-rating/examples" />
+      <path value="$PROJECT_DIR$/vendor/rs-plugin/js" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap-star-rating/img" />
+      <path value="$PROJECT_DIR$/vendor/rs-plugin/revolution-addons" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap-star-rating/css" />
+      <path value="$PROJECT_DIR$/vendor/rs-plugin/fonts" />
+      <path value="$PROJECT_DIR$/vendor/rs-plugin/addon-visual-editor" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap-star-rating/themes" />
+      <path value="$PROJECT_DIR$/vendor/rs-plugin/assets" />
+      <path value="$PROJECT_DIR$/vendor/rs-plugin/images" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap-datepicker/js" />
+      <path value="$PROJECT_DIR$/vendor/rs-plugin/css" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap-datepicker/locales" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap-datepicker/css" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap/js" />
+      <path value="$PROJECT_DIR$/vendor/bootstrap/css" />
+      <path value="$PROJECT_DIR$/vendor/simple-line-icons/less" />
+      <path value="$PROJECT_DIR$/vendor/simple-line-icons/scss" />
+      <path value="$PROJECT_DIR$/vendor/simple-line-icons/fonts" />
+      <path value="$PROJECT_DIR$/vendor/hover3d/source" />
+      <path value="$PROJECT_DIR$/vendor/simple-line-icons/css" />
+      <path value="$PROJECT_DIR$/vendor/hover3d/dist" />
+      <path value="$PROJECT_DIR$/vendor/jquery.validation/localization" />
+      <path value="$PROJECT_DIR$/vendor/popper/esm" />
+      <path value="$PROJECT_DIR$/vendor/popper/umd" />
+      <path value="$PROJECT_DIR$/vendor/animated-headline/partials" />
+      <path value="$PROJECT_DIR$/vendor/animated-headline/js" />
+      <path value="$PROJECT_DIR$/vendor/animated-headline/scss" />
+      <path value="$PROJECT_DIR$/vendor/animated-headline/css" />
+      <path value="$PROJECT_DIR$/vendor/fontawesome-free/webfonts" />
+      <path value="$PROJECT_DIR$/vendor/fontawesome-free/css" />
+      <path value="$PROJECT_DIR$/vendor/twentytwenty/js" />
+      <path value="$PROJECT_DIR$/vendor/twentytwenty/scss" />
+      <path value="$PROJECT_DIR$/vendor/twentytwenty/img" />
+    </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="27" />
@@ -258,6 +1139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,13 +1155,37 @@
             <path>
               <item name="seguimiento_compromisos" type="b2602c69:ProjectViewProjectNode" />
               <item name="seguimiento_compromisos" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seguimiento_compromisos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seguimiento_compromisos" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seguimiento_compromisos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seguimiento_compromisos" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seguimiento_compromisos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seguimiento_compromisos" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="masterpage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seguimiento_compromisos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seguimiento_compromisos" type="462c0819:PsiDirectoryNode" />
               <item name="HTML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,7 +1221,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f004c654-5234-4720-807c-fd763b1e7fe3" name="Default Changelist" comment="" />
+      <changelist id="5fd08836-e397-48df-8e8f-7c10f2487fae" name="Default Changelist" comment="" />
       <created>1561057803574</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -364,11 +1270,12 @@
       <workItem from="1564020787056" duration="3775000" />
       <workItem from="1564066139624" duration="15353000" />
       <workItem from="1564418235047" duration="309000" />
+      <workItem from="1565275780484" duration="6760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280540000" />
+    <option name="totallyTimeSpent" value="288457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -400,43 +1307,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/formatos anteriores/V_frm_12.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="383" selection-start-line="383" selection-end-line="383" selection-end-column="82" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/formatos anteriores/V_frm_6.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1734" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/formatos anteriores/V_frm_7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/formatos anteriores/V_frm_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1428" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/formatos anteriores/V_frm_9.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2365" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/C_Programa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="61" column="54" lean-forward="true" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/M_Programa.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
@@ -716,13 +1586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7225">
-          <caret line="434" column="76" selection-start-line="434" selection-start-column="76" selection-end-line="434" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/descripcion_compromiso.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1647">
@@ -781,12 +1644,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/masterpage/navegacion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="59" column="71" lean-forward="true" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/formatos/formatoprincipal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!block;n#eliminarprograma#0" />
+            <element signature="e#2468#3902#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/theme.init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="1349" column="7" lean-forward="true" selection-start-line="1349" selection-start-column="7" selection-end-line="1349" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/listadoprogamas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="267" column="42" selection-start-line="267" selection-start-column="42" selection-end-line="267" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/C_Diagnostico.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/V_diagnostico.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/masterpage/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="75" column="47" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7257">
+          <caret line="434" column="76" selection-start-line="434" selection-start-column="76" selection-end-line="434" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Nuevo documento de texto.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/Index_compromisos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="528" column="38" lean-forward="true" selection-start-line="528" selection-start-column="38" selection-end-line="528" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#1;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/masterpage/footer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Control_pagina.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/V_index_compromiso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1052">
+          <caret line="348" column="6" selection-start-line="348" selection-start-column="6" selection-end-line="348" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/listado_compromisos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="365" column="53" selection-start-line="365" selection-start-column="53" selection-end-line="365" selection-end-column="53" />
+        <state relative-caret-position="1834">
+          <caret line="383" column="10" lean-forward="true" selection-start-line="111" selection-start-column="3" selection-end-line="383" selection-end-column="10" />
           <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -829,98 +1809,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/masterpage/navegacion.php">
+    <entry file="file://$PROJECT_DIR$/application/views/V_listado_compromisos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="59" column="71" lean-forward="true" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="29" lean-forward="true" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/listadoprogamas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="267" column="42" lean-forward="true" selection-start-line="267" selection-start-column="42" selection-end-line="267" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/formatos/formatoprincipal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="1530">
+          <caret line="272" column="6" selection-start-line="272" selection-start-column="6" selection-end-line="272" selection-end-column="6" />
           <folding>
-            <element signature="n#!!block;n#eliminarprograma#0" />
-            <element signature="e#2468#3902#0" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="43" column="61" lean-forward="true" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/C_Diagnostico.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/masterpage/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="92" lean-forward="true" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/masterpage/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/Index_compromisos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3891">
-          <caret line="508" column="19" selection-start-line="508" selection-start-column="13" selection-end-line="508" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#1;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Control_pagina.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/V_diagnostico.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        <state relative-caret-position="338">
+          <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
         </state>
       </provider>
     </entry>
