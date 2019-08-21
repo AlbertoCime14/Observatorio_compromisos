@@ -52,10 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'control_pagina/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-//======================Alberto====================================//
+//======================Acciones compromisos====================================//
 $route['compromisos/listar'] = 'C_compromisos/index';
 $route['compromisos/descripcion'] = 'C_compromisos_descripcion/index';
-
+$route['acciones/compromisos/listar_4'] = 'Control_pagina/ListarCompromisos4';
 
 
 

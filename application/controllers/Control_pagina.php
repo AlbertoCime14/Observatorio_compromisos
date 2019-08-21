@@ -24,7 +24,7 @@ class Control_pagina extends CI_Controller
         parent::__construct();
         //session_start();
         $this->load->helper('url');
-        //$this->load->model('M_alineacion');
+        $this->load->model('M_compromisos');
         //$this->load->library('session');
     }
 
@@ -35,6 +35,21 @@ class Control_pagina extends CI_Controller
         $this->load->view('masterpage/footer');
 
     }
+    public function ListarCompromisos4(){
+
+		$data['filas'] = '';
+		$data['num_compromiso'] = 0;
+
+		$data['compromisos_4'] = $this->M_compromisos->listar_compromisos4();
+		$objetos_definicion = $data['compromisos_4'];
+		echo json_encode($objetos_definicion);
+		/*foreach ($objetos_definicion as $datos) {
+
+			$data['filas'] .= $this->fila_definicion($datos['iIdDefinicion'], $datos['vNombre'], $data['num_def']);
+
+			$data['num_def']++;
+		}*/
+	}
 }
 
 

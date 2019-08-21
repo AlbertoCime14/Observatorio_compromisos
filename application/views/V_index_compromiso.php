@@ -5,7 +5,7 @@
              data-plugin-options="{'sliderLayout': 'fullscreen', 'delay': 9000, 'gridwidth': 1170, 'gridheight': 700, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'navigation' : {'arrows': { 'enable': true, 'style': 'arrows-style-1 arrows-big' }, 'bullets': {'enable': false, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
             <ul>
                 <li class="slide-overlay slide-overlay-gradient slide-overlay-level-9" data-transition="fade">
-                    <img src="img/slides/slide-corporate-13-1.jpg"
+                    <img src="<?=base_url();?>img/slides/slide-corporate-13-1.jpg"
                          alt=""
                          data-bgposition="center center"
                          data-bgfit="cover"
@@ -25,7 +25,7 @@
                          data-frames='[{"delay":2400,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                          data-x="center" data-hoffset="['100','100','100','135']"
                          data-y="center" data-voffset="['-92','-92','-92','-100']"><img
-                            src="img/slides/slide-white-line.png" alt=""></div>
+                            src="<?=base_url();?>img/slides/slide-white-line.png" alt=""></div>
 
                     <div class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
                          data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
@@ -62,7 +62,7 @@
 
                 </li>
                 <li class="slide-overlay slide-overlay-gradient slide-overlay-level-9" data-transition="fade">
-                    <img src="img/slides/slide-corporate-13-1.jpg"
+                    <img src="<?=base_url();?>img/slides/slide-corporate-13-1.jpg"
                          alt=""
                          data-bgposition="center center"
                          data-bgfit="cover"
@@ -82,7 +82,7 @@
                          data-frames='[{"delay":2400,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                          data-x="center" data-hoffset="['100','100','100','135']"
                          data-y="center" data-voffset="['-92','-92','-92','-100']"><img
-                            src="img/slides/slide-white-line.png" alt=""></div>
+                            src="<?=base_url();?>img/slides/slide-white-line.png" alt=""></div>
 
                     <div class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
                          data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
@@ -229,13 +229,13 @@
                 <div class="owl-carousel owl-theme mb-0"
                      data-plugin-options="{'responsive': {'0': {'items': 3}, '476': {'items': 3}, '768': {'items': 3}, '992': {'items': 3}, '1200': {'items': 3}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
                     <div>
-                        <img class="img-fluid opacity-2" src="img/logos/logo-1.png" alt="">
+                        <img class="img-fluid opacity-2" src="<?=base_url();?>img/logos/logo-1.png" alt="">
                     </div>
                     <div>
-                        <img class="img-fluid opacity-2" src="img/logos/logo-2.png" alt="">
+                        <img class="img-fluid opacity-2" src="<?=base_url();?>img/logos/logo-2.png" alt="">
                     </div>
                     <div>
-                        <img class="img-fluid opacity-2" src="img/logos/logo-3.png" alt="">
+                        <img class="img-fluid opacity-2" src="<?=base_url();?>img/logos/logo-3.png" alt="">
                     </div>
 
                 </div>
@@ -271,7 +271,7 @@
                     <div class=" owl-theme nav-style-1 stage-margin mb-0"
                          data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'margin': 25, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 40}">
                         <div class="p-4">
-                            <img class="img-fluid  mb-3" src="img/gallery/gallery-6.jpg" alt=""/>
+                            <img class="img-fluid  mb-3" src="<?=base_url();?>img/gallery/gallery-6.jpg" alt=""/>
                         </div>
 
                     </div>
@@ -286,7 +286,7 @@
                     <div class=" owl-theme nav-style-1 stage-margin mb-0"
                          data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'margin': 25, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 40}">
                         <div class="p-4">
-                            <img class="img-fluid  mb-3" src="img/gallery/gallery-6.jpg" alt=""/>
+                            <img class="img-fluid  mb-3" src="<?=base_url();?>img/gallery/gallery-6.jpg" alt=""/>
                         </div>
 
                     </div>
@@ -347,3 +347,8 @@
     </div>
 
 </div>
+<script
+	src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+<script src="<?=base_url();?>js/compromisos/compromisos.js"></script>

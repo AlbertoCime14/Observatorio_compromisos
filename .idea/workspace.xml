@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd08836-e397-48df-8e8f-7c10f2487fae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/formatos/compromisos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/models/M_compromisos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/C_Bienesys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Control_pagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Control_pagina.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_index_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_index_compromiso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/masterpage/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/OtrosCriterios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/bienesyservicios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/compromisos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/formatocriterios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/formatodiagnostico.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/formatoprincipal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/fuentes_criterios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formatos/poblaciones.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,36 +38,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>CARLOS</find>
-      <find>page</find>
-      <find>hid</find>
-      <find>21</find>
-      <find>formatos/frm_21</find>
-      <find>consultas/frm_21/</find>
-      <find>tablafinal</find>
-      <find>nombrefuente</find>
-      <find>Mé</find>
-      <find>busquedanombreubpypp</find>
-      <find>progrmas_presupuestales</find>
-      <find>enviar</find>
-      <find>ListarServicios</find>
-      <find>cons</find>
-      <find>selector_unidad</find>
-      <find>listado_programas_body</find>
-      <find>ListarServicios()</find>
-      <find>consultar_cricterios</find>
-      <find>loader</find>
-      <find>itAr</find>
-      <find>xs</find>
-      <find>noti</find>
-      <find>url</find>
-      <find>fuentes</find>
-      <find>go</find>
-      <find>img</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -203,7 +186,7 @@
       <workItem from="1566242821648" duration="50000" />
       <workItem from="1566243146710" duration="715000" />
       <workItem from="1566255644735" duration="3481000" />
-      <workItem from="1566408164659" duration="2701000" />
+      <workItem from="1566408164659" duration="5408000" />
     </task>
     <servers />
   </component>

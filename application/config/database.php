@@ -73,11 +73,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-/*$db['default'] = array(
+$db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'postgres',
-	'password' => 'geniux481',
+	'password' => 'Rapido-furioso06',
 	'database' => 'SIGO',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',
@@ -94,4 +94,3 @@ $query_builder = TRUE;
 	'failover' => array(),
 	'save_queries' => TRUE
 );
-*/
