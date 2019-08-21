@@ -311,33 +311,33 @@
     <div class="container-fluid">
         <div class="row featured-boxes-full featured-boxes-full-scale">
 
-            <div class="col-lg-3 featured-box-full featured-box-full-primary">
+            <div class="col-lg-3 featured-box-full featured-box-full-primary" style="background-color: #00A36A">
                 <a href="#">
-                    <i class="far fa-life-ring"></i>
+					<h1><strong>33</strong></h1>
                     <h4>Customer Support</h4>
                     <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
                         Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
                 </a>
             </div>
-            <div class="col-lg-3 featured-box-full featured-box-full-primary">
+            <div class="col-lg-3 featured-box-full featured-box-full-primary" style="background-color: #212743">
                 <a href="#">
-                    <i class="far fa-life-ring"></i>
+					<h1><strong>33</strong></h1>
                     <h4>Customer Support</h4>
                     <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
                         Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
                 </a>
             </div>
-            <div class="col-lg-3 featured-box-full featured-box-full-primary">
+            <div class="col-lg-3 featured-box-full featured-box-full-primary"  style="background-color: #694688">
                 <a href="#">
-                    <i class="far fa-life-ring"></i>
+					<h1><strong>33</strong></h1>
                     <h4>Customer Support</h4>
                     <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
                         Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
                 </a>
             </div>
-            <div class="col-lg-3 featured-box-full featured-box-full-primary">
+            <div class="col-lg-3 featured-box-full featured-box-full-primary"  style="background-color: #6CBB37">
                 <a href="#">
-                    <i class="far fa-life-ring"></i>
+					<h1><strong>33</strong></h1>
                     <h4>Customer Support</h4>
                     <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
                         Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
