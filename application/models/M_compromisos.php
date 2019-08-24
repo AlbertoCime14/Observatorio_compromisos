@@ -14,20 +14,93 @@ class M_compromisos extends CI_Model{
 	//Muestra todos los entregables
 	public function listar_compromisos4()
 	{
-		$this->db->select();
-		$this->db->from('Entregable e');
-		$this->db->join('UnidadMedida um','e.iIdUnidadMedida = um.iIdUnidadMedida','JOIN');
-		$this->db->join('Periodicidad p','e.iIdPeriodicidad = p.iIdPeriodicidad','JOIN');
-		$this->db->join('SujetoAfectado sa','e.iIdSujetoAfectado = sa.iIdSujetoAfectado','JOIN');
-		$this->db->join('DetalleEntregable de','e.iIdEntregable = de.iIdEntregable','JOIN');
-		$this->db->join('DetalleActividad da','de.iIdDetalleActividad = da.iIdDetalleActividad','JOIN');
-		$this->db->where('e.iActivo', 1);
-		$this->db->where('da.iIdDetalleActividad');
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero');
+		$this->db->from('CompromisoPag cp');
+		$this->db->order_by('cp.dUltimaAct', 'DESC');
+		$this->db->limit(4);
+
 
 		$query =  $this->db->get();
 
-		$resultado = $query->result();
-		return $resultado;
+		if ($query->num_rows() > 0) {
+			foreach ($query->result() as $row) {
+				$datos[] = [
+					'iIdCompromiso' => $row->iIdCompromiso,
+					'vCompromiso' => $row->vCompromiso,
+					'iNumero' => $row->iNumero
+
+
+
+
+				];
+			}
+		} else {
+			$datos = array();
+		}
+
+
+		return $datos;
+	}
+	public function listar_compromisos10()
+	{
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.vDescripcion');
+		$this->db->from('CompromisoPag cp');
+		$this->db->order_by('cp.dUltimaAct', 'DESC');
+		$this->db->limit(10);
+
+
+		$query =  $this->db->get();
+
+		if ($query->num_rows() > 0) {
+			foreach ($query->result() as $row) {
+				$datos[] = [
+					'iIdCompromiso' => $row->iIdCompromiso,
+					'vCompromiso' => $row->vCompromiso,
+					'vDescripcion' => $row->vDescripcion
+
+
+
+
+				];
+			}
+		} else {
+			$datos = array();
+		}
+
+
+		return $datos;
+	}
+	public function listar_compromisos()
+	{
+		$orden_by='cp.dUltimaAct AND cp.iIdCompromiso';
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance');
+		$this->db->from('CompromisoPag cp');
+		$this->db->order_by('cp.iIdCompromiso', 'ASC');
+		$this->db->where('iEstatus',6);
+		//$this->db->limit(10);
+
+
+		$query =  $this->db->get();
+
+		if ($query->num_rows() > 0) {
+			foreach ($query->result() as $row) {
+				$datos[] = [
+					'iIdCompromiso' => $row->iIdCompromiso,
+					'vCompromiso' => $row->vCompromiso,
+					'iNumero' => $row->iNumero,
+					'dPorcentajeAvance' => $row->dPorcentajeAvance
+
+
+
+
+				];
+			}
+		} else {
+			$datos = array();
+		}
+
+
+		return $datos;
 	}
 
 

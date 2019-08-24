@@ -1,123 +1,86 @@
 <div role="main" class="main">
+	<style>
+		.break-word {
+			-ms-word-break: break-all;
+			word-break: break-all;
 
+		// Non standard for webkit
+		word-break: break-word;
+
+			-webkit-hyphens: auto;
+			-moz-hyphens: auto;
+			-ms-hyphens: auto;
+			hyphens: auto;
+		}
+	</style>
     <div class="slider-container rev_slider_wrapper" style="height: 100vh;">
         <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider
              data-plugin-options="{'sliderLayout': 'fullscreen', 'delay': 9000, 'gridwidth': 1170, 'gridheight': 700, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'navigation' : {'arrows': { 'enable': true, 'style': 'arrows-style-1 arrows-big' }, 'bullets': {'enable': false, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
-            <ul>
-                <li class="slide-overlay slide-overlay-gradient slide-overlay-level-9" data-transition="fade">
-                    <img src="<?=base_url();?>img/slides/slide-corporate-13-1.jpg"
-                         alt=""
-                         data-bgposition="center center"
-                         data-bgfit="cover"
-                         data-bgrepeat="no-repeat"
-                         class="rev-slidebg">
+            <ul id="listar_Compromisos">
+				<?php
 
-                    <h1 class="tp-caption text-color-light font-weight-normal"
-                        data-x="center"
-                        data-y="center" data-voffset="['-110','-110','-110','-180']"
-                        data-start="700"
-                        data-fontsize="['22','22','22','40']"
-                        data-lineheight="['25','25','25','45']"
-                        data-letterspacing="0"
-                        data-transform_in="y:[-50%];opacity:0;s:500;">ENTREGA DE</h1>
+				foreach($compromisos_10 as $compromiso){
+					echo '<li class="slide-overlay slide-overlay-gradient slide-overlay-level-9" data-transition="fade">
+					<img src="../img/slides/slide-corporate-13-1.jpg"
+						 alt=""
+						 data-bgposition="center center"
+						 data-bgfit="cover"
+						 data-bgrepeat="no-repeat"
+						 class="rev-slidebg">
 
-                    <div class="tp-caption d-none d-md-block"
-                         data-frames='[{"delay":2400,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                         data-x="center" data-hoffset="['100','100','100','135']"
-                         data-y="center" data-voffset="['-92','-92','-92','-100']"><img
-                            src="<?=base_url();?>img/slides/slide-white-line.png" alt=""></div>
+					<h1 class="tp-caption text-color-light font-weight-normal"
+						data-x="center"
+						data-y="center" data-voffset="[\'-110\',\'-110\',\'-110\',\'-180\']"
+						data-start="700"
+						data-fontsize="[\'22\',\'22\',\'22\',\'40\']"
+						data-lineheight="[\'25\',\'25\',\'25\',\'45\']"
+						data-letterspacing="0"
+					</h1>
 
-                    <div class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
-                         data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                         data-x="center"
-                         data-y="center" data-voffset="['-60','-60','-60','-85']"
-                         data-fontsize="['50','50','50','90']"
-                         data-lineheight="['55','55','55','95']"
-                         data-letterspacing="0">VEHÍCULOS DE TRANSLADO MÉDICO
-                    </div>
+					<div class="tp-caption d-none d-md-block"
+						 data-frames=\'[{"delay":2400,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]\'
+						 data-x="center" data-hoffset="[\'100\',\'100\',\'100\',\'135\']"
+						 data-y="center" data-voffset="[\'-92\',\'-92\',\'-92\',\'-100\']"><img
+							src="img/slides/slide-white-line.png" alt=""></div>
 
-                    <div class="tp-caption font-weight-light text-color-light text-center ws-normal"
-                         data-frames='[{"from":"opacity:0;","speed":300,"to":"o:0.8;","delay":2000,"split":"chars","splitdelay":0.04,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-                         data-x="center"
-                         data-y="center" data-voffset="['15','15','15','40']"
-                         data-width="['350','350','350','875']"
-                         data-fontsize="['18','18','18','50']"
-                         data-lineheight="['29','29','29','60']">Porto is a huge sucess in the one of the world's
-                        largest MarketPlace.
-                    </div>
+					<div  class="tp-caption font-weight-extra-bold text-color-light negative-ls-2 ws-nowrap break-word	"
+						 data-frames=\'[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]\'
+						 data-x="center"
+						 data-y="center" data-voffset="[\'-60\',\'-60\',\'-60\',\'-85\']"
+						 data-fontsize="[\'25\',\'25\',\'25\',\'25\']"
+						 data-lineheight="[\'55\',\'55\',\'55\',\'95\']"
+						 data-letterspacing="-2">'.$compromiso['vCompromiso'].'
+						
+					</div>
 
-                    <a class="tp-caption btn btn-primary font-weight-semibold"
-                       data-frames='[{"delay":3500,"speed":2000,"frame":"0","from":"opacity:0;y:50%;","to":"o:1;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                       data-hash
-                       data-hash-offset="85"
-                       href="#main"
-                       data-x="center" data-hoffset="0"
-                       data-y="center" data-voffset="['100','100','100','210']"
-                       data-whitespace="nowrap"
-                       data-fontsize="['14','14','14','33']"
-                       data-paddingtop="['16','16','16','40']"
-                       data-paddingright="['33','33','33','80']"
-                       data-paddingbottom="['16','16','16','40']"
-                       data-paddingleft="['33','33','33','80']">Consulta</a>
+					<div class="tp-caption font-weight-light text-color-light text-center ws-normal"
+						 data-frames=\'[{"from":"opacity:0;","speed":300,"to":"o:0.8;","delay":2000,"split":"chars","splitdelay":0.04,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]\'
+						 data-x="center"
+						 data-y="center" data-voffset="[\'15\',\'15\',\'15\',\'40\']"
+						 data-width="[\'350\',\'350\',\'350\',\'875\']"
+						 data-fontsize="[\'18\',\'18\',\'18\',\'50\']"
+						 data-lineheight="[\'29\',\'29\',\'29\',\'60\']">'.$compromiso['vDescripcion'].'
+					</div>
 
-                </li>
-                <li class="slide-overlay slide-overlay-gradient slide-overlay-level-9" data-transition="fade">
-                    <img src="<?=base_url();?>img/slides/slide-corporate-13-1.jpg"
-                         alt=""
-                         data-bgposition="center center"
-                         data-bgfit="cover"
-                         data-bgrepeat="no-repeat"
-                         class="rev-slidebg">
+					<a class="tp-caption btn btn-primary font-weight-semibold"
+					   data-frames=\'[{"delay":3500,"speed":2000,"frame":"0","from":"opacity:0;y:50%;","to":"o:1;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]\'
+					   data-hash
+					   data-hash-offset="85"
+					   href="#main"
+					   data-x="center" data-hoffset="0"
+					   data-y="center" data-voffset="[\'100\',\'100\',\'100\',\'210\']"
+					   data-whitespace="nowrap"
+					   data-fontsize="[\'14\',\'14\',\'14\',\'33\']"
+					   data-paddingtop="[\'16\',\'16\',\'16\',\'40\']"
+					   data-paddingright="[\'33\',\'33\',\'33\',\'80\']"
+					   data-paddingbottom="[\'16\',\'16\',\'16\',\'40\']"
+					   data-paddingleft="[\'33\',\'33\',\'33\',\'80\']">Consulta</a>
 
-                    <h1 class="tp-caption text-color-light font-weight-normal"
-                        data-x="center"
-                        data-y="center" data-voffset="['-110','-110','-110','-180']"
-                        data-start="700"
-                        data-fontsize="['22','22','22','40']"
-                        data-lineheight="['25','25','25','45']"
-                        data-letterspacing="0"
-                        data-transform_in="y:[-50%];opacity:0;s:500;">ENTREGA DE</h1>
+				</li>';
+				}
+				?>
 
-                    <div class="tp-caption d-none d-md-block"
-                         data-frames='[{"delay":2400,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                         data-x="center" data-hoffset="['100','100','100','135']"
-                         data-y="center" data-voffset="['-92','-92','-92','-100']"><img
-                            src="<?=base_url();?>img/slides/slide-white-line.png" alt=""></div>
 
-                    <div class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
-                         data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                         data-x="center"
-                         data-y="center" data-voffset="['-60','-60','-60','-85']"
-                         data-fontsize="['50','50','50','90']"
-                         data-lineheight="['55','55','55','95']"
-                         data-letterspacing="0">ÚTILES ESCOLARES
-                    </div>
-
-                    <div class="tp-caption font-weight-light text-color-light text-center ws-normal"
-                         data-frames='[{"from":"opacity:0;","speed":300,"to":"o:0.8;","delay":2000,"split":"chars","splitdelay":0.04,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-                         data-x="center"
-                         data-y="center" data-voffset="['15','15','15','40']"
-                         data-width="['350','350','350','875']"
-                         data-fontsize="['18','18','18','50']"
-                         data-lineheight="['29','29','29','60']">Porto is a huge sucess in the one of the world's
-                        largest MarketPlace.
-                    </div>
-
-                    <a class="tp-caption btn btn-primary font-weight-semibold"
-                       data-frames='[{"delay":3500,"speed":2000,"frame":"0","from":"opacity:0;y:50%;","to":"o:1;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                       data-hash
-                       data-hash-offset="85"
-                       href="#main"
-                       data-x="center" data-hoffset="0"
-                       data-y="center" data-voffset="['100','100','100','210']"
-                       data-whitespace="nowrap"
-                       data-fontsize="['14','14','14','33']"
-                       data-paddingtop="['16','16','16','40']"
-                       data-paddingright="['33','33','33','80']"
-                       data-paddingbottom="['16','16','16','40']"
-                       data-paddingleft="['33','33','33','80']">Consulta</a>
-
-                </li>
             </ul>
         </div>
     </div>
@@ -309,40 +272,8 @@
     </section>
 
     <div class="container-fluid">
-        <div class="row featured-boxes-full featured-boxes-full-scale">
+        <div class="row featured-boxes-full featured-boxes-full-scale" id="listado_compromisos">
 
-            <div class="col-lg-3 featured-box-full featured-box-full-primary" style="background-color: #00A36A">
-                <a href="#">
-					<h1><strong>33</strong></h1>
-                    <h4>Customer Support</h4>
-                    <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
-                        Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
-                </a>
-            </div>
-            <div class="col-lg-3 featured-box-full featured-box-full-primary" style="background-color: #212743">
-                <a href="#">
-					<h1><strong>33</strong></h1>
-                    <h4>Customer Support</h4>
-                    <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
-                        Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
-                </a>
-            </div>
-            <div class="col-lg-3 featured-box-full featured-box-full-primary"  style="background-color: #694688">
-                <a href="#">
-					<h1><strong>33</strong></h1>
-                    <h4>Customer Support</h4>
-                    <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
-                        Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
-                </a>
-            </div>
-            <div class="col-lg-3 featured-box-full featured-box-full-primary"  style="background-color: #6CBB37">
-                <a href="#">
-					<h1><strong>33</strong></h1>
-                    <h4>Customer Support</h4>
-                    <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.
-                        Quisque rutrum pellentesque imperdiet. Quisque rutrum pellentesque imperdiet.</p>
-                </a>
-            </div>
         </div>
     </div>
 

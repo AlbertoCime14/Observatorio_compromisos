@@ -30,8 +30,17 @@ class Control_pagina extends CI_Controller
 
     public function index()
     {
+		$data['filas'] = '';
+		$data['num_compromiso'] = 0;
+
+		$data['compromisos_10'] = $this->M_compromisos->listar_compromisos10();
+
+		//$objetos_compromisos = $data['compromisos_10'];
+		//echo json_encode( $objetos_compromisos = $data['compromisos_10']);
+
+
         $this->load->view('masterpage/head');
-        $this->load->view('V_index_compromiso');
+        $this->load->view('V_index_compromiso',$data);
         $this->load->view('masterpage/footer');
 
     }
@@ -41,15 +50,34 @@ class Control_pagina extends CI_Controller
 		$data['num_compromiso'] = 0;
 
 		$data['compromisos_4'] = $this->M_compromisos->listar_compromisos4();
-		$objetos_definicion = $data['compromisos_4'];
-		echo json_encode($objetos_definicion);
-		/*foreach ($objetos_definicion as $datos) {
+		//echo json_encode( $objetos_compromisos = $data['compromisos_4']);
+		$objetos_compromisos = $data['compromisos_4'];
+		$colors = array('#00A36A', '#212743', '#694688', '#6CBB37');
+		$i = 0;
+		foreach ($objetos_compromisos as $datos) {
 
-			$data['filas'] .= $this->fila_definicion($datos['iIdDefinicion'], $datos['vNombre'], $data['num_def']);
-
-			$data['num_def']++;
-		}*/
+				$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'],$colors[$i]);
+				$i++;
+		}
 	}
+	public function fila_compromiso($iIdCompromiso, $nombre, $numero,$color)
+	{
+
+		$html = ' <div class="col-lg-3 featured-box-full featured-box-full-primary" style="background-color: '.$color.'">
+                <a href="#">
+					<h1><strong>'.$numero.'</strong></h1>
+                    <h4><strong>Compromiso</strong></h4>
+                    <h5 class="font-weight-light" style="text-align: center">'.$nombre.'</h5>
+                </a>
+            </div>';
+
+		echo $html;
+
+	}
+
+
+
+
 }
 
 

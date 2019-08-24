@@ -56,8 +56,8 @@ $route['translate_uri_dashes'] = FALSE;
 $route['compromisos/listar'] = 'C_compromisos/index';
 $route['compromisos/descripcion'] = 'C_compromisos_descripcion/index';
 $route['acciones/compromisos/listar_4'] = 'Control_pagina/ListarCompromisos4';
-
-
+$route['acciones/compromisos/listar_10'] = 'Control_pagina/ListarCompromisos10';
+$route['acciones/compromisos/listar'] = 'C_compromisos/ListarCompromisos';
 
 //=======================Acciones bienes y servicios===========//
 $route['acciones/bienesyservicios/agregar'] = 'C_Bienesys/AgregarServicio';
