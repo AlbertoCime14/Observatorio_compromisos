@@ -24,17 +24,25 @@ class C_compromisos_descripcion extends CI_Controller
         parent::__construct();
         //session_start();
         $this->load->helper('url');
-        //$this->load->model('M_alineacion');
+        $this->load->model('M_compromisos');
         //$this->load->library('session');
     }
 
     public function index()
     {
+		$key = $this->uri->segment(3);
+		$id_dependencia = $this->uri->segment(4);
+
+		$data['descripcion'] = $this->M_compromisos->listar_descripcion_compromiso($key);
+		$data['responsable']=$this->M_compromisos->listar_responsable($id_dependencia);
+		//$var=json_encode($data['descripcion']);
+		//echo $var;
         $this->load->view('masterpage/head');
-        $this->load->view('V_descripcion_compromiso');
+        $this->load->view('V_descripcion_compromiso',$data);
         $this->load->view('masterpage/footer');
 
     }
+
 }
 
 

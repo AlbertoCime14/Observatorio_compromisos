@@ -66,7 +66,7 @@
 					   data-frames=\'[{"delay":3500,"speed":2000,"frame":"0","from":"opacity:0;y:50%;","to":"o:1;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]\'
 					   data-hash
 					   data-hash-offset="85"
-					   href="#main"
+					   href="'.base_url().'compromisos/descripcion/'.$compromiso['iIdCompromiso'].'/'.$compromiso['iIdDependencia'].'"
 					   data-x="center" data-hoffset="0"
 					   data-y="center" data-voffset="[\'100\',\'100\',\'100\',\'210\']"
 					   data-whitespace="nowrap"

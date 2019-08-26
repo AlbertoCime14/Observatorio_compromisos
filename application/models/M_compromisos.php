@@ -14,7 +14,7 @@ class M_compromisos extends CI_Model{
 	//Muestra todos los entregables
 	public function listar_compromisos4()
 	{
-		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero');
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,cp.iIdDependencia');
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.dUltimaAct', 'DESC');
 		$this->db->limit(4);
@@ -27,7 +27,8 @@ class M_compromisos extends CI_Model{
 				$datos[] = [
 					'iIdCompromiso' => $row->iIdCompromiso,
 					'vCompromiso' => $row->vCompromiso,
-					'iNumero' => $row->iNumero
+					'iNumero' => $row->iNumero,
+					'iIdDependencia' => $row->iIdDependencia
 
 
 
@@ -43,7 +44,7 @@ class M_compromisos extends CI_Model{
 	}
 	public function listar_compromisos10()
 	{
-		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.vDescripcion');
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.vDescripcion,,cp.iIdDependencia');
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.dUltimaAct', 'DESC');
 		$this->db->limit(10);
@@ -56,7 +57,8 @@ class M_compromisos extends CI_Model{
 				$datos[] = [
 					'iIdCompromiso' => $row->iIdCompromiso,
 					'vCompromiso' => $row->vCompromiso,
-					'vDescripcion' => $row->vDescripcion
+					'vDescripcion' => $row->vDescripcion,
+					'iIdDependencia' => $row->iIdDependencia
 
 
 
@@ -73,7 +75,7 @@ class M_compromisos extends CI_Model{
 	public function listar_compromisos()
 	{
 		$orden_by='cp.dUltimaAct AND cp.iIdCompromiso';
-		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance');
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance,,cp.iIdDependencia');
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.iIdCompromiso', 'ASC');
 		$this->db->where('iEstatus',6);
@@ -88,7 +90,8 @@ class M_compromisos extends CI_Model{
 					'iIdCompromiso' => $row->iIdCompromiso,
 					'vCompromiso' => $row->vCompromiso,
 					'iNumero' => $row->iNumero,
-					'dPorcentajeAvance' => $row->dPorcentajeAvance
+					'dPorcentajeAvance' => $row->dPorcentajeAvance,
+					'iIdDependencia' => $row->iIdDependencia
 
 
 
@@ -105,7 +108,7 @@ class M_compromisos extends CI_Model{
 	public function listar_compromisosP()
 	{
 		$orden_by='cp.dUltimaAct AND cp.iIdCompromiso';
-		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance');
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance,,cp.iIdDependencia');
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.iIdCompromiso', 'ASC');
 		$this->db->where('iEstatus',5);
@@ -120,7 +123,8 @@ class M_compromisos extends CI_Model{
 					'iIdCompromiso' => $row->iIdCompromiso,
 					'vCompromiso' => $row->vCompromiso,
 					'iNumero' => $row->iNumero,
-					'dPorcentajeAvance' => $row->dPorcentajeAvance
+					'dPorcentajeAvance' => $row->dPorcentajeAvance,
+					'iIdDependencia' => $row->iIdDependencia
 
 
 
@@ -137,7 +141,7 @@ class M_compromisos extends CI_Model{
 	public function listar_compromisosI()
 	{
 		$orden_by='cp.dUltimaAct AND cp.iIdCompromiso';
-		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance');
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance,cp.iIdDependencia');
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.iIdCompromiso', 'ASC');
 		$this->db->where('iEstatus',4);
@@ -152,7 +156,8 @@ class M_compromisos extends CI_Model{
 					'iIdCompromiso' => $row->iIdCompromiso,
 					'vCompromiso' => $row->vCompromiso,
 					'iNumero' => $row->iNumero,
-					'dPorcentajeAvance' => $row->dPorcentajeAvance
+					'dPorcentajeAvance' => $row->dPorcentajeAvance,
+					'iIdDependencia' => $row->iIdDependencia
 
 
 
@@ -166,8 +171,65 @@ class M_compromisos extends CI_Model{
 
 		return $datos;
 	}
+public function listar_descripcion_compromiso($key){
+	$this->db->select('cp.vCompromiso,cp.iNumero');
+	$this->db->from('CompromisoPag cp');
+	//$this->db->order_by('cp.iIdCompromiso', 'ASC');
+	$this->db->where('cp.iIdCompromiso',$key);
+	//$this->db->limit(10);
 
 
+	$query =  $this->db->get();
+
+	if ($query->num_rows() > 0) {
+		foreach ($query->result() as $row) {
+			$datos[] = [
+
+				'vCompromiso' => $row->vCompromiso,
+				'iNumero' => $row->iNumero,
+
+
+
+
+
+			];
+		}
+	} else {
+		$datos = array();
+	}
+
+
+	return $datos;
+}
+public function listar_responsable($key){
+	$this->db->select('De.vDependencia');
+	$this->db->from('Dependencia De');
+	//$this->db->order_by('cp.iIdCompromiso', 'ASC');
+	$this->db->where('De.iIdDependencia',$key);
+	//$this->db->limit(10);
+
+
+	$query =  $this->db->get();
+
+	if ($query->num_rows() > 0) {
+		foreach ($query->result() as $row) {
+			$datos[] = [
+
+				'vDependencia' => $row->vDependencia
+
+
+
+
+
+			];
+		}
+	} else {
+		$datos = array();
+	}
+
+
+	return $datos;
+}
 
 	//Muestra la ponderacion mas alta del DetalleEntregable
 	public function mostrar_detalleentregable($id_detalleactividad){

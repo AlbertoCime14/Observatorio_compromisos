@@ -50,7 +50,7 @@ class C_compromisos extends CI_Controller
 		$i = 0;
 		foreach ($objetos_compromisos as $datos) {
 
-			$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance'],$progress_color[$i],$colors[$i]);
+			$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance'],$progress_color[$i],$colors[$i],$datos['iIdDependencia']);
 
 			if($i >=3){
 				$i=0;
@@ -76,7 +76,7 @@ class C_compromisos extends CI_Controller
 		$i = 0;
 		foreach ($objetos_compromisos as $datos) {
 
-			$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance'],$progress_color[$i],$colors[$i]);
+			$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance'],$progress_color[$i],$colors[$i],$datos['iIdDependencia']);
 
 
 			if($i >=3){
@@ -104,7 +104,7 @@ class C_compromisos extends CI_Controller
 		$i = 0;
 		foreach ($objetos_compromisos as $datos) {
 
-			$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance'],$progress_color[$i],$colors[$i]);
+			$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance'],$progress_color[$i],$colors[$i],$datos['iIdDependencia']);
 			if($i >=3){
 				$i=0;
 			}else{
@@ -115,15 +115,15 @@ class C_compromisos extends CI_Controller
 
 	}
 
-	public function fila_compromiso($iIdCompromiso, $nombre, $numero, $porcentaje,$progress_color,$color)
+	public function fila_compromiso($iIdCompromiso, $nombre, $numero, $porcentaje,$progress_color,$color,$id_dependencia)
 	{
 
 					$html = '<div class="col-sm-6 col-lg-3 isotope-item brands" ">
 				<div class="portfolio-item">
-					<a href="http://localhost/observatorio/compromisos/descripcion">
+					<a href="descripcion/'.$iIdCompromiso.'/'.$id_dependencia.'">
 					<span class="thumb-info thumb-info-lighten border-radius-0">
 						<span class="thumb-info-wrapper border-radius-0">
-							<img src="http://localhost/observatorio/img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
+							<img src="../img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
 			
 							<span class="thumb-info-title" style="opacity: 0.7 !important;">
 								<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">'.$numero.'</span>

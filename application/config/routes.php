@@ -54,7 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 //======================Acciones compromisos====================================//
 $route['compromisos/listar'] = 'C_compromisos/index';
-$route['compromisos/descripcion'] = 'C_compromisos_descripcion/index';
+$route['compromisos/descripcion/(:any)/(:any)'] = 'C_compromisos_descripcion/index';
 $route['acciones/compromisos/listar_4'] = 'Control_pagina/ListarCompromisos4';
 $route['acciones/compromisos/listar_10'] = 'Control_pagina/ListarCompromisos10';
 $route['acciones/compromisos/listar'] = 'C_compromisos/ListarCompromisos';

@@ -56,15 +56,15 @@ class Control_pagina extends CI_Controller
 		$i = 0;
 		foreach ($objetos_compromisos as $datos) {
 
-				$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'],$colors[$i]);
+				$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'],$colors[$i],$datos['iIdDependencia']);
 				$i++;
 		}
 	}
-	public function fila_compromiso($iIdCompromiso, $nombre, $numero,$color)
+	public function fila_compromiso($iIdCompromiso, $nombre, $numero,$color,$id_dependencia)
 	{
 
 		$html = ' <div class="col-lg-3 featured-box-full featured-box-full-primary" style="background-color: '.$color.'">
-                <a href="#">
+                <a href="'.base_url().'compromisos/descripcion/'.$iIdCompromiso.'/'.$id_dependencia.'">
 					<h1><strong>'.$numero.'</strong></h1>
                     <h4><strong>Compromiso</strong></h4>
                     <h5 class="font-weight-light" style="text-align: center">'.$nombre.'</h5>

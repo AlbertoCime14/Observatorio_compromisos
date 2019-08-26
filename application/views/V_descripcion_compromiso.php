@@ -11,7 +11,14 @@
     </div>
     <div class="row align-items-center" style="text-align: center">
         <div class="col-md-12 align-self-center p-static order-2 text-center">
-            <h1><strong>Compromiso 67 </strong></h1>
+			<?php
+			foreach ($descripcion as $key){
+				echo '<h1><strong>Compromiso '. $key['iNumero'].' </strong></h1>';
+			}
+
+
+			?>
+
         </div>
     </div>
 </div>
@@ -41,8 +48,14 @@
 
                 <div class="summary entry-summary">
 
-                    <h1 style="font-size: 30px !important;" class="mb-0 font-weight-bold text-7" >Compromiso 67</h1>
 
+					<?php
+					foreach ($descripcion as $key){
+						echo '<h1 style="font-size: 30px !important;" class="mb-0 font-weight-bold text-7" >Compromiso '.$key['iNumero'].'</h1>';
+					}
+
+
+					?>
                     <div class="pb-0 clearfix">
                         <div title="Rated 3 out of 5" class="float-left">
                             <input type="text" class="d-none" value="3" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'primary', 'size':'xs'}">
@@ -53,9 +66,24 @@
 
 
 
-                    <p class="mb-4" style="font-size: 16px !important;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elimttis adipiscing. Fusce in hendrerit purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elimttis adipiscing. Fusce in hendrerit purus. </p>
 
-                    <strong style="font-size: 16px" class="text-color-primary">Responsable:</strong> <label style="font-size: 16px"> Okler Themes</label>
+					<?php
+					foreach ($descripcion as $key){
+						echo ' <p class="mb-4" style="font-size: 16px !important;" >'.$key['vCompromiso'].' </p>';
+					}
+
+
+					?>
+
+					<?php
+					foreach ($responsable as $key){
+
+
+						echo '<strong style="font-size: 16px" class="text-color-primary">Responsable:</strong> <label style="font-size: 16px"> '.$key['vDependencia'].'</label>';
+					}
+
+
+					?>
                     <hr style="background: #777 !important;margin-bottom: 3rem!important;margin-top: 0px!important;      margin: 7px 0 !important; margin-top: 1rem !important; border: 0 !important; border-top: 0px solid rgba(0, 0, 0, 0.1) !important;">
                     <strong style="font-size: 16px" class="text-color-primary">Participantes(s):</strong> <label style="font-size: 16px"> Okler Themes</label>
                     <hr style="background: #777 !important;margin-bottom: 3rem!important;margin-top: 0px!important;      margin: 7px 0 !important; margin-top: 1rem !important; border: 0 !important; border-top: 0px solid rgba(0, 0, 0, 0.1) !important;">
