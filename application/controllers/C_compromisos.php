@@ -67,7 +67,109 @@ class C_compromisos extends CI_Controller
                 <img src="http://localhost/observatorio/img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
 
                 <span class="thumb-info-title">
-                    <span class="thumb-info-inner">'.$numero.'</span>
+                    <span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">'.$numero.'</span>
+                    <span class="thumb-info-type">Compromiso</span>
+                </span>
+
+            </span>
+        </span>
+            <div class="progress mb-2" style="margin-top: 7px">
+                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="'.$porcentaje.'" aria-valuemin="0" aria-valuemax="100" style="width: '.$porcentaje.'%;">
+                    '.$porcentaje.'%
+                </div>
+            </div>
+            <p>'.$nombre.' </p>
+        </a>
+    </div>
+</div>';
+
+		echo $html;
+
+
+	}
+	public function ListarCompromisosP()
+	{
+
+		$data['filas'] = '';
+		$data['num_compromiso'] = 0;
+
+		$data['compromisosP'] = $this->M_compromisos->listar_compromisosP();
+		//echo json_encode( $objetos_compromisos = $data['compromisos']);
+		$objetos_compromisos = $data['compromisosP'];
+		$colors = array('#00A36A', '#212743', '#694688', '#6CBB37');
+		$i = 0;
+		foreach ($objetos_compromisos as $datos) {
+
+			$data['filas'] .= $this->fila_compromisoP($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance']);
+			$i++;
+
+		}
+
+	}
+
+	public function fila_compromisoP($iIdCompromiso, $nombre, $numero, $porcentaje)
+	{
+
+		$html = '<div class="col-sm-6 col-lg-3 isotope-item brands" ">
+    <div class="portfolio-item">
+        <a href="http://localhost/observatorio/compromisos/descripcion">
+        <span class="thumb-info thumb-info-lighten border-radius-0">
+            <span class="thumb-info-wrapper border-radius-0">
+                <img src="http://localhost/observatorio/img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
+
+                <span class="thumb-info-title">
+                    <span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">'.$numero.'</span>
+                    <span class="thumb-info-type">Compromiso</span>
+                </span>
+
+            </span>
+        </span>
+            <div class="progress mb-2" style="margin-top: 7px">
+                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="'.$porcentaje.'" aria-valuemin="0" aria-valuemax="100" style="width: '.$porcentaje.'%;">
+                    '.$porcentaje.'%
+                </div>
+            </div>
+            <p>'.$nombre.' </p>
+        </a>
+    </div>
+</div>';
+
+		echo $html;
+
+
+	}
+	public function ListarCompromisosI()
+	{
+
+		$data['filas'] = '';
+		$data['num_compromiso'] = 0;
+
+		$data['compromisosP'] = $this->M_compromisos->listar_compromisosI();
+		//echo json_encode( $objetos_compromisos = $data['compromisos']);
+		$objetos_compromisos = $data['compromisosP'];
+		$colors = array('#00A36A', '#212743', '#694688', '#6CBB37');
+		$i = 0;
+		foreach ($objetos_compromisos as $datos) {
+
+			$data['filas'] .= $this->fila_compromisoI($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance']);
+			$i++;
+
+		}
+
+	}
+
+	public function fila_compromisoI($iIdCompromiso, $nombre, $numero, $porcentaje)
+	{
+
+		$html = '<div class="col-sm-6 col-lg-3 isotope-item brands" ">
+    <div class="portfolio-item">
+        <a href="http://localhost/observatorio/compromisos/descripcion">
+        <span class="thumb-info thumb-info-lighten border-radius-0">
+            <span class="thumb-info-wrapper border-radius-0">
+                <img src="http://localhost/observatorio/img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
+
+                <span class="thumb-info-title">
+                    <span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">'.$numero.'</span>
                     <span class="thumb-info-type">Compromiso</span>
                 </span>
 

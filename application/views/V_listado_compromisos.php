@@ -43,14 +43,14 @@
 		</div>
 		<ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio"
 			data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-			<li class="nav-item active" data-option-value="*"><a class="nav-link text-1 text-uppercase active"
+			<li onclick="listar_compromisos();" class="nav-item active" data-option-value="*"><a class="nav-link text-1 text-uppercase active"
 																 style="color:black!important;    border-bottom-color: #073a54 !important;"
 																 href="#"><strong>Cumplidos</strong></a></li>
-			<li class="nav-item" data-option-value=".websites"><a class="nav-link text-1 text-uppercase" href="#"
+			<li onclick="listar_procesos();" class="nav-item" data-option-value=".websites"><a class="nav-link text-1 text-uppercase" href="#"
 																  style="color:black!important;"><strong>En
 						proceso</strong></a>
 			</li>
-			<li class="nav-item" data-option-value=".logos"><a class="nav-link text-1 text-uppercase"
+			<li onclick="listar_procesosI();" class="nav-item" data-option-value=".logos"><a class="nav-link text-1 text-uppercase"
 															   style="color:black!important;"
 															   href="#"><strong>Por iniciar</strong></a></li>
 

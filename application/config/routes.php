@@ -58,7 +58,8 @@ $route['compromisos/descripcion'] = 'C_compromisos_descripcion/index';
 $route['acciones/compromisos/listar_4'] = 'Control_pagina/ListarCompromisos4';
 $route['acciones/compromisos/listar_10'] = 'Control_pagina/ListarCompromisos10';
 $route['acciones/compromisos/listar'] = 'C_compromisos/ListarCompromisos';
-
+$route['acciones/compromisos/listarP'] = 'C_compromisos/ListarCompromisosP';
+$route['acciones/compromisos/listarI'] = 'C_compromisos/ListarCompromisosI';
 //=======================Acciones bienes y servicios===========//
 $route['acciones/bienesyservicios/agregar'] = 'C_Bienesys/AgregarServicio';
 $route['acciones/bienesyservicios/listar_unidad_medida'] = 'C_Bienesys/listar_unidad_medida';

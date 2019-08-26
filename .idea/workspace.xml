@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd08836-e397-48df-8e8f-7c10f2487fae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/controllers/eliminar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/vendor/rs-plugin/css/settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/vendor/rs-plugin/css/settings.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/C_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/C_compromisos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Control_pagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Control_pagina.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/M_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_compromisos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/V_index_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_index_compromiso.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/masterpage/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/compromisos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compromisos/compromisos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +178,8 @@
       <workItem from="1566255644735" duration="3481000" />
       <workItem from="1566408164659" duration="25920000" />
       <workItem from="1566492874077" duration="19223000" />
-      <workItem from="1566579250413" duration="12459000" />
+      <workItem from="1566579250413" duration="15096000" />
+      <workItem from="1566833461561" duration="1613000" />
     </task>
     <servers />
   </component>

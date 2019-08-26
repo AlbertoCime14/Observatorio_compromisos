@@ -26,7 +26,36 @@ function listar_compromisos() {
 		}
 	});
 }
+function listar_procesos() {
+	var recurso = "acciones/compromisos/listarP";
+	$.ajax({
+		type: "GET",
+		url: url + recurso,
+		success: function (data) {
+			//$("#listado_cumplidos").empty();
+			var html=data;
+			console.log(typeof data);
+			//console.log(html);
+			$("#listado_cumplidos").html(html);
 
+		}
+	});
+}
+function listar_procesosI() {
+	var recurso = "acciones/compromisos/listarI";
+	$.ajax({
+		type: "GET",
+		url: url + recurso,
+		success: function (data) {
+			//$("#listado_cumplidos").empty();
+			var html=data;
+			console.log(typeof data);
+			//console.log(html);
+			$("#listado_cumplidos").html(html);
+
+		}
+	});
+}
 
 
 
