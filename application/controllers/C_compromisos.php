@@ -45,48 +45,23 @@ class C_compromisos extends CI_Controller
 		$data['compromisos'] = $this->M_compromisos->listar_compromisos();
 		//echo json_encode( $objetos_compromisos = $data['compromisos']);
 		$objetos_compromisos = $data['compromisos'];
+		$progress_color = array('progress-bar-primario', 'progress-bar-secundario', 'progress-bar-terciario', 'progress-bar-cuaternario');
 		$colors = array('#00A36A', '#212743', '#694688', '#6CBB37');
 		$i = 0;
 		foreach ($objetos_compromisos as $datos) {
 
-			$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance']);
-			$i++;
+			$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance'],$progress_color[$i],$colors[$i]);
 
+			if($i >=3){
+				$i=0;
+			}else{
+				$i++;
+			}
 		}
 
 	}
 
-	public function fila_compromiso($iIdCompromiso, $nombre, $numero, $porcentaje)
-	{
 
-		$html = '<div class="col-sm-6 col-lg-3 isotope-item brands" ">
-    <div class="portfolio-item">
-        <a href="http://localhost/observatorio/compromisos/descripcion">
-        <span class="thumb-info thumb-info-lighten border-radius-0">
-            <span class="thumb-info-wrapper border-radius-0">
-                <img src="http://localhost/observatorio/img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
-
-                <span class="thumb-info-title">
-                    <span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">'.$numero.'</span>
-                    <span class="thumb-info-type">Compromiso</span>
-                </span>
-
-            </span>
-        </span>
-            <div class="progress mb-2" style="margin-top: 7px">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="'.$porcentaje.'" aria-valuemin="0" aria-valuemax="100" style="width: '.$porcentaje.'%;">
-                    '.$porcentaje.'%
-                </div>
-            </div>
-            <p>'.$nombre.' </p>
-        </a>
-    </div>
-</div>';
-
-		echo $html;
-
-
-	}
 	public function ListarCompromisosP()
 	{
 
@@ -96,48 +71,25 @@ class C_compromisos extends CI_Controller
 		$data['compromisosP'] = $this->M_compromisos->listar_compromisosP();
 		//echo json_encode( $objetos_compromisos = $data['compromisos']);
 		$objetos_compromisos = $data['compromisosP'];
+		$progress_color = array('progress-bar-primario', 'progress-bar-secundario', 'progress-bar-terciario', 'progress-bar-cuaternario');
 		$colors = array('#00A36A', '#212743', '#694688', '#6CBB37');
 		$i = 0;
 		foreach ($objetos_compromisos as $datos) {
 
-			$data['filas'] .= $this->fila_compromisoP($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance']);
-			$i++;
+			$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance'],$progress_color[$i],$colors[$i]);
+
+
+			if($i >=3){
+				$i=0;
+			}else{
+				$i++;
+			}
 
 		}
 
 	}
 
-	public function fila_compromisoP($iIdCompromiso, $nombre, $numero, $porcentaje)
-	{
 
-		$html = '<div class="col-sm-6 col-lg-3 isotope-item brands" ">
-    <div class="portfolio-item">
-        <a href="http://localhost/observatorio/compromisos/descripcion">
-        <span class="thumb-info thumb-info-lighten border-radius-0">
-            <span class="thumb-info-wrapper border-radius-0">
-                <img src="http://localhost/observatorio/img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
-
-                <span class="thumb-info-title">
-                    <span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">'.$numero.'</span>
-                    <span class="thumb-info-type">Compromiso</span>
-                </span>
-
-            </span>
-        </span>
-            <div class="progress mb-2" style="margin-top: 7px">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="'.$porcentaje.'" aria-valuemin="0" aria-valuemax="100" style="width: '.$porcentaje.'%;">
-                    '.$porcentaje.'%
-                </div>
-            </div>
-            <p>'.$nombre.' </p>
-        </a>
-    </div>
-</div>';
-
-		echo $html;
-
-
-	}
 	public function ListarCompromisosI()
 	{
 
@@ -147,43 +99,48 @@ class C_compromisos extends CI_Controller
 		$data['compromisosP'] = $this->M_compromisos->listar_compromisosI();
 		//echo json_encode( $objetos_compromisos = $data['compromisos']);
 		$objetos_compromisos = $data['compromisosP'];
+		$progress_color = array('progress-bar-primario', 'progress-bar-secundario', 'progress-bar-terciario', 'progress-bar-cuaternario');
 		$colors = array('#00A36A', '#212743', '#694688', '#6CBB37');
 		$i = 0;
 		foreach ($objetos_compromisos as $datos) {
 
-			$data['filas'] .= $this->fila_compromisoI($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance']);
-			$i++;
+			$data['filas'] .= $this->fila_compromiso($datos['iIdCompromiso'], $datos['vCompromiso'], $datos['iNumero'], $datos['dPorcentajeAvance'],$progress_color[$i],$colors[$i]);
+			if($i >=3){
+				$i=0;
+			}else{
+				$i++;
+			}
 
 		}
 
 	}
 
-	public function fila_compromisoI($iIdCompromiso, $nombre, $numero, $porcentaje)
+	public function fila_compromiso($iIdCompromiso, $nombre, $numero, $porcentaje,$progress_color,$color)
 	{
 
-		$html = '<div class="col-sm-6 col-lg-3 isotope-item brands" ">
-    <div class="portfolio-item">
-        <a href="http://localhost/observatorio/compromisos/descripcion">
-        <span class="thumb-info thumb-info-lighten border-radius-0">
-            <span class="thumb-info-wrapper border-radius-0">
-                <img src="http://localhost/observatorio/img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
-
-                <span class="thumb-info-title">
-                    <span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">'.$numero.'</span>
-                    <span class="thumb-info-type">Compromiso</span>
-                </span>
-
-            </span>
-        </span>
-            <div class="progress mb-2" style="margin-top: 7px">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="'.$porcentaje.'" aria-valuemin="0" aria-valuemax="100" style="width: '.$porcentaje.'%;">
-                    '.$porcentaje.'%
-                </div>
-            </div>
-            <p>'.$nombre.' </p>
-        </a>
-    </div>
-</div>';
+					$html = '<div class="col-sm-6 col-lg-3 isotope-item brands" ">
+				<div class="portfolio-item">
+					<a href="http://localhost/observatorio/compromisos/descripcion">
+					<span class="thumb-info thumb-info-lighten border-radius-0">
+						<span class="thumb-info-wrapper border-radius-0">
+							<img src="http://localhost/observatorio/img/projects/project.jpg" class="img-fluid border-radius-0" alt="">
+			
+							<span class="thumb-info-title" style="opacity: 0.7 !important;">
+								<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">'.$numero.'</span>
+								<span style="background-color: '.$color.' !important;" class="thumb-info-type">Compromiso</span>
+							</span>
+			
+						</span>
+					</span>
+						<div class="progress mb-2" style="margin-top: 7px">
+							<div class="progress-bar '.$progress_color.'" role="progressbar" aria-valuenow="'.$porcentaje.'" aria-valuemin="0" aria-valuemax="100" style="width: '.$porcentaje.'%;">
+								'.$porcentaje.'%
+							</div>
+						</div>
+						<p>'.$nombre.' </p>
+					</a>
+				</div>
+			</div>';
 
 		echo $html;
 

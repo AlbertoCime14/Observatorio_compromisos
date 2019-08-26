@@ -17,7 +17,27 @@
 </div>
 <style>
 	#listado_cumplidos{ height: auto! important;}
+	.progress-bar-primario {
+		background-color: #128C5D;
+		color: #FFF;
+	}
+
+	.progress-bar-secundario {
+		background-color: #2B293E;
+		color: #FFF;
+	}
+
+	.progress-bar-terciario {
+		background-color: #524471;
+		color: #FFF;
+	}
+
+	.progress-bar-cuaternario {
+		background-color: #52863B;
+		color: #FFF;
+	}
 </style>
+
 
 <div role="main" class="main" style="margin-bottom: 100px">
 
