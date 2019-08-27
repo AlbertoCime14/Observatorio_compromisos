@@ -38,10 +38,10 @@
 					</h1>
 
 					<div class="tp-caption d-none d-md-block"
-						 data-frames=\'[{"delay":2400,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]\'
+						 data-frames=\'[{"delay":2400,"speed":100,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]\'
 						 data-x="center" data-hoffset="[\'100\',\'100\',\'100\',\'135\']"
 						 data-y="center" data-voffset="[\'-92\',\'-92\',\'-92\',\'-100\']"><img
-							src="img/slides/slide-white-line.png" alt=""></div>
+							src="../img/slides/slide-white-line.png" alt=""></div>
 
 					<div  class="tp-caption font-weight-extra-bold text-color-light negative-ls-2 ws-nowrap break-word	"
 						 data-frames=\'[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]\'
@@ -106,7 +106,7 @@
 											<span class="featured-boxes featured-boxes-style-6 p-0 m-0">
 												<span class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
 													<span class="box-content p-0 m-0">
-														<i class="icon-featured fas fa-copyright"></i>
+														 <img alt="compromisos width="30" height="50" src="<?=base_url();?>img/icono_c.png">
 													</span>
 												</span>
 											</span>
@@ -118,7 +118,7 @@
 											<span class="featured-boxes featured-boxes-style-6 p-0 m-0">
 												<span class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
 													<span class="box-content p-0 m-0">
-														<i class="icon-featured fas fa-file"></i>
+														<img alt="compromisos width="30" height="50" src="<?=base_url();?>img/icono_documento.png">
 													</span>
 												</span>
 											</span>
@@ -130,7 +130,7 @@
 											<span class="featured-boxes featured-boxes-style-6 p-0 m-0">
 												<span class="featured-box featured-box-primary featured-box-effect-6 p-0 m-0">
 													<span class="box-content p-0 m-0">
-														<i class="icon-featured fas fa-newspaper"></i>
+														<img alt="compromisos width="30" height="50" src="<?=base_url();?>img/icono_noticias.png">
 													</span>
 												</span>
 											</span>
@@ -234,7 +234,7 @@
                     <div class=" owl-theme nav-style-1 stage-margin mb-0"
                          data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'margin': 25, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 40}">
                         <div class="p-4">
-                            <img class="img-fluid  mb-3" src="<?=base_url();?>img/gallery/gallery-6.jpg" alt=""/>
+                            <img class="img-fluid  mb-3" src="<?=base_url();?>img/gallery/testigo_ciudadano.png" alt=""/>
                         </div>
 
                     </div>
@@ -249,7 +249,7 @@
                     <div class=" owl-theme nav-style-1 stage-margin mb-0"
                          data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'margin': 25, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 40}">
                         <div class="p-4">
-                            <img class="img-fluid  mb-3" src="<?=base_url();?>img/gallery/gallery-6.jpg" alt=""/>
+                            <img class="img-fluid  mb-3" src="<?=base_url();?>img/gallery/Logo-verde-FPEY-300x274.png" alt=""/>
                         </div>
 
                     </div>
@@ -272,7 +272,7 @@
     </section>
 
     <div class="container-fluid">
-        <div class="row featured-boxes-full featured-boxes-full-scale" id="listado_compromisos">
+        <div style="margin-bottom: -50px !important;" class="row featured-boxes-full featured-boxes-full-scale" id="listado_compromisos">
 
         </div>
     </div>

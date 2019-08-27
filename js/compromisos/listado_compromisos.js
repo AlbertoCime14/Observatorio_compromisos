@@ -19,7 +19,7 @@ function listar_compromisos() {
 		success: function (data) {
 			//$("#listado_cumplidos").empty();
 			var html=data;
-			console.log(typeof data);
+
 			//console.log(html);
 			$("#listado_cumplidos").html(html);
 
@@ -34,7 +34,7 @@ function listar_procesos() {
 		success: function (data) {
 			//$("#listado_cumplidos").empty();
 			var html=data;
-			console.log(typeof data);
+
 			//console.log(html);
 			$("#listado_cumplidos").html(html);
 
@@ -49,7 +49,7 @@ function listar_procesosI() {
 		success: function (data) {
 			//$("#listado_cumplidos").empty();
 			var html=data;
-			console.log(typeof data);
+
 			//console.log(html);
 			$("#listado_cumplidos").html(html);
 

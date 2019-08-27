@@ -44,7 +44,7 @@ class M_compromisos extends CI_Model{
 	}
 	public function listar_compromisos10()
 	{
-		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.vDescripcion,,cp.iIdDependencia');
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.vDescripcion,cp.iIdDependencia');
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.dUltimaAct', 'DESC');
 		$this->db->limit(10);
@@ -75,7 +75,7 @@ class M_compromisos extends CI_Model{
 	public function listar_compromisos()
 	{
 		$orden_by='cp.dUltimaAct AND cp.iIdCompromiso';
-		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance,,cp.iIdDependencia');
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance,cp.iIdDependencia');
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.iIdCompromiso', 'ASC');
 		$this->db->where('iEstatus',6);
@@ -108,7 +108,7 @@ class M_compromisos extends CI_Model{
 	public function listar_compromisosP()
 	{
 		$orden_by='cp.dUltimaAct AND cp.iIdCompromiso';
-		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance,,cp.iIdDependencia');
+		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,dPorcentajeAvance,cp.iIdDependencia');
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.iIdCompromiso', 'ASC');
 		$this->db->where('iEstatus',5);
@@ -216,11 +216,58 @@ public function listar_responsable($key){
 			$datos[] = [
 
 				'vDependencia' => $row->vDependencia
+			];
+		}
+	} else {
+		$datos = array();
+	}
 
 
+	return $datos;
+}
+public function listar_participantes($key){
+	$this->db->select('de.vDependencia');
+	$this->db->from('CompromisoCorresponsablePag cc');
+	$this->db->join('Dependencia de','cc.iIdDependencia = de.iIdDependencia','JOIN');
+
+	//$this->db->order_by('cp.iIdCompromiso', 'ASC');
+	$this->db->where('cc.iIdCompromiso',$key);
+	//$this->db->limit(10);
 
 
+	$query =  $this->db->get();
 
+	if ($query->num_rows() > 0) {
+		foreach ($query->result() as $row) {
+			$datos[] = [
+
+				'vDependencia' => $row->vDependencia
+			];
+		}
+	} else {
+		$datos = array();
+	}
+
+
+	return $datos;
+}
+public function listar_componentes($key){
+	$this->db->select('cp.iIdComponente,cp.vComponente,cp.nAvance,cp.vDescripcion');
+	$this->db->from('ComponentePag cp');
+	$this->db->order_by('cp.iOrden', 'DESC');
+	$this->db->where('iIdCompromiso',$key);
+	//$this->db->limit(10);
+
+
+	$query =  $this->db->get();
+
+	if ($query->num_rows() > 0) {
+		foreach ($query->result() as $row) {
+			$datos[] = [
+				'iIdComponente' => $row->iIdComponente,
+				'vComponente' => $row->vComponente,
+				'nAvance' => $row->nAvance,
+				'vDescripcion' => $row->vDescripcion
 			];
 		}
 	} else {

@@ -568,8 +568,8 @@ html .nav-pills-light > li.active > a:focus {
 }
 
 .sort-source.sort-source-style-3 > li.active > a {
-	border-bottom-color: #0088CC !important;
-	color: #0088CC !important;
+	border-bottom-color: #1D2244 !important;
+	color: #1D2244 !important;
 }
 
 html .badge-primary {
@@ -2521,7 +2521,7 @@ html body .tabs.tabs-bottom .nav-tabs li.active .nav-link:hover,
 html.dark body .tabs.tabs-bottom .nav-tabs li.active .nav-link:hover,
 html body .tabs.tabs-bottom .nav-tabs li.active .nav-link:focus,
 html.dark body .tabs.tabs-bottom .nav-tabs li.active .nav-link:focus {
-	border-bottom-color: #0088CC;
+	border-bottom-color: #1D2244 !important;
 }
 
 html body .tabs.tabs-vertical.tabs-left .nav-tabs li .nav-link:hover,

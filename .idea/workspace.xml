@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd08836-e397-48df-8e8f-7c10f2487fae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/compromisos/descripcion_compromisos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/C_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/C_compromisos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/C_compromisos_descripcion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/C_compromisos_descripcion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Control_pagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Control_pagina.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/M_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_compromisos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_index_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_index_compromiso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/masterpage/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/masterpage/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/skins/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/skins/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,6 +109,11 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Xampp\htdocs\observatorio\js\compromisos" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -181,7 +190,9 @@
       <workItem from="1566408164659" duration="25920000" />
       <workItem from="1566492874077" duration="19223000" />
       <workItem from="1566579250413" duration="15096000" />
-      <workItem from="1566833461561" duration="14049000" />
+      <workItem from="1566833461561" duration="20149000" />
+      <workItem from="1566877723540" duration="2135000" />
+      <workItem from="1566917259295" duration="13791000" />
     </task>
     <servers />
   </component>

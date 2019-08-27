@@ -69,7 +69,7 @@
                         <div class="header-row">
                             <div class="header-logo">
                                 <a href="<?=base_url()?>control_pagina/index">
-                                    <img alt="Porto" width="82" height="40" src="<?=base_url();?>img/logo-default-slim.png">
+                                    <img alt="compromisos width="82" height="40" src="<?=base_url();?>img/logo_compromiso.png">
                                 </a>
                             </div>
                         </div>

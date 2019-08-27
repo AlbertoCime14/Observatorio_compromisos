@@ -64,7 +64,7 @@
 		<ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio"
 			data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
 			<li onclick="listar_compromisos();" class="nav-item active" data-option-value="*"><a class="nav-link text-1 text-uppercase active"
-																 style="color:black!important;    border-bottom-color: #073a54 !important;"
+																 style="color:black!important;   "
 																 href="#"><strong>Cumplidos</strong></a></li>
 			<li onclick="listar_procesos();" class="nav-item" data-option-value=".websites"><a class="nav-link text-1 text-uppercase" href="#"
 																  style="color:black!important;"><strong>En
