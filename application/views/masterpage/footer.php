@@ -7,10 +7,10 @@
 						<ul class="nav" id="footerNav">
 
 							<li>
-								<a class="active" href="#">Inicio</a>
+								<a class="active" href="<?=base_url()?>control_pagina/index">Inicio</a>
 							</li>
 							<li>
-								<a href="#">Compromisos</a>
+								<a href="<?=base_url()?>compromisos/listar">Compromisos</a>
 							</li>
 						</ul>
 					</nav>
@@ -23,7 +23,7 @@
 						<p class="m-0">Calle 20-A número 284 entre 3-C y 49 diagonal, Colonia Xcumpich C.P. 97204,
 							Mérida, Yucatán, México.</p></li>
 					<li class="mb-1"><i class="fas fa-phone text-color-primary"></i>
-						<p class="m-0"><a href="tel:8001234567">(999) 61180 10 Ext. 47004</a></p></li>
+						<p class="m-0"><a href="tel:9996118010">(999) 61180 10 Ext. 47004</a></p></li>
 
 				</ul>
 			</div>
@@ -33,7 +33,7 @@
 		<div class="container py-2">
 			<div class="row py-4">
 				<div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
-					<a href="index.html" class="logo pr-0 pr-lg-3">
+					<a  class="logo pr-0 pr-lg-3">
 						<img alt="compromisos width="30" height="40" src="<?=base_url();?>img/logo_compromiso_white.png">
 					</a>
 				</div>

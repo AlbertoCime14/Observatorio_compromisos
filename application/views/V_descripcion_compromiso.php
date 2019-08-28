@@ -4,9 +4,8 @@
 	<div class="col-md-12 ">
 		<ul class="breadcrumb d-block text-center " style="color: white !important;" data-appear-animation="fadeIn"
 			data-appear-animation-delay="300">
-			<li><a style="color:white !important;" href="#">Inicio</a></li>
-			<li><a style="color:white !important;" href="#">Compromisos</a></li>
-
+			<li><a style="color:white !important;" href="<?=base_url()?>control_pagina/index">Inicio</a></li>
+			<li><a style="color:white !important;" href="<?=base_url()?>compromisos/listar">Compromisos</a></li>
 		</ul>
 	</div>
 	<div class="row align-items-center" style="text-align: center">
