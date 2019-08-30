@@ -60,6 +60,8 @@ $route['acciones/compromisos/listar_10'] = 'Control_pagina/ListarCompromisos10';
 $route['acciones/compromisos/listar'] = 'C_compromisos/ListarCompromisos';
 $route['acciones/compromisos/listarP'] = 'C_compromisos/ListarCompromisosP';
 $route['acciones/compromisos/listarI'] = 'C_compromisos/ListarCompromisosI';
+$route['acciones/compromisos/mostrar'] = 'C_compromisos/mostrar';
+$route['acciones/compromisos/mostrar_number'] = 'C_compromisos/mostrar_number';
 $route['compromisos/descripcion/(:any)/(:any)'] = 'C_compromisos_descripcion/index';
 $route['acciones/compromisos/componentes/(:any)'] = 'C_compromisos_descripcion/ListarComponentes';
 

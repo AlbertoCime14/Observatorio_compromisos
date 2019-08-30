@@ -47,11 +47,11 @@
 			<div class="form-row">
 				<div class="form-group col-lg-4">
 					<label class="font-weight-bold text-dark">Búsqueda por palabra clave</label>
-					<input type="text" value="" class="form-control">
+					<input name="busqueda" type="text" value="" class="form-control">
 				</div>
 				<div class="form-group col-lg-4">
 					<label class="font-weight-bold text-dark">Por número de compromiso</label>
-					<input type="text" value="" class="form-control">
+					<input name="busqueda_numero" type="number" value="" class="form-control">
 				</div>
 				<div class="form-group col-lg-4">
 					<label class="font-weight-bold text-dark">Por dependencia</label>
@@ -82,17 +82,7 @@
 			</div>
 			<nav aria-label="...">
 				<ul class="pagination float-right">
-					<li class="page-item disabled">
-						<a class="page-link" href="#" tabindex="-1">Previous</a>
-					</li>
-					<li class="page-item"><a class="page-link" href="#">1</a></li>
-					<li class="page-item active">
-						<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="page-item"><a class="page-link" href="#">3</a></li>
-					<li class="page-item">
-						<a class="page-link" href="#">Next</a>
-					</li>
+
 				</ul>
 			</nav>
 		</div>

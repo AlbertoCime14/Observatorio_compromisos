@@ -146,6 +146,38 @@ class C_compromisos extends CI_Controller
 
 
 	}
+	public function mostrar()
+	{
+		//valor a Buscar
+		$buscar = $this->input->post("buscar");
+		$numeropagina = $this->input->post("nropagina");
+		//$cantidad = $this->input->post("cantidad");
+		$cantidad=8; //deben ser busquedas por cada 8
+		$inicio = ($numeropagina -1)*$cantidad;
+		$data = array(
+			"compromisos" => $this->M_compromisos->buscar($buscar,$inicio,$cantidad),
+			"totalregistros" => count($this->M_compromisos->buscar($buscar)),
+			"cantidad" =>$cantidad
+
+		);
+		echo json_encode($data);
+	}
+	public function mostrar_number()
+	{
+		//valor a Buscar
+		$buscar = $this->input->post("buscar");
+		$numeropagina = $this->input->post("nropagina");
+		//$cantidad = $this->input->post("cantidad");
+		$cantidad=8; //deben ser busquedas por cada 8
+		$inicio = ($numeropagina -1)*$cantidad;
+		$data = array(
+			"compromisos" => $this->M_compromisos->buscar_number($buscar,$inicio,$cantidad),
+			"totalregistros" => count($this->M_compromisos->buscar_number($buscar)),
+			"cantidad" =>$cantidad
+
+		);
+		echo json_encode($data);
+	}
 }
 
 
