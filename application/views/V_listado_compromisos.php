@@ -47,11 +47,11 @@
 			<div class="form-row">
 				<div class="form-group col-lg-4">
 					<label class="font-weight-bold text-dark">Búsqueda por palabra clave</label>
-					<input name="busqueda" type="text" value="" class="form-control">
+					<input name="busqueda" type="text" value="" id="busqueda" onkeyup="buscar_datos()" class="form-control">
 				</div>
 				<div class="form-group col-lg-4">
 					<label class="font-weight-bold text-dark">Por número de compromiso</label>
-					<input name="busqueda_numero" type="number" value="" class="form-control">
+					<input name="busqueda_numero" id="busqueda_numero" onkeyup="buscar_datos()" type="number" value="" class="form-control">
 				</div>
 				<div class="form-group col-lg-4">
 					<label class="font-weight-bold text-dark">Por dependencia</label>
@@ -63,10 +63,13 @@
 		</div>
 		<ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio"
 			data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-			<li onclick="main();" class="nav-item active" data-option-value="*"><a class="nav-link text-1 text-uppercase active"
+			<input type="hidden" value="1" id="txt_1" name="txt_1">
+			<input type="hidden" value="1" id="paginado" name="paginado">
+
+			<li onclick="evento(1);" class="nav-item active" data-option-value="*"><a class="nav-link text-1 text-uppercase active"
 																 style="color:black!important;   "
 																 href="#"><strong>Cumplidos</strong></a></li>
-			<li onclick="listar_procesos();" class="nav-item" data-option-value=".websites"><a class="nav-link text-1 text-uppercase" href="#"
+			<li onclick="evento(2);" class="nav-item" data-option-value=".websites"><a class="nav-link text-1 text-uppercase" href="#"
 																  style="color:black!important;"><strong>En
 						proceso</strong></a>
 			</li>

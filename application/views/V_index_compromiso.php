@@ -197,17 +197,17 @@
 				<div class="owl-carousel owl-theme mb-0"
 					 data-plugin-options="{'responsive': {'0': {'items': 3}, '476': {'items': 3}, '768': {'items': 3}, '992': {'items': 3}, '1200': {'items': 3}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
 					<div>
-						<a href="http://www.yucatan.gob.mx">
+						<a href="http://www.yucatan.gob.mx" target="_blank">
 							<img class="img-fluid opacity-2" src="<?= base_url(); ?>img/logos/logo-1.png" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="https://www.inegi.org.mx">
+						<a href="https://www.inegi.org.mx" target="_blank">
 							<img class="img-fluid opacity-2" src="<?= base_url(); ?>img/logos/logo-2.png" alt="">
 						</a>
 					</div>
 					<div>
-						<a href="http://siegy.yucatan.gob.mx/">
+						<a href="http://siegy.yucatan.gob.mx/" target="_blank">
 							<img class="img-fluid opacity-2" src="<?= base_url(); ?>img/logos/logo-3.png" alt="">
 						</a>
 					</div>
@@ -277,7 +277,7 @@
 
 					</p>
 					<a href="https://fpeyucatan.org.mx"
-					   class="btn btn-primary font-weight-semibold rounded-0 text-2 btn-px-5 btn-py-2">Visitar</a>
+					   class="btn btn-primary font-weight-semibold rounded-0 text-2 btn-px-5 btn-py-2" target="_blank">Visitar</a>
 
 
 				</div>

@@ -62,6 +62,18 @@ $route['acciones/compromisos/listarP'] = 'C_compromisos/ListarCompromisosP';
 $route['acciones/compromisos/listarI'] = 'C_compromisos/ListarCompromisosI';
 $route['acciones/compromisos/mostrar'] = 'C_compromisos/mostrar';
 $route['acciones/compromisos/mostrar_number'] = 'C_compromisos/mostrar_number';
+$route['acciones/compromisos/mostrar_procesos'] = 'C_compromisos/mostrarProcesos';
+$route['acciones/compromisos/mostrar_procesos_number'] = 'C_compromisos/procesos_number';
+$route['acciones/compromisos/mostrar_procesos_iniciar'] = 'C_compromisos/mostrarProcesosIniciar';
+$route['acciones/compromisos/mostrar_procesos_number_iniciar'] = 'C_compromisos/procesos_numberIniciar';
+
+
+
+
+
+
+
+
 $route['compromisos/descripcion/(:any)/(:any)'] = 'C_compromisos_descripcion/index';
 $route['acciones/compromisos/componentes/(:any)'] = 'C_compromisos_descripcion/ListarComponentes';
 
