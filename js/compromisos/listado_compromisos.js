@@ -269,7 +269,7 @@ function mostrarDatos(valorBuscar,pagina) {
 
 }
 
-function listar_compromisos() {
+/*function listar_compromisos() {
 
 	var recurso = "acciones/compromisos/listar";
 	$.ajax({
@@ -284,7 +284,7 @@ function listar_compromisos() {
 
 		}
 	});
-}
+}*/
 
 function listar_procesos() {
 	var recurso = "acciones/compromisos/listarP";

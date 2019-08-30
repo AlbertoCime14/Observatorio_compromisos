@@ -291,8 +291,8 @@ class M_compromisos extends CI_Model
 	public function buscar_number($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
 	{
 		//$this->db->ilike("vCompromiso", $buscar);
-		$text="::text";
-		$this->db->where("iEstatus='6' and \"iNumero\" like '%$buscar%'");
+		$text='CAST ("iNumero" AS text)';
+		$this->db->where("iEstatus='6' and $text like '%$buscar%'");
 		if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
 			$this->db->limit($cantidadregistro, $inicio);
 		}
