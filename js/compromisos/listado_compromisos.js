@@ -5,118 +5,48 @@ $(document).ready(function () {
 	url = $("#url").val();
 	//listar_compromisos();
 	buscar_datos();
-
-
 });
-
-
-
 function evento(opcion) {
+	$("#paginado").val(1);
 	$("#txt_1").val(opcion);
 	buscar_datos();
-
 }
-
-
 function buscar_datos() {
-	marcador=$("#txt_1").val();
+	marcador = $("#txt_1").val();
 	textobuscar = $("#busqueda").val();
-	busqueda_numero=$("#busqueda_numero").val();
-    pagina=$("#paginado").val();
+	busqueda_numero = $("#busqueda_numero").val();
+	pagina = $("#paginado").val();
 
-	if(textobuscar != ""){
-		buscar=textobuscar;
-	}else{
-		buscar=(busqueda_numero == "")?"":parseInt(busqueda_numero);
+	if (textobuscar != "") {
+		buscar = textobuscar;
+	} else {
+		buscar = (busqueda_numero == "") ? "" : parseInt(busqueda_numero);
 	}
 
-	if(marcador ==1){
-		mostrarDatos(buscar,pagina);
+	if (marcador == 1) {
+		mostrarDatos(buscar, pagina);
+	} else if(marcador == 2) {
+		mostrar_procesos(buscar, pagina);
 	}else{
-		mostrar_procesos(buscar,pagina);
+
 	}
-
-
-
 }
-$("body").on("click", ".pagination li a"	, function (e) {
+
+$("body").on("click", ".pagination li a", function (e) {
 	e.preventDefault();
 	$("#paginado").val($(this).attr("href"));
 
 	buscar_datos();
-
 });
-function main(opcion) {
-
-
-	/*$("#cantidad").change(function () {
-		valoroption = $(this).val();
-		valorBuscar = $("input[name=busqueda]").val();
-		mostrarDatos(valorBuscar, 1, valoroption);
-	});
-
-	switch (opcion) {
-		case 1:
-			mostrarDatos("",1);
-
-
-
-			$("input[name=busqueda_numero]").keyup(function () {
-				texto = $(this).val().trim();
-
-				if(texto == ""){
-					mostrarDatos(texto,1);
-				}else{
-					conversion_texto=parseInt(texto);
-					mostrarDatos(conversion_texto,1);
-				}
-				//valoroption = $("#cantidad").val();
-			});
-
-			$("body").on("click", ".pagination li a", function (e) {
-				e.preventDefault();
-				valorhref = $(this).attr("href");
-				valorBuscar = $("input[name=busqueda]").val();
-				mostrarDatos(valorBuscar, valorhref);
-			});
-			break;
-		case 2:
-			mostrar_procesos("",1);
-			$("input[name=busqueda]").keyup(function () {
-				textobuscar = $(this).val();
-				//valoroption = $("#cantidad").val();
-				mostrar_procesos(textobuscar,1);
-			});
-			$("input[name=busqueda_numero]").keyup(function () {
-				texto = $(this).val().trim();
-
-				if(texto == ""){
-					mostrar_procesos(texto,1);
-				}else{
-					conversion_texto=parseInt(texto);
-					mostrar_procesos(conversion_texto,1);
-				}
-				//valoroption = $("#cantidad").val();
-			});
-
-
-			break;
-
-
-
-	}*/
-}
-
-
-function mostrarDatos(valorBuscar,pagina) {
+function mostrarDatos(valorBuscar, pagina) {
 	var recurso;
 
-	if(typeof(valorBuscar) == "string" ){
+	if (typeof (valorBuscar) == "string") {
 		recurso = "acciones/compromisos/mostrar";
 		$.ajax({
 			url: url + recurso,
 			type: "POST",
-			data: {buscar: valorBuscar,nropagina:pagina},
+			data: {buscar: valorBuscar, nropagina: pagina},
 			dataType: "json",
 			success: function (response) {
 
@@ -147,9 +77,9 @@ function mostrarDatos(valorBuscar,pagina) {
 										</a>
 								</div>
 						</div>`;
-					if(i >=3){
-						i=0;
-					}else{
+					if (i >= 3) {
+						i = 0;
+					} else {
 						i++;
 					}
 
@@ -165,16 +95,13 @@ function mostrarDatos(valorBuscar,pagina) {
 				numerolinks = Math.ceil(totalregistros / cantidadregistros);
 				paginador = "<ul class='pagination float-right'>";
 
-				if(linkseleccionado>1)
-				{
-					paginador+="<li class='page-item'><a class='page-link'  href='1'>&laquo;</a></li>";
-					paginador+="<li class='page-item'><a class='page-link' href='"+(linkseleccionado-1)+"' '>&lsaquo;</a></li>";
+				if (linkseleccionado > 1) {
+					paginador += "<li class='page-item'><a class='page-link'  href='1'>&laquo;</a></li>";
+					paginador += "<li class='page-item'><a class='page-link' href='" + (linkseleccionado - 1) + "' '>&lsaquo;</a></li>";
 
-				}
-				else
-				{
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&laquo;</a></li>";
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&lsaquo;</a></li>";
+				} else {
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&laquo;</a></li>";
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&lsaquo;</a></li>";
 				}
 				//muestro de los enlaces
 				//cantidad de link hacia atras y adelante
@@ -182,38 +109,29 @@ function mostrarDatos(valorBuscar,pagina) {
 				//inicio de donde se va a mostrar los links
 				pagInicio = (linkseleccionado > cant) ? (linkseleccionado - cant) : 1;
 				//condicion en la cual establecemos el fin de los links
-				if (numerolinks > cant)
-				{
+				if (numerolinks > cant) {
 					//conocer los links que hay entre el seleccionado y el final
 					pagRestantes = numerolinks - linkseleccionado;
 					//defino el fin de los links
-					pagFin = (pagRestantes > cant) ? (linkseleccionado + cant) :numerolinks;
-				}
-				else
-				{
+					pagFin = (pagRestantes > cant) ? (linkseleccionado + cant) : numerolinks;
+				} else {
 					pagFin = numerolinks;
 				}
 				for (var i = 1; i <= numerolinks; i++) {
-					if (i == linkseleccionado){
+					if (i == linkseleccionado) {
 						paginador += `<li class="page-item active"><a class="page-link" href="javascript:void(0)">${i}</a></li>`;
-					}else{
+					} else {
 						paginador += `<li class="page-item"><a class="page-link" href="${i}">${i}</a></li>`;
 					}
-
-
-
 				}
 				//condicion para mostrar el boton sigueinte y ultimo
-				if(linkseleccionado<numerolinks)
-				{
-					paginador+="<li class='page-item'><a class='page-link' href='"+(linkseleccionado+1)+"' >&rsaquo;</a></li>";
-					paginador+="<li class='page-item'><a class='page-link' href='"+numerolinks+"'>&raquo;</a></li>";
+				if (linkseleccionado < numerolinks) {
+					paginador += "<li class='page-item'><a class='page-link' href='" + (linkseleccionado + 1) + "' >&rsaquo;</a></li>";
+					paginador += "<li class='page-item'><a class='page-link' href='" + numerolinks + "'>&raquo;</a></li>";
 
-				}
-				else
-				{
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&rsaquo;</a></li>";
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&raquo;</a></li>";
+				} else {
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&rsaquo;</a></li>";
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&raquo;</a></li>";
 				}
 
 				paginador += "</ul>";
@@ -221,15 +139,14 @@ function mostrarDatos(valorBuscar,pagina) {
 
 			}
 		});
-	}else{
+	} else {
 		recurso = "acciones/compromisos/mostrar_number";
 		$.ajax({
 			url: url + recurso,
 			type: "POST",
-			data: {buscar: valorBuscar,nropagina:pagina},
+			data: {buscar: valorBuscar, nropagina: pagina},
 			dataType: "json",
 			success: function (response) {
-
 				filas = "";
 				var progress_color = ['progress-bar-primario', 'progress-bar-secundario', 'progress-bar-terciario', 'progress-bar-cuaternario'];
 				var colors = ['#00A36A', '#212743', '#694688', '#6CBB37'];
@@ -257,12 +174,11 @@ function mostrarDatos(valorBuscar,pagina) {
 										</a>
 								</div>
 						</div>`;
-					if(i >=3){
-						i=0;
-					}else{
+					if (i >= 3) {
+						i = 0;
+					} else {
 						i++;
 					}
-
 				});
 				$("#listado_cumplidos").html(filas);
 
@@ -275,16 +191,13 @@ function mostrarDatos(valorBuscar,pagina) {
 				numerolinks = Math.ceil(totalregistros / cantidadregistros);
 				paginador = "<ul class='pagination float-right'>";
 
-				if(linkseleccionado>1)
-				{
-					paginador+="<li class='page-item'><a class='page-link'  href='1'>&laquo;</a></li>";
-					paginador+="<li class='page-item'><a class='page-link' href='"+(linkseleccionado-1)+"' '>&lsaquo;</a></li>";
+				if (linkseleccionado > 1) {
+					paginador += "<li class='page-item'><a class='page-link'  href='1'>&laquo;</a></li>";
+					paginador += "<li class='page-item'><a class='page-link' href='" + (linkseleccionado - 1) + "' '>&lsaquo;</a></li>";
 
-				}
-				else
-				{
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&laquo;</a></li>";
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&lsaquo;</a></li>";
+				} else {
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&laquo;</a></li>";
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&lsaquo;</a></li>";
 				}
 				//muestro de los enlaces
 				//cantidad de link hacia atras y adelante
@@ -292,43 +205,31 @@ function mostrarDatos(valorBuscar,pagina) {
 				//inicio de donde se va a mostrar los links
 				pagInicio = (linkseleccionado > cant) ? (linkseleccionado - cant) : 1;
 				//condicion en la cual establecemos el fin de los links
-				if (numerolinks > cant)
-				{
+				if (numerolinks > cant) {
 					//conocer los links que hay entre el seleccionado y el final
 					pagRestantes = numerolinks - linkseleccionado;
 					//defino el fin de los links
-					pagFin = (pagRestantes > cant) ? (linkseleccionado + cant) :numerolinks;
-				}
-				else
-				{
+					pagFin = (pagRestantes > cant) ? (linkseleccionado + cant) : numerolinks;
+				} else {
 					pagFin = numerolinks;
 				}
 				for (var i = 1; i <= numerolinks; i++) {
-					if (i == linkseleccionado){
+					if (i == linkseleccionado) {
 						paginador += `<li class="page-item active"><a class="page-link" href="javascript:void(0)">${i}</a></li>`;
-					}else{
+					} else {
 						paginador += `<li class="page-item"><a class="page-link" href="${i}">${i}</a></li>`;
 					}
-
-
-
 				}
 				//condicion para mostrar el boton sigueinte y ultimo
-				if(linkseleccionado<numerolinks)
-				{
-					paginador+="<li class='page-item'><a class='page-link' href='"+(linkseleccionado+1)+"' >&rsaquo;</a></li>";
-					paginador+="<li class='page-item'><a class='page-link' href='"+numerolinks+"'>&raquo;</a></li>";
-
+				if (linkseleccionado < numerolinks) {
+					paginador += "<li class='page-item'><a class='page-link' href='" + (linkseleccionado + 1) + "' >&rsaquo;</a></li>";
+					paginador += "<li class='page-item'><a class='page-link' href='" + numerolinks + "'>&raquo;</a></li>";
+				} else {
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&rsaquo;</a></li>";
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&raquo;</a></li>";
 				}
-				else
-				{
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&rsaquo;</a></li>";
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&raquo;</a></li>";
-				}
-
 				paginador += "</ul>";
 				$(".pagination").html(paginador);
-
 			}
 		});
 	}
@@ -336,15 +237,15 @@ function mostrarDatos(valorBuscar,pagina) {
 
 }
 
-function mostrar_procesos(valorBuscar,pagina) {
+function mostrar_procesos(valorBuscar, pagina) {
 	var recurso;
 
-	if(typeof(valorBuscar) == "string" ){
+	if (typeof (valorBuscar) == "string") {
 		recurso = "acciones/compromisos/mostrar_procesos";
 		$.ajax({
 			url: url + recurso,
 			type: "POST",
-			data: {buscar: valorBuscar,nropagina:pagina},
+			data: {buscar: valorBuscar, nropagina: pagina},
 			dataType: "json",
 			success: function (response) {
 
@@ -375,9 +276,9 @@ function mostrar_procesos(valorBuscar,pagina) {
 										</a>
 								</div>
 						</div>`;
-					if(i >=3){
-						i=0;
-					}else{
+					if (i >= 3) {
+						i = 0;
+					} else {
 						i++;
 					}
 
@@ -393,16 +294,13 @@ function mostrar_procesos(valorBuscar,pagina) {
 				numerolinks = Math.ceil(totalregistros / cantidadregistros);
 				paginador = "<ul class='pagination float-right'>";
 
-				if(linkseleccionado>1)
-				{
-					paginador+="<li class='page-item'><a class='page-link'  href='1'>&laquo;</a></li>";
-					paginador+="<li class='page-item'><a class='page-link' href='"+(linkseleccionado-1)+"' '>&lsaquo;</a></li>";
+				if (linkseleccionado > 1) {
+					paginador += "<li class='page-item'><a class='page-link'  href='1'>&laquo;</a></li>";
+					paginador += "<li class='page-item'><a class='page-link' href='" + (linkseleccionado - 1) + "' '>&lsaquo;</a></li>";
 
-				}
-				else
-				{
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&laquo;</a></li>";
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&lsaquo;</a></li>";
+				} else {
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&laquo;</a></li>";
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&lsaquo;</a></li>";
 				}
 				//muestro de los enlaces
 				//cantidad de link hacia atras y adelante
@@ -410,38 +308,31 @@ function mostrar_procesos(valorBuscar,pagina) {
 				//inicio de donde se va a mostrar los links
 				pagInicio = (linkseleccionado > cant) ? (linkseleccionado - cant) : 1;
 				//condicion en la cual establecemos el fin de los links
-				if (numerolinks > cant)
-				{
+				if (numerolinks > cant) {
 					//conocer los links que hay entre el seleccionado y el final
 					pagRestantes = numerolinks - linkseleccionado;
 					//defino el fin de los links
-					pagFin = (pagRestantes > cant) ? (linkseleccionado + cant) :numerolinks;
-				}
-				else
-				{
+					pagFin = (pagRestantes > cant) ? (linkseleccionado + cant) : numerolinks;
+				} else {
 					pagFin = numerolinks;
 				}
 				for (var i = 1; i <= numerolinks; i++) {
-					if (i == linkseleccionado){
+					if (i == linkseleccionado) {
 						paginador += `<li class="page-item active"><a class="page-link" href="javascript:void(0)">${i}</a></li>`;
-					}else{
+					} else {
 						paginador += `<li class="page-item"><a class="page-link" href="${i}">${i}</a></li>`;
 					}
 
 
-
 				}
 				//condicion para mostrar el boton sigueinte y ultimo
-				if(linkseleccionado<numerolinks)
-				{
-					paginador+="<li class='page-item'><a class='page-link' href='"+(linkseleccionado+1)+"' >&rsaquo;</a></li>";
-					paginador+="<li class='page-item'><a class='page-link' href='"+numerolinks+"'>&raquo;</a></li>";
+				if (linkseleccionado < numerolinks) {
+					paginador += "<li class='page-item'><a class='page-link' href='" + (linkseleccionado + 1) + "' >&rsaquo;</a></li>";
+					paginador += "<li class='page-item'><a class='page-link' href='" + numerolinks + "'>&raquo;</a></li>";
 
-				}
-				else
-				{
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&rsaquo;</a></li>";
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&raquo;</a></li>";
+				} else {
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&rsaquo;</a></li>";
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&raquo;</a></li>";
 				}
 
 				paginador += "</ul>";
@@ -449,12 +340,12 @@ function mostrar_procesos(valorBuscar,pagina) {
 
 			}
 		});
-	}else{
+	} else {
 		recurso = "acciones/compromisos/mostrar_procesos_number";
 		$.ajax({
 			url: url + recurso,
 			type: "POST",
-			data: {buscar: valorBuscar,nropagina:pagina},
+			data: {buscar: valorBuscar, nropagina: pagina},
 			dataType: "json",
 			success: function (response) {
 
@@ -485,9 +376,9 @@ function mostrar_procesos(valorBuscar,pagina) {
 										</a>
 								</div>
 						</div>`;
-					if(i >=3){
-						i=0;
-					}else{
+					if (i >= 3) {
+						i = 0;
+					} else {
 						i++;
 					}
 
@@ -503,16 +394,13 @@ function mostrar_procesos(valorBuscar,pagina) {
 				numerolinks = Math.ceil(totalregistros / cantidadregistros);
 				paginador = "<ul class='pagination float-right'>";
 
-				if(linkseleccionado>1)
-				{
-					paginador+="<li class='page-item'><a class='page-link'  href='1'>&laquo;</a></li>";
-					paginador+="<li class='page-item'><a class='page-link' href='"+(linkseleccionado-1)+"' '>&lsaquo;</a></li>";
+				if (linkseleccionado > 1) {
+					paginador += "<li class='page-item'><a class='page-link'  href='1'>&laquo;</a></li>";
+					paginador += "<li class='page-item'><a class='page-link' href='" + (linkseleccionado - 1) + "' '>&lsaquo;</a></li>";
 
-				}
-				else
-				{
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&laquo;</a></li>";
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&lsaquo;</a></li>";
+				} else {
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&laquo;</a></li>";
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&lsaquo;</a></li>";
 				}
 				//muestro de los enlaces
 				//cantidad de link hacia atras y adelante
@@ -520,64 +408,47 @@ function mostrar_procesos(valorBuscar,pagina) {
 				//inicio de donde se va a mostrar los links
 				pagInicio = (linkseleccionado > cant) ? (linkseleccionado - cant) : 1;
 				//condicion en la cual establecemos el fin de los links
-				if (numerolinks > cant)
-				{
+				if (numerolinks > cant) {
 					//conocer los links que hay entre el seleccionado y el final
 					pagRestantes = numerolinks - linkseleccionado;
 					//defino el fin de los links
-					pagFin = (pagRestantes > cant) ? (linkseleccionado + cant) :numerolinks;
-				}
-				else
-				{
+					pagFin = (pagRestantes > cant) ? (linkseleccionado + cant) : numerolinks;
+				} else {
 					pagFin = numerolinks;
 				}
 				for (var i = 1; i <= numerolinks; i++) {
-					if (i == linkseleccionado){
+					if (i == linkseleccionado) {
 						paginador += `<li class="page-item active"><a class="page-link" href="javascript:void(0)">${i}</a></li>`;
-					}else{
+					} else {
 						paginador += `<li class="page-item"><a class="page-link" href="${i}">${i}</a></li>`;
 					}
 
 
-
 				}
 				//condicion para mostrar el boton sigueinte y ultimo
-				if(linkseleccionado<numerolinks)
-				{
-					paginador+="<li class='page-item'><a class='page-link' href='"+(linkseleccionado+1)+"' >&rsaquo;</a></li>";
-					paginador+="<li class='page-item'><a class='page-link' href='"+numerolinks+"'>&raquo;</a></li>";
+				if (linkseleccionado < numerolinks) {
+					paginador += "<li class='page-item'><a class='page-link' href='" + (linkseleccionado + 1) + "' >&rsaquo;</a></li>";
+					paginador += "<li class='page-item'><a class='page-link' href='" + numerolinks + "'>&raquo;</a></li>";
 
-				}
-				else
-				{
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&rsaquo;</a></li>";
-					paginador+="<li class='page-item disabled'><a class='page-link' href='#'>&raquo;</a></li>";
+				} else {
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&rsaquo;</a></li>";
+					paginador += "<li class='page-item disabled'><a class='page-link' href='#'>&raquo;</a></li>";
 				}
 
 				paginador += "</ul>";
 				$(".pagination").html(paginador);
-
 			}
 		});
 	}
-
-
 }
-
-
-
 function listar_procesosI() {
 	var recurso = "acciones/compromisos/listarI";
 	$.ajax({
 		type: "GET",
 		url: url + recurso,
 		success: function (data) {
-			//$("#listado_cumplidos").empty();
 			var html = data;
-
-			//console.log(html);
 			$("#listado_cumplidos").html(html);
-
 		}
 	});
 }

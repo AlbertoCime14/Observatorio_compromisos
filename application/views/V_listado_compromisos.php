@@ -73,7 +73,7 @@
 																  style="color:black!important;"><strong>En
 						proceso</strong></a>
 			</li>
-			<li onclick="listar_procesosI();" class="nav-item" data-option-value=".logos"><a class="nav-link text-1 text-uppercase"
+			<li onclick="evento(3);" class="nav-item" data-option-value=".logos"><a class="nav-link text-1 text-uppercase"
 															   style="color:black!important;"
 															   href="#"><strong>Por iniciar</strong></a></li>
 
