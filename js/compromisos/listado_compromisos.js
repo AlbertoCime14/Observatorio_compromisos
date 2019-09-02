@@ -50,12 +50,13 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 	if (typeof (valorBuscar) == "string") {
 		recurso = "acciones/compromisos/mostrar";
 		$.ajax({
+
 			url: url + recurso,
 			type: "POST",
 			data: {buscar: valorBuscar, nropagina: pagina,idDpendencia:id_dependencia},
 			dataType: "json",
 			success: function (response) {
-
+				console.log(response);
 				filas = "";
 				var progress_color = ['progress-bar-primario', 'progress-bar-secundario', 'progress-bar-terciario', 'progress-bar-cuaternario'];
 				var colors = ['#00A36A', '#212743', '#694688', '#6CBB37'];

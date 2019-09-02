@@ -157,8 +157,8 @@ class C_compromisos extends CI_Controller
 		$cantidad=8; //deben ser busquedas por cada 8
 		$inicio = ($numeropagina -1)*$cantidad;
 		$data = array(
-			"compromisos" => $this->M_compromisos->buscar($buscar,$inicio,$cantidad,$id_dependencia),
-			"totalregistros" => count($this->M_compromisos->buscar($buscar)),
+			"compromisos" => $this->M_compromisos->buscar($buscar,$id_dependencia,$inicio,$cantidad),
+			"totalregistros" =>count( $this-> M_compromisos->buscar($buscar,$id_dependencia)),
 			"cantidad" =>$cantidad
 
 		);

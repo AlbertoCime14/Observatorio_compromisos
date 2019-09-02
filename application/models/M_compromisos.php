@@ -278,10 +278,10 @@ class M_compromisos extends CI_Model
 		return $datos;
 	}
 
-	public function buscar($buscar, $inicio = FALSE, $cantidadregistro = FALSE,$id_dependencia = false)
+	public function buscar($buscar, $id_dependencia=FALSE,$inicio = FALSE, $cantidadregistro = FALSE)
 	{
-		//$this->db->ilike("vCompromiso", $buscar);x
-		if($id_dependencia ==false){
+		//$this->db->ilike("vCompromiso", $buscar);
+		if($id_dependencia ==0){
 			$this->db->where("iEstatus='6' and \"vCompromiso\" ilike '%$buscar%'");
 			$this->db->order_by('iNumero', 'ASC');
 			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
@@ -298,7 +298,6 @@ class M_compromisos extends CI_Model
 			$consulta = $this->db->get("CompromisoPag");
 			return $consulta->result();
 		}
-
 	}
 	public function buscar_number($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
 	{
