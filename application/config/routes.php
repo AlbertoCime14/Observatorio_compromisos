@@ -66,7 +66,7 @@ $route['acciones/compromisos/mostrar_procesos'] = 'C_compromisos/mostrarProcesos
 $route['acciones/compromisos/mostrar_procesos_number'] = 'C_compromisos/procesos_number';
 $route['acciones/compromisos/mostrar_procesos_iniciar'] = 'C_compromisos/mostrarProcesosIniciar';
 $route['acciones/compromisos/mostrar_procesos_number_iniciar'] = 'C_compromisos/procesos_numberIniciar';
-
+$route['acciones/compromisos/listar_dependencias'] = 'C_compromisos/listar_dependencias';
 
 
 

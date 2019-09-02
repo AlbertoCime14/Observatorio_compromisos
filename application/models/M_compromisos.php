@@ -278,16 +278,27 @@ class M_compromisos extends CI_Model
 		return $datos;
 	}
 
-	public function buscar($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
+	public function buscar($buscar, $inicio = FALSE, $cantidadregistro = FALSE,$id_dependencia = false)
 	{
-		//$this->db->ilike("vCompromiso", $buscar);
-		$this->db->where("iEstatus='6' and \"vCompromiso\" ilike '%$buscar%'");
-		$this->db->order_by('iNumero', 'ASC');
-		if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
-			$this->db->limit($cantidadregistro, $inicio);
+		//$this->db->ilike("vCompromiso", $buscar);x
+		if($id_dependencia ==false){
+			$this->db->where("iEstatus='6' and \"vCompromiso\" ilike '%$buscar%'");
+			$this->db->order_by('iNumero', 'ASC');
+			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
+				$this->db->limit($cantidadregistro, $inicio);
+			}
+			$consulta = $this->db->get("CompromisoPag");
+			return $consulta->result();
+		}else{
+			$this->db->where("iEstatus='6' and \"iIdDependencia\"='$id_dependencia'");
+			$this->db->order_by('iNumero', 'ASC');
+			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
+				$this->db->limit($cantidadregistro, $inicio);
+			}
+			$consulta = $this->db->get("CompromisoPag");
+			return $consulta->result();
 		}
-		$consulta = $this->db->get("CompromisoPag");
-		return $consulta->result();
+
 	}
 	public function buscar_number($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
 	{
@@ -323,6 +334,50 @@ class M_compromisos extends CI_Model
 		}
 		$consulta = $this->db->get("CompromisoPag");
 		return $consulta->result();
+	}
+	public function buscar_iniciar($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
+	{
+		//$this->db->ilike("vCompromiso", $buscar);
+		$this->db->where("iEstatus='4' and \"vCompromiso\" ilike '%$buscar%'");
+		$this->db->order_by('iNumero', 'ASC');
+		if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
+			$this->db->limit($cantidadregistro, $inicio);
+		}
+		$consulta = $this->db->get("CompromisoPag");
+		return $consulta->result();
+	}
+	public function buscar_iniciar_number($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
+	{
+		//$this->db->ilike("vCompromiso", $buscar);
+		$text='CAST ("iNumero" AS text)';
+		$this->db->where("iEstatus='4' and $text like '%$buscar%'");
+		$this->db->order_by('iNumero', 'ASC');
+		if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
+			$this->db->limit($cantidadregistro, $inicio);
+		}
+		$consulta = $this->db->get("CompromisoPag");
+		return $consulta->result();
+	}
+	public function recuperar_dependencias(){
+		$this->db->select('d.iIdDependencia,d.vDependencia');
+		$this->db->from('Dependencia d');
+		$this->db->order_by('d.vDependencia', 'ASC');
+		$this->db->where('iActivo', 1);
+		//$this->db->limit(10);
+		$query = $this->db->get();
+
+		if ($query->num_rows() > 0) {
+			foreach ($query->result() as $row) {
+				$datos[] = [
+					'iIdDependencia' => $row->iIdDependencia,
+					'vDependencia' => $row->vDependencia
+
+				];
+			}
+		} else {
+			$datos = array();
+		}
+		return $datos;
 	}
 
 	//Muestra la ponderacion mas alta del DetalleEntregable

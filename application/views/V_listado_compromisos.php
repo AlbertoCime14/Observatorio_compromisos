@@ -55,8 +55,8 @@
 				</div>
 				<div class="form-group col-lg-4">
 					<label class="font-weight-bold text-dark">Por dependencia</label>
-					<select class="form-control">
-						<option value="">Seleccione</option>
+					<select class="form-control" id="cbo_dependencias" onchange="buscar_datos()">
+						<option value="0">Seleccione</option>
 					</select>
 				</div>
 			</div>
@@ -76,7 +76,6 @@
 			<li onclick="evento(3);" class="nav-item" data-option-value=".logos"><a class="nav-link text-1 text-uppercase"
 															   style="color:black!important;"
 															   href="#"><strong>Por iniciar</strong></a></li>
-
 		</ul>
 
 		<div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
