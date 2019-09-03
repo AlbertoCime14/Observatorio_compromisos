@@ -169,6 +169,7 @@ class C_compromisos extends CI_Controller
 		//valor a Buscar
 		$buscar = $this->input->post("buscar");
 		$numeropagina = $this->input->post("nropagina");
+
 		//$cantidad = $this->input->post("cantidad");
 		$cantidad=8; //deben ser busquedas por cada 8
 		$inicio = ($numeropagina -1)*$cantidad;
@@ -185,12 +186,13 @@ class C_compromisos extends CI_Controller
 		//valor a Buscar
 		$buscar = $this->input->post("buscar");
 		$numeropagina = $this->input->post("nropagina");
+		$id_dependencia = $this->input->post("Id_dependencia");
 		//$cantidad = $this->input->post("cantidad");
 		$cantidad=8; //deben ser busquedas por cada 8
 		$inicio = ($numeropagina -1)*$cantidad;
 		$data = array(
-			"compromisos" => $this->M_compromisos->buscar_proceso($buscar,$inicio,$cantidad),
-			"totalregistros" => count($this->M_compromisos->buscar_proceso($buscar)),
+			"compromisos" => $this->M_compromisos->buscar_proceso($buscar,$id_dependencia,$inicio,$cantidad),
+			"totalregistros" => count($this->M_compromisos->buscar_proceso($buscar,$id_dependencia)),
 			"cantidad" =>$cantidad
 
 		);

@@ -311,16 +311,25 @@ class M_compromisos extends CI_Model
 		$consulta = $this->db->get("CompromisoPag");
 		return $consulta->result();
 	}
-	public function buscar_proceso($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
+	public function buscar_proceso($buscar, $id_dependencia=FALSE,$inicio = FALSE, $cantidadregistro = FALSE)
 	{
-		//$this->db->ilike("vCompromiso", $buscar);
-		$this->db->where("iEstatus='5' and \"vCompromiso\" ilike '%$buscar%'");
-		$this->db->order_by('iNumero', 'ASC');
-		if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
-			$this->db->limit($cantidadregistro, $inicio);
+		if($id_dependencia ==0){
+			$this->db->where("iEstatus='5' and \"vCompromiso\" ilike '%$buscar%'");
+			$this->db->order_by('iNumero', 'ASC');
+			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
+				$this->db->limit($cantidadregistro, $inicio);
+			}
+			$consulta = $this->db->get("CompromisoPag");
+			return $consulta->result();
+		}else{
+			$this->db->where("iEstatus='5' and \"iIdDependencia\"='$id_dependencia'");
+			$this->db->order_by('iNumero', 'ASC');
+			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
+				$this->db->limit($cantidadregistro, $inicio);
+			}
+			$consulta = $this->db->get("CompromisoPag");
+			return $consulta->result();
 		}
-		$consulta = $this->db->get("CompromisoPag");
-		return $consulta->result();
 	}
 	public function buscar_proceso_number($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
 	{

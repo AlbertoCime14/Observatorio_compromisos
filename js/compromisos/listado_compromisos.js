@@ -32,9 +32,9 @@ function buscar_datos() {
 	if (marcador == 1) {
 		mostrarDatos(buscar, pagina,id_dependencia);
 	} else if(marcador == 2) {
-		mostrar_procesos(buscar, pagina);
+		mostrar_procesos(buscar, pagina,id_dependencia);
 	}else{
-		mostrar_iniciar(buscar, pagina);
+		mostrar_iniciar(buscar, pagina,id_dependencia);
 	}
 }
 
@@ -56,7 +56,6 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 			data: {buscar: valorBuscar, nropagina: pagina,idDpendencia:id_dependencia},
 			dataType: "json",
 			success: function (response) {
-				console.log(response);
 				filas = "";
 				var progress_color = ['progress-bar-primario', 'progress-bar-secundario', 'progress-bar-terciario', 'progress-bar-cuaternario'];
 				var colors = ['#00A36A', '#212743', '#694688', '#6CBB37'];
@@ -244,7 +243,7 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 
 }
 
-function mostrar_procesos(valorBuscar, pagina) {
+function mostrar_procesos(valorBuscar, pagina,IdDependencia) {
 	var recurso;
 
 	if (typeof (valorBuscar) == "string") {
@@ -252,10 +251,9 @@ function mostrar_procesos(valorBuscar, pagina) {
 		$.ajax({
 			url: url + recurso,
 			type: "POST",
-			data: {buscar: valorBuscar, nropagina: pagina},
+			data: {buscar: valorBuscar, nropagina: pagina,Id_dependencia:IdDependencia},
 			dataType: "json",
 			success: function (response) {
-
 				filas = "";
 				var progress_color = ['progress-bar-primario', 'progress-bar-secundario', 'progress-bar-terciario', 'progress-bar-cuaternario'];
 				var colors = ['#00A36A', '#212743', '#694688', '#6CBB37'];

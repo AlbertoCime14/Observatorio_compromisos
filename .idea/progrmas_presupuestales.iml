@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/animated-headline/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/animated-headline/js" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/animated-headline/partials" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/animated-headline/scss" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap-datepicker/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap-datepicker/js" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap-datepicker/locales" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap-star-rating/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap-star-rating/examples" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap-star-rating/img" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap-star-rating/js" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap-star-rating/themes" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap/js" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/circle-flip-slideshow/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/circle-flip-slideshow/js" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fontawesome-free/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fontawesome-free/webfonts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hover3d/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hover3d/source" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jquery.pin/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jquery.pin/images" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jquery.validation/localization" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/linea-icons/linea-arrows" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/linea-icons/linea-basic" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/linea-icons/linea-basic-elaboration" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/linea-icons/linea-ecommerce" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/linea-icons/linea-music" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/linea-icons/linea-software" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/nivo-slider/themes" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/owl.carousel/assets" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/popper/esm" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/popper/umd" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/rs-plugin/addon-visual-editor" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/rs-plugin/assets" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/rs-plugin/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/rs-plugin/fonts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/rs-plugin/images" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/rs-plugin/js" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/rs-plugin/php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/rs-plugin/revolution-addons" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/simple-line-icons/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/simple-line-icons/fonts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/simple-line-icons/less" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/simple-line-icons/scss" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twentytwenty/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twentytwenty/img" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twentytwenty/js" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twentytwenty/scss" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
