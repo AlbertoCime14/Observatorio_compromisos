@@ -4,6 +4,7 @@
     <list default="true" id="5fd08836-e397-48df-8e8f-7c10f2487fae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/C_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/C_compromisos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Control_pagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Control_pagina.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/M_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_compromisos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" afterDir="false" />
     </list>
@@ -88,7 +89,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api_seplan" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -188,7 +189,13 @@
       <workItem from="1567092038711" duration="26552000" />
       <workItem from="1567178523973" duration="22121000" />
       <workItem from="1567438840657" duration="15575000" />
-      <workItem from="1567521580344" duration="1919000" />
+      <workItem from="1567521580344" duration="5833000" />
+      <workItem from="1567642292544" duration="219000" />
+      <workItem from="1567698381966" duration="6569000" />
+      <workItem from="1567783628541" duration="7397000" />
+      <workItem from="1568047401542" duration="1262000" />
+      <workItem from="1568057696399" duration="581000" />
+      <workItem from="1568132596055" duration="8372000" />
     </task>
     <servers />
   </component>

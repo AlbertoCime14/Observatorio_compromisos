@@ -76,7 +76,7 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 											</span>
 											<div class="progress mb-2" style="margin-top: 7px">
 												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
-												${item.dPorcentajeAvance}
+												${item.dPorcentajeAvance} %
 												</div>
 											</div>
 											<p>${item.vCompromiso} </p>
@@ -172,8 +172,8 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 												</span>
 											</span>
 											<div class="progress mb-2" style="margin-top: 7px">
-												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
-												${item.dPorcentajeAvance}
+												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}%" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
+												${item.dPorcentajeAvance} %
 												</div>
 											</div>
 											<p>${item.vCompromiso} </p>
@@ -273,8 +273,8 @@ function mostrar_procesos(valorBuscar, pagina,IdDependencia) {
 												</span>
 											</span>
 											<div class="progress mb-2" style="margin-top: 7px">
-												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
-												${item.dPorcentajeAvance}
+												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}%" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
+												${item.dPorcentajeAvance} %
 												</div>
 											</div>
 											<p>${item.vCompromiso} </p>
@@ -373,8 +373,8 @@ function mostrar_procesos(valorBuscar, pagina,IdDependencia) {
 												</span>
 											</span>
 											<div class="progress mb-2" style="margin-top: 7px">
-												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
-												${item.dPorcentajeAvance}
+												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}%" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
+												${item.dPorcentajeAvance} %
 												</div>
 											</div>
 											<p>${item.vCompromiso} </p>
@@ -447,7 +447,7 @@ function mostrar_procesos(valorBuscar, pagina,IdDependencia) {
 	}
 }
 
-function mostrar_iniciar(valorBuscar, pagina) {
+function mostrar_iniciar(valorBuscar, pagina,id_dependencia) {
 	var recurso;
 
 	if (typeof (valorBuscar) == "string") {
@@ -455,7 +455,7 @@ function mostrar_iniciar(valorBuscar, pagina) {
 		$.ajax({
 			url: url + recurso,
 			type: "POST",
-			data: {buscar: valorBuscar, nropagina: pagina},
+			data: {buscar: valorBuscar, nropagina: pagina,idDependencia:id_dependencia},
 			dataType: "json",
 			success: function (response) {
 				filas = "";
@@ -477,8 +477,8 @@ function mostrar_iniciar(valorBuscar, pagina) {
 												</span>
 											</span>
 											<div class="progress mb-2" style="margin-top: 7px">
-												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
-												${item.dPorcentajeAvance}
+												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}%" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
+												${item.dPorcentajeAvance} %
 												</div>
 											</div>
 											<p>${item.vCompromiso} </p>
@@ -576,8 +576,8 @@ function mostrar_iniciar(valorBuscar, pagina) {
 												</span>
 											</span>
 											<div class="progress mb-2" style="margin-top: 7px">
-												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
-												${item.dPorcentajeAvance}
+												<div class="progress-bar ${progress_color[i]}" role="progressbar" aria-valuenow="${item.dPorcentajeAvance}%" aria-valuemin="0" aria-valuemax="100" style="width: ${item.dPorcentajeAvance}%;">
+												${item.dPorcentajeAvance} %
 												</div>
 											</div>
 											<p>${item.vCompromiso} </p>

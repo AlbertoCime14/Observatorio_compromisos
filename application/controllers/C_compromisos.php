@@ -218,12 +218,13 @@ class C_compromisos extends CI_Controller
 	{
 		$buscar = $this->input->post("buscar");
 		$numeropagina = $this->input->post("nropagina");
+		$id_dependencia = $this->input->post("idDependencia");
 		//$cantidad = $this->input->post("cantidad");
 		$cantidad=8; //deben ser busquedas por cada 8
 		$inicio = ($numeropagina -1)*$cantidad;
 		$data = array(
-			"compromisos" => $this->M_compromisos->buscar_iniciar($buscar,$inicio,$cantidad),
-			"totalregistros" => count($this->M_compromisos->buscar_iniciar($buscar)),
+			"compromisos" => $this->M_compromisos->buscar_iniciar($buscar,$id_dependencia,$inicio,$cantidad),
+			"totalregistros" => count($this->M_compromisos->buscar_iniciar($buscar,$id_dependencia)),
 			"cantidad" =>$cantidad
 		);
 		echo json_encode($data);

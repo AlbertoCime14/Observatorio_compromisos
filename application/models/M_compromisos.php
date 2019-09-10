@@ -42,6 +42,35 @@ class M_compromisos extends CI_Model
 		return $datos;
 	}
 
+	public function recuperar_fotografias($id_Compromiso)
+	{
+		$this->db->select('Evi.iIdEvidencia,Evi.vEvidencia,Evi.iFotoInicio,Evi.iOrdenFoto');
+		$this->db->from('EvidenciaPag Evi');
+		$this->db->join('ComponentePag cpag', 'Evi.iIdComponente = cpag.iIdComponente', 'JOIN');
+		$this->db->join('CompromisoPag compag', 'cpag.iIdCompromiso = compag.iIdCompromiso', 'JOIN');
+		$this->db->where("compag.iIdCompromiso='$id_Compromiso' and \"Evi.iFotoInicio\"='1' and \"Evi.vTipo\"='Fotografía'");
+		$this->db->order_by('Evi.iOrdenFoto', 'asc');
+		$this->db->limit(1);
+
+		//$this->db->limit(10);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0) {
+			foreach ($query->result() as $row) {
+
+				$datos = array(
+					'vEvidencia' => $row->vEvidencia,
+
+				)
+			;
+			}
+		} else {
+			$datos = array(
+				'Evidencia' => null
+			);
+		}
+		return $datos;
+	}
+
 	public function listar_compromisos10()
 	{
 		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.vDescripcion,cp.iIdDependencia');
@@ -54,13 +83,13 @@ class M_compromisos extends CI_Model
 
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
+				$imagenes = $this->recuperar_fotografias($row->iIdCompromiso);
 				$datos[] = [
 					'iIdCompromiso' => $row->iIdCompromiso,
 					'vCompromiso' => $row->vCompromiso,
 					'vDescripcion' => $row->vDescripcion,
-					'iIdDependencia' => $row->iIdDependencia
-
-
+					'iIdDependencia' => $row->iIdDependencia,
+					'imagenes' => $imagenes,
 				];
 			}
 		} else {
@@ -278,10 +307,10 @@ class M_compromisos extends CI_Model
 		return $datos;
 	}
 
-	public function buscar($buscar, $id_dependencia=FALSE,$inicio = FALSE, $cantidadregistro = FALSE)
+	public function buscar($buscar, $id_dependencia = FALSE, $inicio = FALSE, $cantidadregistro = FALSE)
 	{
 		//$this->db->ilike("vCompromiso", $buscar);
-		if($id_dependencia ==0){
+		if ($id_dependencia == 0) {
 			$this->db->where("iEstatus='6' and \"vCompromiso\" ilike '%$buscar%'");
 			$this->db->order_by('iNumero', 'ASC');
 			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
@@ -289,7 +318,7 @@ class M_compromisos extends CI_Model
 			}
 			$consulta = $this->db->get("CompromisoPag");
 			return $consulta->result();
-		}else{
+		} else {
 			$this->db->where("iEstatus='6' and \"iIdDependencia\"='$id_dependencia'");
 			$this->db->order_by('iNumero', 'ASC');
 			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
@@ -299,10 +328,11 @@ class M_compromisos extends CI_Model
 			return $consulta->result();
 		}
 	}
+
 	public function buscar_number($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
 	{
 		//$this->db->ilike("vCompromiso", $buscar);
-		$text='CAST ("iNumero" AS text)';
+		$text = 'CAST ("iNumero" AS text)';
 		$this->db->where("iEstatus='6' and $text like '%$buscar%'");
 		$this->db->order_by('iNumero', 'ASC');
 		if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
@@ -311,9 +341,10 @@ class M_compromisos extends CI_Model
 		$consulta = $this->db->get("CompromisoPag");
 		return $consulta->result();
 	}
-	public function buscar_proceso($buscar, $id_dependencia=FALSE,$inicio = FALSE, $cantidadregistro = FALSE)
+
+	public function buscar_proceso($buscar, $id_dependencia = FALSE, $inicio = FALSE, $cantidadregistro = FALSE)
 	{
-		if($id_dependencia ==0){
+		if ($id_dependencia == 0) {
 			$this->db->where("iEstatus='5' and \"vCompromiso\" ilike '%$buscar%'");
 			$this->db->order_by('iNumero', 'ASC');
 			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
@@ -321,7 +352,7 @@ class M_compromisos extends CI_Model
 			}
 			$consulta = $this->db->get("CompromisoPag");
 			return $consulta->result();
-		}else{
+		} else {
 			$this->db->where("iEstatus='5' and \"iIdDependencia\"='$id_dependencia'");
 			$this->db->order_by('iNumero', 'ASC');
 			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
@@ -331,10 +362,11 @@ class M_compromisos extends CI_Model
 			return $consulta->result();
 		}
 	}
+
 	public function buscar_proceso_number($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
 	{
 		//$this->db->ilike("vCompromiso", $buscar);
-		$text='CAST ("iNumero" AS text)';
+		$text = 'CAST ("iNumero" AS text)';
 		$this->db->where("iEstatus='5' and $text like '%$buscar%'");
 		$this->db->order_by('iNumero', 'ASC');
 		if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
@@ -343,21 +375,32 @@ class M_compromisos extends CI_Model
 		$consulta = $this->db->get("CompromisoPag");
 		return $consulta->result();
 	}
-	public function buscar_iniciar($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
+
+	public function buscar_iniciar($buscar, $id_dependencia = FALSE, $inicio = FALSE, $cantidadregistro = FALSE)
 	{
-		//$this->db->ilike("vCompromiso", $buscar);
-		$this->db->where("iEstatus='4' and \"vCompromiso\" ilike '%$buscar%'");
-		$this->db->order_by('iNumero', 'ASC');
-		if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
-			$this->db->limit($cantidadregistro, $inicio);
+		if ($id_dependencia == 0) {
+			$this->db->where("iEstatus='4' and \"vCompromiso\" ilike '%$buscar%'");
+			$this->db->order_by('iNumero', 'ASC');
+			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
+				$this->db->limit($cantidadregistro, $inicio);
+			}
+			$consulta = $this->db->get("CompromisoPag");
+			return $consulta->result();
+		} else {
+			$this->db->where("iEstatus='4' and \"iIdDependencia\"='$id_dependencia'");
+			$this->db->order_by('iNumero', 'ASC');
+			if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
+				$this->db->limit($cantidadregistro, $inicio);
+			}
+			$consulta = $this->db->get("CompromisoPag");
+			return $consulta->result();
 		}
-		$consulta = $this->db->get("CompromisoPag");
-		return $consulta->result();
 	}
+
 	public function buscar_iniciar_number($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
 	{
 		//$this->db->ilike("vCompromiso", $buscar);
-		$text='CAST ("iNumero" AS text)';
+		$text = 'CAST ("iNumero" AS text)';
 		$this->db->where("iEstatus='4' and $text like '%$buscar%'");
 		$this->db->order_by('iNumero', 'ASC');
 		if ($inicio !== FALSE && $cantidadregistro !== FALSE) {
@@ -366,7 +409,9 @@ class M_compromisos extends CI_Model
 		$consulta = $this->db->get("CompromisoPag");
 		return $consulta->result();
 	}
-	public function recuperar_dependencias(){
+
+	public function recuperar_dependencias()
+	{
 		$this->db->select('d.iIdDependencia,d.vDependencia');
 		$this->db->from('Dependencia d');
 		$this->db->order_by('d.vDependencia', 'ASC');
