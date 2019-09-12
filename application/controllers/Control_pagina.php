@@ -35,14 +35,14 @@ class Control_pagina extends CI_Controller
 
 		$data['compromisos_10'] = $this->M_compromisos->listar_compromisos10();
 
-		$objetos_compromisos = $data['compromisos_10'];
-		echo json_encode( $objetos_compromisos = $data['compromisos_10']);
+		//$objetos_compromisos = $data['compromisos_10'];
+		//echo json_encode( $objetos_compromisos = $data['compromisos_10']);
 
 
-        //$this->load->view('masterpage/head');
-        //$this->load->view('V_index_compromiso',$data);
+        $this->load->view('masterpage/head');
+        $this->load->view('V_index_compromiso',$data);
 
-        //$this->load->view('masterpage/footer');
+        $this->load->view('masterpage/footer');
 
     }
     public function ListarCompromisos4(){

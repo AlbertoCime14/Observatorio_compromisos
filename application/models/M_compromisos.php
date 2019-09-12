@@ -65,7 +65,7 @@ class M_compromisos extends CI_Model
 			}
 		} else {
 			$datos = array(
-				'Evidencia' => null
+				'vEvidencia' =>null
 			);
 		}
 		return $datos;

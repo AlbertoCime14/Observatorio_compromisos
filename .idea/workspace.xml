@@ -6,7 +6,8 @@
       <change beforePath="$PROJECT_DIR$/application/controllers/C_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/C_compromisos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Control_pagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Control_pagina.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/M_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_compromisos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_index_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_index_compromiso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/slides/slide-white-line.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +196,9 @@
       <workItem from="1567783628541" duration="7397000" />
       <workItem from="1568047401542" duration="1262000" />
       <workItem from="1568057696399" duration="581000" />
-      <workItem from="1568132596055" duration="8372000" />
+      <workItem from="1568132596055" duration="8381000" />
+      <workItem from="1568221594437" duration="5361000" />
+      <workItem from="1568240249692" duration="866000" />
     </task>
     <servers />
   </component>
