@@ -30,12 +30,13 @@ class C_compromisos_descripcion extends CI_Controller
 
 	public function index()
 	{
-		$key = $this->uri->segment(3);
-		$id_dependencia = $this->uri->segment(4);
+		$key =base64_decode( $this->uri->segment(3));
+		$id_dependencia =base64_decode($this->uri->segment(4));
 
 		$data['descripcion'] = $this->M_compromisos->listar_descripcion_compromiso($key);
 		$data['responsable'] = $this->M_compromisos->listar_responsable($id_dependencia);
 		$data['participantes'] = $this->M_compromisos->listar_participantes($key);
+		$data['imagenes_portada']=$this->M_compromisos->listar_fotos_portada($key);
 		//$var=json_encode($data['participantes']);
 		//echo $var;
 		$this->load->view('masterpage/head');
@@ -46,7 +47,7 @@ class C_compromisos_descripcion extends CI_Controller
 
 	public function ListarComponentes()
 	{
-		$id_compromiso=$this->uri->segment(4);
+		$id_compromiso=base64_decode($this->uri->segment(4));
 		$data['filas'] = '';
 		$data['num_componentes'] = 0;
 

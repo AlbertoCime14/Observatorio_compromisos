@@ -41,7 +41,34 @@ class M_compromisos extends CI_Model
 
 		return $datos;
 	}
+	public function listar_fotos_portada($id_Compromiso){
+		$this->db->select('Evi.iIdEvidencia,Evi.vEvidencia,Evi.iFotoInicio,Evi.iOrdenFoto');
+		$this->db->from('EvidenciaPag Evi');
+		$this->db->join('ComponentePag cpag', 'Evi.iIdComponente = cpag.iIdComponente', 'JOIN');
+		$this->db->join('CompromisoPag compag', 'cpag.iIdCompromiso = compag.iIdCompromiso', 'JOIN');
+		$this->db->where("compag.iIdCompromiso='$id_Compromiso' and \"Evi.iFotoInicio\"='1' and \"Evi.vTipo\"='Fotografía'");
+		$this->db->order_by('Evi.iOrdenFoto', 'asc');
 
+
+		//$this->db->limit(10);
+		$query = $this->db->get();
+		if ($query->num_rows() > 0) {
+			foreach ($query->result() as $row) {
+
+				$datos []= [
+					'vEvidencia' => $row->vEvidencia,
+
+				]
+				;
+			}
+		} else {
+			$datos = array();
+		}
+		
+
+
+		return $datos;
+	}
 	public function recuperar_fotografias($id_Compromiso)
 	{
 		$this->db->select('Evi.iIdEvidencia,Evi.vEvidencia,Evi.iFotoInicio,Evi.iOrdenFoto');

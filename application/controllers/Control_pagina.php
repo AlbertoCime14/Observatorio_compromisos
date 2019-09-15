@@ -63,9 +63,10 @@ class Control_pagina extends CI_Controller
 	}
 	public function fila_compromiso($iIdCompromiso, $nombre, $numero,$color,$id_dependencia)
 	{
-
+		$id_compromiso=base64_encode($iIdCompromiso);
+		$idDependencia=base64_encode($id_dependencia);
 		$html = ' <div class="col-lg-3 featured-box-full featured-box-full-primary" style="background-color: '.$color.'">
-                <a href="'.base_url().'compromisos/descripcion/'.$iIdCompromiso.'/'.$id_dependencia.'">
+                <a href="'.base_url().'compromisos/descripcion/'.$id_compromiso.'/'.$idDependencia.'">
 					<h1><strong>'.$numero.'</strong></h1>
                     <h4><strong>Compromiso</strong></h4>
                     <h5 class="font-weight-light" style="text-align: center">'.$nombre.'</h5>

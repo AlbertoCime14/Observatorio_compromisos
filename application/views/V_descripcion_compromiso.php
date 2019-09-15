@@ -30,16 +30,25 @@
 			<div class="col-lg-6">
 
 				<div class="owl-carousel owl-theme" data-plugin-options="{'items': 1}">
-					<div>
-						<img alt="" class="img-fluid" src="<?= base_url(); ?>img/products/product-grey-7.jpg">
-					</div>
-					<div>
-						<img alt="" class="img-fluid" src="<?= base_url(); ?>img/products/product-grey-7-2.jpg">
-					</div>
-					<div>
-						<img alt="" class="img-fluid" src="<?= base_url(); ?>img/products/product-grey-7-3.jpg">
-					</div>
+					<?php
+
+					if($imagenes_portada != null){
+
+
+						foreach ($imagenes_portada as $key) {
+							echo '<div>
+								<img style="height: 430px" alt="" class="img-fluid" src="' . base_url() . 'archivos/documentosImages/'.$key['vEvidencia'].'">
+							</div>';
+
+						}
+					}else{
+
+						echo '<label style="margin-top: 120px; margin-left: 120px;font-size: 22px"><strong>Sin imágenes disponibles </strong></label>';
+					}
+
+					?>
 				</div>
+
 
 			</div>
 
