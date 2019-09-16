@@ -21,17 +21,16 @@ include 'application/views/masterpage/navagacionnavb.php';
 			 data-plugin-options="{'sliderLayout': 'fullscreen', 'delay': 9000, 'gridwidth': 1170, 'gridheight': 700, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'navigation' : {'arrows': { 'enable': true, 'style': 'arrows-style-1 arrows-big' }, 'bullets': {'enable': false, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
 			<ul id="listar_Compromisos">
 				<?php
-
 				foreach ($compromisos_10 as $compromiso) {
-					$imagen="";
-					if( $compromiso['imagenes']['vEvidencia'] == ""){
-						$imagen="slide-corporate-13-1.jpg";
+					$imagen = "";
+					if ($compromiso['imagenes']['vEvidencia'] == "") {
+						$imagen = "slide-corporate-13-1.jpg";
 
-					}else{
-						$imagen=$compromiso['imagenes']['vEvidencia'];
+					} else {
+						$imagen = $compromiso['imagenes']['vEvidencia'];
 					}
 					echo '<li class="slide-overlay slide-overlay-gradient slide-overlay-level-9" data-transition="fade">
-					<img src="../archivos/documentosImages/'.$imagen.'"
+					<img src="../archivos/documentosImages/' . $imagen . '"
 						 alt=""
 						 data-bgposition="center center"
 						 data-bgfit="cover"
@@ -76,7 +75,7 @@ include 'application/views/masterpage/navagacionnavb.php';
 					   data-frames=\'[{"delay":3500,"speed":2000,"frame":"0","from":"opacity:0;y:50%;","to":"o:1;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]\'
 					   data-hash
 					   data-hash-offset="85"
-					   href="' . base_url() . 'compromisos/descripcion/' . base64_encode( $compromiso['iIdCompromiso']) . '/' . base64_encode( $compromiso['iIdDependencia']) . '"
+					   href="' . base_url() . 'compromisos/descripcion/' . base64_encode($compromiso['iIdCompromiso']) . '/' . base64_encode($compromiso['iIdDependencia']) . '"
 					   data-x="center" data-hoffset="0"
 					   data-y="center" data-voffset="[\'100\',\'100\',\'100\',\'210\']"
 					   data-whitespace="nowrap"
@@ -89,8 +88,6 @@ include 'application/views/masterpage/navagacionnavb.php';
 				</li>';
 				}
 				?>
-
-
 			</ul>
 		</div>
 	</div>
@@ -102,7 +99,6 @@ include 'application/views/masterpage/navagacionnavb.php';
 				<div class="col">
 					<p class="font-weight-bold text-color-dark" style="font-size: 20px">
 						¿Qué es el observatorio de compromisos?
-
 					</p>
 				</div>
 			</div>

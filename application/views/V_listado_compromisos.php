@@ -10,7 +10,6 @@ include 'application/views/masterpage/navagacionnavb.php';
 			data-appear-animation-delay="300">
 			<li><a style="color:white !important;" href="<?=base_url()?>control_pagina/index">Inicio</a></li>
 			<li><a style="color:white !important;" href="<?=base_url()?>compromisos/listar">Compromisos</a></li>
-
 		</ul>
 	</div>
 	<div class="row align-items-center" style="text-align: center">
@@ -44,8 +43,6 @@ include 'application/views/masterpage/navagacionnavb.php';
 
 
 <div role="main" class="main" style="margin-bottom: 100px">
-
-
 	<div class="container py-2">
 		<div class="col-12">
 			<div class="form-row">
@@ -88,7 +85,6 @@ include 'application/views/masterpage/navagacionnavb.php';
 			</div>
 			<nav aria-label="...">
 				<ul class="pagination float-right">
-
 				</ul>
 			</nav>
 		</div>

@@ -7,7 +7,6 @@ $(document).ready(function () {
 
 
 function listar_componentes() {
-
 	var recurso = "acciones/compromisos/componentes/"+id_compromiso;
 	$.ajax({
 		type: "GET",

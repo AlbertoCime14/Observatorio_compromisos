@@ -12,17 +12,14 @@ class M_compromisos extends CI_Model
 		$this->db = $this->load->database('default', TRUE);
 	}
 
-	//Muestra todos los entregables
+	//Muetra los ultimos 4 compromisos actualizados
 	public function listar_compromisos4()
 	{
 		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.iNumero,cp.iIdDependencia');
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.dUltimaAct', 'DESC');
 		$this->db->limit(4);
-
-
 		$query = $this->db->get();
-
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
 				$datos[] = [
@@ -30,17 +27,15 @@ class M_compromisos extends CI_Model
 					'vCompromiso' => $row->vCompromiso,
 					'iNumero' => $row->iNumero,
 					'iIdDependencia' => $row->iIdDependencia
-
-
 				];
 			}
 		} else {
 			$datos = array();
 		}
-
-
 		return $datos;
 	}
+
+	//funcion que lista los documentos por compromiso
 	public function listar_documentos($id_Compromiso)
 	{
 		$this->db->select('Evi.iIdEvidencia,Evi.vEvidencia,Evi.iFotoInicio,Evi.iOrdenFoto');
@@ -49,112 +44,84 @@ class M_compromisos extends CI_Model
 		$this->db->join('CompromisoPag compag', 'cpag.iIdCompromiso = compag.iIdCompromiso', 'JOIN');
 		$this->db->where("compag.iIdCompromiso='$id_Compromiso' and \"Evi.vTipo\"='Documento'");
 		$this->db->order_by('Evi.iIdEvidencia', 'asc');
-
-
-		//$this->db->limit(10);
 		$query = $this->db->get();
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
-
-				$datos []= [
+				$datos [] = [
 					'vEvidencia' => $row->vEvidencia,
-
-				]
-				;
+				];
 			}
 		} else {
 			$datos = array();
 		}
-
-
-
 		return $datos;
 	}
 
-	public function listar_galeria($id_Compromiso){
+	//funcion que lista las fotos por compromiso
+	public function listar_galeria($id_Compromiso)
+	{
 		$this->db->select('Evi.iIdEvidencia,Evi.vEvidencia,Evi.iFotoInicio,Evi.iOrdenFoto');
 		$this->db->from('EvidenciaPag Evi');
 		$this->db->join('ComponentePag cpag', 'Evi.iIdComponente = cpag.iIdComponente', 'JOIN');
 		$this->db->join('CompromisoPag compag', 'cpag.iIdCompromiso = compag.iIdCompromiso', 'JOIN');
 		$this->db->where("compag.iIdCompromiso='$id_Compromiso' and \"Evi.vTipo\"='Fotografía'");
 		$this->db->order_by('Evi.iOrdenFoto', 'asc');
-
-
-		//$this->db->limit(10);
 		$query = $this->db->get();
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
-
-				$datos []= [
+				$datos [] = [
 					'vEvidencia' => $row->vEvidencia,
-
-				]
-				;
+				];
 			}
 		} else {
 			$datos = array();
 		}
-
-
-
 		return $datos;
 	}
-	public function listar_videos($id_Compromiso){
+
+	//funcion que list los videos por compromiso
+	public function listar_videos($id_Compromiso)
+	{
 		$this->db->select('Evi.iIdEvidencia,Evi.vEvidencia');
 		$this->db->from('EvidenciaPag Evi');
 		$this->db->join('ComponentePag cpag', 'Evi.iIdComponente = cpag.iIdComponente', 'JOIN');
 		$this->db->join('CompromisoPag compag', 'cpag.iIdCompromiso = compag.iIdCompromiso', 'JOIN');
 		$this->db->where("compag.iIdCompromiso='$id_Compromiso' and \"Evi.vTipo\"='Video'");
 		$this->db->order_by('Evi.iIdEvidencia', 'asc');
-
-
-		//$this->db->limit(10);
 		$query = $this->db->get();
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
-
-				$datos []= [
+				$datos [] = [
 					'vEvidencia' => $row->vEvidencia,
-
-				]
-				;
+				];
 			}
 		} else {
 			$datos = array();
 		}
-
-
-
 		return $datos;
 	}
-	public function listar_fotos_portada($id_Compromiso){
+	//funcion que lista las fotos de portada
+	public function listar_fotos_portada($id_Compromiso)
+	{
 		$this->db->select('Evi.iIdEvidencia,Evi.vEvidencia,Evi.iFotoInicio,Evi.iOrdenFoto');
 		$this->db->from('EvidenciaPag Evi');
 		$this->db->join('ComponentePag cpag', 'Evi.iIdComponente = cpag.iIdComponente', 'JOIN');
 		$this->db->join('CompromisoPag compag', 'cpag.iIdCompromiso = compag.iIdCompromiso', 'JOIN');
 		$this->db->where("compag.iIdCompromiso='$id_Compromiso' and \"Evi.iFotoInicio\"='1' and \"Evi.vTipo\"='Fotografía'");
 		$this->db->order_by('Evi.iOrdenFoto', 'asc');
-
-
-		//$this->db->limit(10);
 		$query = $this->db->get();
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
-
-				$datos []= [
+				$datos [] = [
 					'vEvidencia' => $row->vEvidencia,
-
-				]
-				;
+				];
 			}
 		} else {
 			$datos = array();
 		}
-		
-
-
 		return $datos;
 	}
+	//funcion que lista las fotos inicio por compromiso, recupera la foto principal de portada
 	public function recuperar_fotografias($id_Compromiso)
 	{
 		$this->db->select('Evi.iIdEvidencia,Evi.vEvidencia,Evi.iFotoInicio,Evi.iOrdenFoto');
@@ -164,37 +131,28 @@ class M_compromisos extends CI_Model
 		$this->db->where("compag.iIdCompromiso='$id_Compromiso' and \"Evi.iFotoInicio\"='1' and \"Evi.vTipo\"='Fotografía'");
 		$this->db->order_by('Evi.iOrdenFoto', 'asc');
 		$this->db->limit(1);
-
-		//$this->db->limit(10);
 		$query = $this->db->get();
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
-
 				$datos = array(
 					'vEvidencia' => $row->vEvidencia,
-
-				)
-			;
+				);
 			}
 		} else {
 			$datos = array(
-				'vEvidencia' =>null
+				'vEvidencia' => null
 			);
 		}
 		return $datos;
 	}
-
-
+	//funcion que lista los ultimos 10 compromisos actualizados
 	public function listar_compromisos10()
 	{
 		$this->db->select('cp.iIdCompromiso,cp.vCompromiso,cp.vDescripcion,cp.iIdDependencia');
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.dUltimaAct', 'DESC');
 		$this->db->limit(10);
-
-
 		$query = $this->db->get();
-
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
 				$imagenes = $this->recuperar_fotografias($row->iIdCompromiso);
@@ -209,11 +167,9 @@ class M_compromisos extends CI_Model
 		} else {
 			$datos = array();
 		}
-
-
 		return $datos;
 	}
-
+	//funcion que lista los compromisos por cumplidos
 	public function listar_compromisos()
 	{
 		$orden_by = 'cp.dUltimaAct AND cp.iIdCompromiso';
@@ -221,11 +177,7 @@ class M_compromisos extends CI_Model
 		$this->db->from('CompromisoPag cp');
 		$this->db->order_by('cp.iIdCompromiso', 'ASC');
 		$this->db->where('iEstatus', 6);
-		//$this->db->limit(10);
-
-
 		$query = $this->db->get();
-
 		if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
 				$datos[] = [
@@ -241,11 +193,9 @@ class M_compromisos extends CI_Model
 		} else {
 			$datos = array();
 		}
-
-
 		return $datos;
 	}
-
+	//funcion que lista los compromisos por cumplidos
 	public function listar_compromisosP()
 	{
 		$orden_by = 'cp.dUltimaAct AND cp.iIdCompromiso';
@@ -399,7 +349,6 @@ class M_compromisos extends CI_Model
 		$this->db->from('ComponentePag cp');
 		$this->db->order_by('cp.iOrden', 'DESC');
 		$this->db->where('iIdCompromiso', $key);
-		//$this->db->limit(10);
 
 
 		$query = $this->db->get();
@@ -446,7 +395,7 @@ class M_compromisos extends CI_Model
 						'iNumero' => $row->iNumero,
 						'dPorcentajeAvance' => $row->dPorcentajeAvance,
 						'iIdDependencia' => $row->iIdDependencia,
-						'imagenes' =>$imagenes
+						'imagenes' => $imagenes
 
 
 					];
@@ -460,7 +409,6 @@ class M_compromisos extends CI_Model
 
 
 			//$this->db->limit(10);
-
 
 
 		} else {
@@ -485,7 +433,7 @@ class M_compromisos extends CI_Model
 						'iNumero' => $row->iNumero,
 						'dPorcentajeAvance' => $row->dPorcentajeAvance,
 						'iIdDependencia' => $row->iIdDependencia,
-						'imagenes' =>$imagenes
+						'imagenes' => $imagenes
 
 
 					];
@@ -525,7 +473,7 @@ class M_compromisos extends CI_Model
 					'iNumero' => $row->iNumero,
 					'dPorcentajeAvance' => $row->dPorcentajeAvance,
 					'iIdDependencia' => $row->iIdDependencia,
-					'imagenes' =>$imagenes
+					'imagenes' => $imagenes
 
 
 				];
@@ -562,23 +510,13 @@ class M_compromisos extends CI_Model
 						'iNumero' => $row->iNumero,
 						'dPorcentajeAvance' => $row->dPorcentajeAvance,
 						'iIdDependencia' => $row->iIdDependencia,
-						'imagenes' =>$imagenes
-
-
+						'imagenes' => $imagenes
 					];
 				}
 			} else {
 				$datos = array();
 			}
-
-
 			return $datos;
-
-
-			//$this->db->limit(10);
-
-
-
 		} else {
 
 			$this->db->select("*");
@@ -601,7 +539,7 @@ class M_compromisos extends CI_Model
 						'iNumero' => $row->iNumero,
 						'dPorcentajeAvance' => $row->dPorcentajeAvance,
 						'iIdDependencia' => $row->iIdDependencia,
-						'imagenes' =>$imagenes
+						'imagenes' => $imagenes
 
 
 					];
@@ -641,7 +579,7 @@ class M_compromisos extends CI_Model
 					'iNumero' => $row->iNumero,
 					'dPorcentajeAvance' => $row->dPorcentajeAvance,
 					'iIdDependencia' => $row->iIdDependencia,
-					'imagenes' =>$imagenes
+					'imagenes' => $imagenes
 
 
 				];
@@ -678,7 +616,7 @@ class M_compromisos extends CI_Model
 						'iNumero' => $row->iNumero,
 						'dPorcentajeAvance' => $row->dPorcentajeAvance,
 						'iIdDependencia' => $row->iIdDependencia,
-						'imagenes' =>$imagenes
+						'imagenes' => $imagenes
 
 
 					];
@@ -692,7 +630,6 @@ class M_compromisos extends CI_Model
 
 
 			//$this->db->limit(10);
-
 
 
 		} else {
@@ -717,7 +654,7 @@ class M_compromisos extends CI_Model
 						'iNumero' => $row->iNumero,
 						'dPorcentajeAvance' => $row->dPorcentajeAvance,
 						'iIdDependencia' => $row->iIdDependencia,
-						'imagenes' =>$imagenes
+						'imagenes' => $imagenes
 
 
 					];
@@ -733,10 +670,8 @@ class M_compromisos extends CI_Model
 
 	public function buscar_iniciar_number($buscar, $inicio = FALSE, $cantidadregistro = FALSE)
 	{
-		//$this->db->ilike("vCompromiso", $buscar);
+
 		$text = 'CAST ("iNumero" AS text)';
-
-
 		$this->db->select("*");
 		$this->db->from('CompromisoPag cp');
 
@@ -757,7 +692,7 @@ class M_compromisos extends CI_Model
 					'iNumero' => $row->iNumero,
 					'dPorcentajeAvance' => $row->dPorcentajeAvance,
 					'iIdDependencia' => $row->iIdDependencia,
-					'imagenes' =>$imagenes
+					'imagenes' => $imagenes
 
 
 				];
@@ -776,7 +711,6 @@ class M_compromisos extends CI_Model
 		$this->db->from('Dependencia d');
 		$this->db->order_by('d.vDependencia', 'ASC');
 		$this->db->where('iActivo', 1);
-		//$this->db->limit(10);
 		$query = $this->db->get();
 
 		if ($query->num_rows() > 0) {
@@ -792,15 +726,6 @@ class M_compromisos extends CI_Model
 		}
 		return $datos;
 	}
-
-
-
-
-
-
-
-
-
 
 
 }
