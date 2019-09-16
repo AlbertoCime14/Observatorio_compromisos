@@ -1,3 +1,7 @@
+<?php
+$pag = 2;
+include 'application/views/masterpage/navagacionnavb.php';
+?>
 <div class="page-header page-header-modern ">
 
 
@@ -192,76 +196,33 @@
 													<div class="owl-stage-outer">
 														<div class="owl-stage"
 															 style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1814px; padding-left: 40px; padding-right: 40px;">
-															<div class="owl-item active"
-																 style="width: 163.333px; margin-right: 10px;">
-																<div>
-																	<<?= base_url(); ?> alt="" class="img-fluid rounded"
-																	src="<?= base_url(); ?>img/projects/project-5.jpg">
-																</div>
-															</div>
-															<div class="owl-item active"
-																 style="width: 163.333px; margin-right: 10px;">
-																<div>
-																	<img alt="" class="img-fluid rounded"
-																		 src="<?= base_url(); ?>img/projects/project-6.jpg">
-																</div>
-															</div>
-															<div class="owl-item active"
-																 style="width: 163.333px; margin-right: 10px;">
-																<div>
-																	<img alt="" class="img-fluid rounded"
-																		 src="<?= base_url(); ?>img/projects/project-7.jpg">
-																</div>
-															</div>
-															<div class="owl-item active"
-																 style="width: 163.333px; margin-right: 10px;">
-																<div>
-																	<img alt="" class="img-fluid rounded"
-																		 src="<?= base_url(); ?>img/projects/project-1.jpg">
-																</div>
-															</div>
-															<div class="owl-item active"
-																 style="width: 163.333px; margin-right: 10px;">
-																<div>
-																	<img alt="" class="img-fluid rounded"
-																		 src="<?= base_url(); ?>img/projects/project-2.jpg">
-																</div>
-															</div>
-															<div class="owl-item active"
-																 style="width: 163.333px; margin-right: 10px;">
-																<div>
-																	<img alt="" class="img-fluid rounded"
-																		 src="<?= base_url(); ?>img/projects/project-3.jpg">
-																</div>
-															</div>
-															<div class="owl-item"
-																 style="width: 163.333px; margin-right: 10px;">
-																<div>
-																	<img alt="" class="img-fluid rounded"
-																		 src="<?= base_url(); ?>img/projects/project-1.jpg">
-																</div>
-															</div>
-															<div class="owl-item"
-																 style="width: 163.333px; margin-right: 10px;">
-																<div>
-																	<img alt="" class="img-fluid rounded"
-																		 src="<?= base_url(); ?>img/projects/project-2.jpg">
-																</div>
-															</div>
-															<div class="owl-item"
-																 style="width: 163.333px; margin-right: 10px;">
-																<div>
-																	<img alt="" class="img-fluid rounded"
-																		 src="<?= base_url(); ?>img/projects/project-3.jpg">
-																</div>
-															</div>
-															<div class="owl-item"
-																 style="width: 163.333px; margin-right: 10px;">
-																<div>
-																	<img alt="" class="img-fluid rounded"
-																		 src="<?= base_url(); ?>img/projects/project-4.jpg">
-																</div>
-															</div>
+
+
+															<?php
+
+																if($galeria_fotos != null){
+
+																	foreach ($galeria_fotos as $key) {
+
+
+																		echo '<div class="owl-item active"
+																				 style="width: 500px; margin-right: 10px;">
+																				<div>
+																					<img style="height: 160px" alt="" class="img-fluid rounded"
+																						 src="' . base_url() . 'archivos/documentosImages/'.$key['vEvidencia'].'">
+																				</div>
+																			</div>';
+
+																	}
+																}
+																else{
+
+																	echo '<label style="margin-top: 120px; margin-left: 120px;font-size: 22px"><strong>Sin imágenes disponibles </strong></label>';
+																}
+
+															?>
+
+
 														</div>
 													</div>
 													<div class="owl-nav">
@@ -287,12 +248,42 @@
 										</div>
 										<div id="collapse10Three" class="collapse" style="">
 											<div class="card-body">
-												<div class="embed-responsive-borders">
-													<div class="embed-responsive embed-responsive-16by9">
-														<iframe width="100" height="100" frameborder="0"
-																allowfullscreen=""
-																src="http://www.youtube.com/embed/l-epKcOA7RQ?showinfo=0&amp;wmode=opaque"></iframe>
-													</div>
+												<div class="row">
+													<?php
+													function convertYoutube($string) {
+														return preg_replace(
+															"/\s*[a-zA-Z\/\/:\.]*youtu(be.com\/watch\?v=|.be\/)([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i",
+															"<iframe width=\"420\" height=\"315\" src=\"//www.youtube.com/embed/$2\" allowfullscreen></iframe>",
+															$string
+														);
+													}
+
+													if($videos != null){
+														$i=1;
+														foreach ($videos as $key) {
+															$convertidor=convertYoutube($key['vEvidencia']);
+
+															echo '<div class="col-lg-6">
+																		<h4>Video '.$i.'</h4>
+																		<div class="embed-responsive-borders">
+																			<div class="embed-responsive embed-responsive-16by9">
+																				'.$convertidor.'
+																			</div>
+																		</div>
+																	</div>';
+															$i++;
+														}
+													}
+													else{
+
+														echo '<label style="margin-top: 120px; margin-left: 120px;font-size: 22px"><strong>Sin videos disponibles </strong></label>';
+													}
+
+													?>
+
+
+												</div>
+
 												</div>
 											</div>
 										</div>

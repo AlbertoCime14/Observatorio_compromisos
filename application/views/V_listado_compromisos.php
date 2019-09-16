@@ -1,3 +1,7 @@
+<?php
+$pag = 2;
+include 'application/views/masterpage/navagacionnavb.php';
+?>
 <div class="page-header page-header-modern ">
 
 

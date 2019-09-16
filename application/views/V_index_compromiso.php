@@ -1,3 +1,7 @@
+<?php
+$pag = 1;
+include 'application/views/masterpage/navagacionnavb.php';
+?>
 <div role="main" class="main">
 	<style>
 		.break-word {

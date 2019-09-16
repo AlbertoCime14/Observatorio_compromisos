@@ -37,6 +37,8 @@ class C_compromisos_descripcion extends CI_Controller
 		$data['responsable'] = $this->M_compromisos->listar_responsable($id_dependencia);
 		$data['participantes'] = $this->M_compromisos->listar_participantes($key);
 		$data['imagenes_portada']=$this->M_compromisos->listar_fotos_portada($key);
+		$data['galeria_fotos']=$this->M_compromisos->listar_galeria($key);
+		$data['videos']=$this->M_compromisos->listar_videos($key);
 		//$var=json_encode($data['participantes']);
 		//echo $var;
 		$this->load->view('masterpage/head');

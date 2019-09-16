@@ -8,8 +8,9 @@
       <change beforePath="$PROJECT_DIR$/application/models/M_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_compromisos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_index_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_index_compromiso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/masterpage/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +93,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../progrmas_presupuestales" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -204,7 +205,8 @@
       <workItem from="1568305635848" duration="7418000" />
       <workItem from="1568350380293" duration="3296000" />
       <workItem from="1568395239732" duration="7731000" />
-      <workItem from="1568576288112" duration="2054000" />
+      <workItem from="1568576288112" duration="2365000" />
+      <workItem from="1568584675072" duration="10955000" />
     </task>
     <servers />
   </component>

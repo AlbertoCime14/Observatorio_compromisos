@@ -39,7 +39,7 @@ class Control_pagina extends CI_Controller
 		//echo json_encode( $objetos_compromisos = $data['compromisos_10']);
 
 
-        $this->load->view('masterpage/head');
+        $this->load->view('masterpage/head',$data);
         $this->load->view('V_index_compromiso',$data);
 
         $this->load->view('masterpage/footer');
