@@ -72,10 +72,10 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 
 					filas += `<div class="col-sm-6 col-lg-3 isotope-item brands" ">
 								<div class="portfolio-item">
-										<a href="descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
+										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="../archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>
@@ -177,10 +177,10 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 
 					filas += `<div class="col-sm-6 col-lg-3 isotope-item brands" ">
 								<div class="portfolio-item">
-										<a href="descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
+										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="../archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>
@@ -286,10 +286,10 @@ function mostrar_procesos(valorBuscar, pagina,IdDependencia) {
 
 					filas += `<div class="col-sm-6 col-lg-3 isotope-item brands" ">
 								<div class="portfolio-item">
-										<a href="descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
+										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="../archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>
@@ -394,10 +394,10 @@ function mostrar_procesos(valorBuscar, pagina,IdDependencia) {
 
 					filas += `<div class="col-sm-6 col-lg-3 isotope-item brands" ">
 								<div class="portfolio-item">
-										<a href="descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
+										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="../archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>
@@ -506,10 +506,10 @@ function mostrar_iniciar(valorBuscar, pagina,id_dependencia) {
 
 					filas += `<div class="col-sm-6 col-lg-3 isotope-item brands" ">
 								<div class="portfolio-item">
-										<a href="descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
+										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="../archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>
@@ -613,10 +613,10 @@ function mostrar_iniciar(valorBuscar, pagina,id_dependencia) {
 
 					filas += `<div class="col-sm-6 col-lg-3 isotope-item brands" ">
 								<div class="portfolio-item">
-										<a href="descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
+										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="../archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>

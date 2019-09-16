@@ -3,26 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5fd08836-e397-48df-8e8f-7c10f2487fae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/C_Poblaciones.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/C_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/C_compromisos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/C_compromisos_descripcion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/C_compromisos_descripcion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Control_pagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Control_pagina.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/eliminar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/M_Criterios.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/M_Diagnostico.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/M_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_compromisos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_index_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_index_compromiso.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/OtrosCriterios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/bienesyservicios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/compromisos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compromisos/compromisos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/descripcion_compromisos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compromisos/descripcion_compromisos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/formatocriterios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/formatodiagnostico.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/formatoprincipal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/fuentes_criterios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compromisos/poblaciones.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -220,6 +203,7 @@
       <workItem from="1568576288112" duration="2365000" />
       <workItem from="1568584675072" duration="15286000" />
       <workItem from="1568612394731" duration="2266000" />
+      <workItem from="1568650728636" duration="2066000" />
     </task>
     <servers />
   </component>

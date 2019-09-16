@@ -1,6 +1,4 @@
 <body>
-
-
 <div class="body">
 	<header id="header" class="header-effect-shrink"
 			data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
