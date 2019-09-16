@@ -8,8 +8,8 @@ include 'application/views/masterpage/navagacionnavb.php';
 	<div class="col-md-12 ">
 		<ul class="breadcrumb d-block text-center " style="color: white !important;" data-appear-animation="fadeIn"
 			data-appear-animation-delay="300">
-			<li><a style="color:white !important;" href="<?=base_url()?>control_pagina/index">Inicio</a></li>
-			<li><a style="color:white !important;" href="<?=base_url()?>compromisos/listar">Compromisos</a></li>
+			<li><a style="color:white !important;" href="<?= base_url() ?>control_pagina/index">Inicio</a></li>
+			<li><a style="color:white !important;" href="<?= base_url() ?>compromisos/listar">Compromisos</a></li>
 		</ul>
 	</div>
 	<div class="row align-items-center" style="text-align: center">
@@ -36,16 +36,16 @@ include 'application/views/masterpage/navagacionnavb.php';
 				<div class="owl-carousel owl-theme" data-plugin-options="{'items': 1}">
 					<?php
 
-					if($imagenes_portada != null){
+					if ($imagenes_portada != null) {
 
 
 						foreach ($imagenes_portada as $key) {
 							echo '<div>
-								<img style="height: 430px" alt="" class="img-fluid" src="' . base_url() . 'archivos/documentosImages/'.$key['vEvidencia'].'">
+								<img style="height: 430px" alt="" class="img-fluid" src="' . base_url() . 'archivos/documentosImages/' . $key['vEvidencia'] . '">
 							</div>';
 
 						}
-					}else{
+					} else {
 
 						echo '<label style="margin-top: 120px; margin-left: 120px;font-size: 22px"><strong>Sin imágenes disponibles </strong></label>';
 					}
@@ -115,8 +115,9 @@ include 'application/views/masterpage/navagacionnavb.php';
 
 					</i>
 					<a class=" text-color-primary" style="font-size: 16px" download=""
-					   href="https://www.anerbarrena.com/demos/2016/014-audio-helicoptero.mp3">Enlace para descargar la
-						ficha técnica</a>
+					   href="https://www.anerbarrena.com/demos/2016/014-audio-helicoptero.mp3">ESTA SECCION ESTA
+						PENDEIDTE YA QUE ES UNA CONSULTA DE vFeNotarial, que ahora no se guarda, ademas ese archivo no
+						se en que carpeta se guarda</a>
 
 
 				</div>
@@ -157,23 +158,31 @@ include 'application/views/masterpage/navagacionnavb.php';
 										</div>
 										<div id="collapse10One" class="collapse" style="">
 											<div class="card-body">
-												<strong style="font-size: 14px "
-														class="text-color-primary">Documento:</strong>
-												<i class="fas fa-file-pdf" style="font-size: 25px;">
 
-												</i>
-												<a class=" text-color-primary" style="font-size: 14px" download=""
-												   href="https://www.anerbarrena.com/demos/2016/014-audio-helicoptero.mp3">Enlace
-													de descarga</a>
-												<br>
-												<strong style="font-size: 14px"
-														class="text-color-primary">Documento:</strong>
-												<i class="fas fa-file-pdf" style="font-size: 25px;">
+												<?php
 
-												</i>
-												<a class=" text-color-primary" style="font-size: 14px" download=""
-												   href="https://www.anerbarrena.com/demos/2016/014-audio-helicoptero.mp3">Enlace
-													de descarga</a>
+												if ($documentos != null) {
+
+													foreach ($documentos as $key) {
+														echo '<strong style="font-size: 14px "
+																		class="text-color-primary">Documento:</strong>
+																<i class="fas fa-file-pdf" style="font-size: 25px;">
+				
+																</i>
+																<a class=" text-color-primary" style="font-size: 14px" download=""
+																   href="' . base_url() . 'archivos/documentosOffice/' . $key['vEvidencia'] . '">Enlace
+																	de descarga al documento '.$key['vEvidencia'].'</a>
+																<br>
+														';
+
+													}
+												} else {
+
+													echo '<label style="margin-top: 120px;margin-bottom: 100px;font-size: 22px"><strong>Sin documentos disponibles </strong></label>';
+												}
+
+												?>
+
 											</div>
 										</div>
 									</div>
@@ -200,25 +209,24 @@ include 'application/views/masterpage/navagacionnavb.php';
 
 															<?php
 
-																if($galeria_fotos != null){
+															if ($galeria_fotos != null) {
 
-																	foreach ($galeria_fotos as $key) {
+																foreach ($galeria_fotos as $key) {
 
 
-																		echo '<div class="owl-item active"
+																	echo '<div class="owl-item active"
 																				 style="width: 500px; margin-right: 10px;">
 																				<div>
 																					<img style="height: 160px" alt="" class="img-fluid rounded"
-																						 src="' . base_url() . 'archivos/documentosImages/'.$key['vEvidencia'].'">
+																						 src="' . base_url() . 'archivos/documentosImages/' . $key['vEvidencia'] . '">
 																				</div>
 																			</div>';
 
-																	}
 																}
-																else{
+															} else {
 
-																	echo '<label style="margin-top: 120px; margin-left: 120px;font-size: 22px"><strong>Sin imágenes disponibles </strong></label>';
-																}
+																echo '<label style="margin-top: 120px; margin-left: 120px;font-size: 22px"><strong>Sin imágenes disponibles </strong></label>';
+															}
 
 															?>
 
@@ -250,7 +258,8 @@ include 'application/views/masterpage/navagacionnavb.php';
 											<div class="card-body">
 												<div class="row">
 													<?php
-													function convertYoutube($string) {
+													function convertYoutube($string)
+													{
 														return preg_replace(
 															"/\s*[a-zA-Z\/\/:\.]*youtu(be.com\/watch\?v=|.be\/)([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i",
 															"<iframe width=\"420\" height=\"315\" src=\"//www.youtube.com/embed/$2\" allowfullscreen></iframe>",
@@ -258,25 +267,24 @@ include 'application/views/masterpage/navagacionnavb.php';
 														);
 													}
 
-													if($videos != null){
-														$i=1;
+													if ($videos != null) {
+														$i = 1;
 														foreach ($videos as $key) {
-															$convertidor=convertYoutube($key['vEvidencia']);
+															$convertidor = convertYoutube($key['vEvidencia']);
 
 															echo '<div class="col-lg-6">
-																		<h4>Video '.$i.'</h4>
+																		<h4>Video ' . $i . '</h4>
 																		<div class="embed-responsive-borders">
 																			<div class="embed-responsive embed-responsive-16by9">
-																				'.$convertidor.'
+																				' . $convertidor . '
 																			</div>
 																		</div>
 																	</div>';
 															$i++;
 														}
-													}
-													else{
+													} else {
 
-														echo '<label style="margin-top: 120px; margin-left: 120px;font-size: 22px"><strong>Sin videos disponibles </strong></label>';
+														echo '<label style="margin-top: 120px; margin-bottom: 120px;font-size: 22px"><strong>Sin videos disponibles </strong></label>';
 													}
 
 													?>
@@ -284,29 +292,33 @@ include 'application/views/masterpage/navagacionnavb.php';
 
 												</div>
 
-												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-
 							</div>
-						</div>
 
+						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
-
-
 	</div>
+
 
 </div>
 
+</div>
+<?php
+$pag = 2;
+include 'application/views/masterpage/menu_footer.php';
+?>
 
-<input type="hidden" id="id_compromiso" value="<?php echo $this->uri->segment(3);?>">
+
+<input type="hidden" id="id_compromiso" value="<?php echo $this->uri->segment(3); ?>">
 <script
 	src="https://code.jquery.com/jquery-3.4.1.js"
 	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 	crossorigin="anonymous"></script>
-<script src="<?=base_url();?>js/compromisos/descripcion_compromisos.js"></script>
+<script src="<?= base_url(); ?>js/compromisos/descripcion_compromisos.js"></script>

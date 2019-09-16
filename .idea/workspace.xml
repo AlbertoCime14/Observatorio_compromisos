@@ -2,15 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd08836-e397-48df-8e8f-7c10f2487fae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/views/masterpage/menu_footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/C_compromisos_descripcion.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/C_compromisos_descripcion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Control_pagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Control_pagina.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/M_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/M_compromisos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_index_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_index_compromiso.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/masterpage/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/navagacionnavb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/masterpage/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/masterpage/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567543318-0innovación conocimiento y tecnología(45-49).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567543318-1paz justicia y gobernabilidad(50-56).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567543318-2yucatán con calidad de vida y bienestar social(27-44).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567543318-3yucatán con economía inclusiva(1-17).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567543318-4yucatán cultural con identidad para el desarrollo(57-68).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567543318-5yucatán verde y sustentable(69-82).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567553238-0innovación conocimiento y tecnología(45-49).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567553238-1paz justicia y gobernabilidad(50-56).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567553238-2yucatán con calidad de vida y bienestar social(27-44).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567553238-3yucatán con economía inclusiva(1-17).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567553238-4yucatán cultural con identidad para el desarrollo(57-68).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567553238-5yucatán verde y sustentable(69-82).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567616867-0yucatán con calidad de vida y bienestar social(27-44).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567616867-1yucatán con economía inclusiva(1-17).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567616867-2yucatán cultural con identidad para el desarrollo(57-68).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos/documentosOffice/1567616867-3yucatán verde y sustentable(69-82).xlsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +221,7 @@
       <workItem from="1568350380293" duration="3296000" />
       <workItem from="1568395239732" duration="7731000" />
       <workItem from="1568576288112" duration="2365000" />
-      <workItem from="1568584675072" duration="10955000" />
+      <workItem from="1568584675072" duration="14987000" />
     </task>
     <servers />
   </component>

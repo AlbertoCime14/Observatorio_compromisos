@@ -96,6 +96,10 @@ include 'application/views/masterpage/navagacionnavb.php';
 	</div>
 
 </div>
+<?php
+$pag = 2;
+include 'application/views/masterpage/menu_footer.php';
+?>
 <script
 	src="https://code.jquery.com/jquery-3.4.1.js"
 	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="

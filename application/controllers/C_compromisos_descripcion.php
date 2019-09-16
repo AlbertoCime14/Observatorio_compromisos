@@ -39,6 +39,7 @@ class C_compromisos_descripcion extends CI_Controller
 		$data['imagenes_portada']=$this->M_compromisos->listar_fotos_portada($key);
 		$data['galeria_fotos']=$this->M_compromisos->listar_galeria($key);
 		$data['videos']=$this->M_compromisos->listar_videos($key);
+		$data['documentos']=$this->M_compromisos->listar_documentos($key);
 		//$var=json_encode($data['participantes']);
 		//echo $var;
 		$this->load->view('masterpage/head');
