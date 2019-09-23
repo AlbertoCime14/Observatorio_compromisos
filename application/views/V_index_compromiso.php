@@ -205,17 +205,17 @@ include 'application/views/masterpage/navagacionnavb.php';
 					 data-plugin-options="{'responsive': {'0': {'items': 3}, '476': {'items': 3}, '768': {'items': 3}, '992': {'items': 3}, '1200': {'items': 3}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
 					<div>
 						<a href="http://www.yucatan.gob.mx" target="_blank">
-							<img class="img-fluid opacity-2" src="<?= base_url(); ?>img/logos/logo-1.png" alt="">
+							<img class="img-fluid opacity-2" src="<?= base_url(); ?>img/yuc_gris.png" alt="">
 						</a>
 					</div>
 					<div>
 						<a href="https://www.inegi.org.mx" target="_blank">
-							<img class="img-fluid opacity-2" src="<?= base_url(); ?>img/logos/logo-2.png" alt="">
+							<img class="img-fluid opacity-2" src="<?= base_url(); ?>img/inegi_gris.png" alt="">
 						</a>
 					</div>
 					<div>
 						<a href="http://siegy.yucatan.gob.mx/" target="_blank">
-							<img class="img-fluid opacity-2" src="<?= base_url(); ?>img/logos/logo-3.png" alt="">
+							<img class="img-fluid opacity-2" src="<?= base_url(); ?>img/siegy_gris.png" alt="">
 						</a>
 					</div>
 

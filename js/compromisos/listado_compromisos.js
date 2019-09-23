@@ -7,6 +7,7 @@ $(document).ready(function () {
 	buscar_datos();
 	listar_dependencias();
 });
+//esta funcion es la principal, la que lanza los demas funciones dependiendo de lo que se pida
 function evento(opcion) {
 	$("#paginado").val(1);
 	$("#txt_1").val(opcion);
