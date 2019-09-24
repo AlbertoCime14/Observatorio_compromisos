@@ -3,6 +3,8 @@ $(document).ready(function () {
 
 	//recuperar_unidad_medida();
 	url = $("#url").val();
+	url_imagenes = $("#url_imagenes").val();
+
 	//listar_compromisos();
 	buscar_datos();
 	listar_dependencias();
@@ -76,7 +78,7 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url_imagenes}${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>
@@ -181,7 +183,7 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url_imagenes}${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>
@@ -290,7 +292,7 @@ function mostrar_procesos(valorBuscar, pagina,IdDependencia) {
 										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url_imagenes}${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>
@@ -398,7 +400,7 @@ function mostrar_procesos(valorBuscar, pagina,IdDependencia) {
 										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url_imagenes}${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>
@@ -510,7 +512,7 @@ function mostrar_iniciar(valorBuscar, pagina,id_dependencia) {
 										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url_imagenes}${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>
@@ -617,7 +619,7 @@ function mostrar_iniciar(valorBuscar, pagina,id_dependencia) {
 										<a href="${url}compromisos/descripcion/${btoa(item.iIdCompromiso)}/${btoa(item.iIdDependencia)}">
 											<span class="thumb-info thumb-info-lighten border-radius-0">
 												<span class="thumb-info-wrapper border-radius-0">
-														<img style="height: 250px !important;" src="${url}archivos/documentosImages/${imagen}" class="img-fluid border-radius-0" alt="">
+														<img style="height: 250px !important;" src="${url_imagenes}${imagen}" class="img-fluid border-radius-0" alt="">
 														
 														<span class="thumb-info-title" style="opacity: 0.7 !important;">
 															<span style="font-size: 40px !important;text-align: center !important;" class="thumb-info-inner">${item.iNumero}</span>

@@ -29,7 +29,7 @@ include 'application/views/masterpage/navagacionnavb.php';
 					if ($imagenes_portada != null) {
 						foreach ($imagenes_portada as $key) {
 							echo '<div>
-								<img style="height: 430px" alt="" class="img-fluid" src="' . base_url() . 'archivos/documentosImages/' . $key['vEvidencia'] . '">
+								<img style="height: 430px" alt="" class="img-fluid" src="' . RUTA_ARCHIVOS_IMAGENES . '' . $key['vEvidencia'] . '">
 							</div>';
 						}
 					} else {
@@ -74,14 +74,14 @@ include 'application/views/masterpage/navagacionnavb.php';
 						echo '<label style="font-size: 16px">Sin datos disponibles </label>';
 					}
 					?>
-					<hr style="background: #777 !important;margin-bottom: 3rem!important;margin-top: 0px!important;      margin: 7px 0 !important; margin-top: 1rem !important; border: 0 !important; border-top: 0px solid rgba(0, 0, 0, 0.1) !important;">
-					<strong style="font-size: 16px" class="text-color-primary">Ficha técnica:</strong>
+					<!--<hr style="background: #777 !important;margin-bottom: 3rem!important;margin-top: 0px!important;      margin: 7px 0 !important; margin-top: 1rem !important; border: 0 !important; border-top: 0px solid rgba(0, 0, 0, 0.1) !important;">
+					 <strong style="font-size: 16px" class="text-color-primary">Ficha técnica:</strong>
 					<i class="fas fa-file-pdf" style="font-size: 25px;">
 					</i>
 					<a class=" text-color-primary" style="font-size: 16px" download=""
 					   href="https://www.anerbarrena.com/demos/2016/014-audio-helicoptero.mp3">ESTA SECCION ESTA
 						pendiente, ya que es una consulta del campo vFeNotarial, que ahora no guarda nada, ademas de que
-						ese campo no se sabe la carpte destino en el proyecto</a>
+						ese campo no se sabe la carpte destino en el proyecto</a>-->
 				</div>
 			</div>
 		</div>
@@ -115,13 +115,12 @@ include 'application/views/masterpage/navagacionnavb.php';
 												<?php
 												if ($documentos != null) {
 													foreach ($documentos as $key) {
-														echo '<strong style="font-size: 14px "
-																		class="text-color-primary">Documento:</strong>
+														echo '
 																<i class="fas fa-file-pdf" style="font-size: 25px;">
 				
 																</i>
 																<a class=" text-color-primary" style="font-size: 14px" download=""
-																   href="' . base_url() . 'archivos/documentosOffice/' . $key['vEvidencia'] . '">Enlace
+																   href="' . RUTA_ARCHIVOS_DOCUMENTOS . '' . $key['vEvidencia'] . '">Enlace
 																	de descarga al documento ' . $key['vEvidencia'] . '</a>
 																<br>
 														';
@@ -160,7 +159,7 @@ include 'application/views/masterpage/navagacionnavb.php';
 																				 style="width: 500px; margin-right: 10px;">
 																				<div>
 																					<img style="height: 160px" alt="" class="img-fluid rounded"
-																						 src="' . base_url() . 'archivos/documentosImages/' . $key['vEvidencia'] . '">
+																						 src="' . RUTA_ARCHIVOS_IMAGENES . '' . $key['vEvidencia'] . '">
 																				</div>
 																			</div>';
 
