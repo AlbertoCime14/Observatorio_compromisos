@@ -92,13 +92,13 @@ include 'application/views/masterpage/navagacionnavb.php';
 		</div>
 	</div>
 
-
 	<div class="container">
 		<div class="row justify-content-center py-4 my-5" style="font-weight: bold">
 			<div class="row text-center">
 				<div class="col">
 					<p class="font-weight-bold text-color-dark" style="font-size: 20px">
 						¿Qué es el observatorio de compromisos?
+						<?php var_dump(RUTA_ARCHIVOS); ?>
 					</p>
 				</div>
 			</div>
