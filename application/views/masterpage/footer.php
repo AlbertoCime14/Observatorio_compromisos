@@ -29,6 +29,7 @@
 <!-- Theme Initialization Files -->
 <script src="<?=base_url();?>js/theme.init.js"></script>
 <input type="text" value="<?=base_url();?>" id="url" style="display: none">
+<input type="text" value="<?=RUTA_ARCHIVOS_IMAGENES;?>" id="url_imagenes" style="display: none">
 
 <!-- archivos javascript -->
 

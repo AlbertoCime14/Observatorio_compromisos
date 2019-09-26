@@ -30,7 +30,7 @@ include 'application/views/masterpage/navagacionnavb.php';
 						$imagen = $compromiso['imagenes']['vEvidencia'];
 					}
 					echo '<li class="slide-overlay slide-overlay-gradient slide-overlay-level-9" data-transition="fade">
-					<img src="' . base_url() . 'archivos/documentosImages/' . $imagen . '"
+					<img src="' . RUTA_ARCHIVOS_IMAGENES . '' . $imagen . '"
 						 alt=""
 						 data-bgposition="center center"
 						 data-bgfit="cover"
@@ -50,7 +50,7 @@ include 'application/views/masterpage/navagacionnavb.php';
 						 data-frames=\'[{"delay":2400,"speed":100,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]\'
 						 data-x="center" data-hoffset="[\'100\',\'100\',\'100\',\'135\']"
 						 data-y="center" data-voffset="[\'-92\',\'-92\',\'-92\',\'-100\']"><img
-							src="' . base_url() . 'archivos/documentosImages/slide-white-line.png" alt=""></div>
+							src="' . RUTA_ARCHIVOS_IMAGENES . 'slide-white-line.png" alt=""></div>
 
 					<div  class="tp-caption font-weight-extra-bold text-color-light negative-ls-2 ws-nowrap break-word	"
 						 data-frames=\'[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]\'
@@ -98,7 +98,7 @@ include 'application/views/masterpage/navagacionnavb.php';
 				<div class="col">
 					<p class="font-weight-bold text-color-dark" style="font-size: 20px">
 						¿Qué es el observatorio de compromisos?
-						<?php var_dump(RUTA_ARCHIVOS); ?>
+
 					</p>
 				</div>
 			</div>
