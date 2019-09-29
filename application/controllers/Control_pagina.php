@@ -56,11 +56,19 @@ class Control_pagina extends CI_Controller
 	{
 		$id_compromiso = base64_encode($iIdCompromiso);
 		$idDependencia = base64_encode($id_dependencia);
+		$str1=strlen($nombre);
+		//echo $str1; 443
+
+		if ($str1 >250){
+			$titulo = substr($nombre, 0,-250);
+		}else{
+			$titulo =$nombre;
+		}
 		$html = ' <div class="col-lg-3 featured-box-full featured-box-full-primary" style="background-color: ' . $color . '">
                 <a href="' . base_url() . 'compromisos/descripcion/' . $id_compromiso . '/' . $idDependencia . '">
 					<h1><strong>' . $numero . '</strong></h1>
                     <h4><strong>Compromiso</strong></h4>
-                    <h5 class="font-weight-light" style="text-align: center">' . $nombre . '</h5>
+                    <h5 class="font-weight-light" style="text-align: center">' . $titulo . '...</h5>
                 </a>
             </div>';
 

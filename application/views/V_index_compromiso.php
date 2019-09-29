@@ -21,6 +21,7 @@ include 'application/views/masterpage/navagacionnavb.php';
 			 data-plugin-options="{'sliderLayout': 'fullscreen', 'delay': 9000, 'gridwidth': 1170, 'gridheight': 700, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'navigation' : {'arrows': { 'enable': true, 'style': 'arrows-style-1 arrows-big' }, 'bullets': {'enable': false, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
 			<ul id="listar_Compromisos">
 				<?php
+
 				foreach ($compromisos_10 as $compromiso) {
 					$imagen = "";
 					if ($compromiso['imagenes']['vEvidencia'] == "") {
@@ -28,6 +29,22 @@ include 'application/views/masterpage/navagacionnavb.php';
 
 					} else {
 						$imagen = $compromiso['imagenes']['vEvidencia'];
+					}
+					$str=strlen($compromiso['vDescripcion']);
+
+					if ($str >145){
+						$descripcion = substr($compromiso['vDescripcion'], 0,-300);
+					}else{
+						$descripcion = $compromiso['vDescripcion'];
+					}
+
+					$str1=strlen($compromiso['vCompromiso']);
+					//echo $str1; 443
+
+					if ($str1 >155){
+						$titulo = substr($compromiso['vCompromiso'], 0,-315);
+					}else{
+						$titulo =$compromiso['vCompromiso'];
 					}
 					echo '<li class="slide-overlay slide-overlay-gradient slide-overlay-level-9" data-transition="fade">
 					<img src="' . RUTA_ARCHIVOS_IMAGENES . '' . $imagen . '"
@@ -58,7 +75,7 @@ include 'application/views/masterpage/navagacionnavb.php';
 						 data-y="center" data-voffset="[\'-60\',\'-60\',\'-60\',\'-85\']"
 						 data-fontsize="[\'25\',\'25\',\'25\',\'25\']"
 						 data-lineheight="[\'55\',\'55\',\'55\',\'95\']"
-						 data-letterspacing="-2">' . $compromiso['vCompromiso'] . '
+						 data-letterspacing="-2">' . $titulo . ' ...
 						
 					</div>
 
@@ -68,7 +85,7 @@ include 'application/views/masterpage/navagacionnavb.php';
 						 data-y="center" data-voffset="[\'15\',\'15\',\'15\',\'40\']"
 						 data-width="[\'350\',\'350\',\'350\',\'875\']"
 						 data-fontsize="[\'18\',\'18\',\'18\',\'50\']"
-						 data-lineheight="[\'29\',\'29\',\'29\',\'60\']">' . $compromiso['vDescripcion'] . '
+						 data-lineheight="[\'29\',\'29\',\'29\',\'60\']">' . $descripcion . '...
 					</div>
 
 					<a class="tp-caption btn btn-primary font-weight-semibold"
