@@ -67,7 +67,7 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 				$.each(response.compromisos, function (key, item) {
 					var imagen;
 					if (item.imagenes.vEvidencia == null){
-						imagen="project.jpg";
+							imagen="project_No_borrar.jpg";
 					}else{
 						imagen=item.imagenes.vEvidencia;
 					}
@@ -172,7 +172,7 @@ function mostrarDatos(valorBuscar, pagina,id_dependencia) {
 				$.each(response.compromisos, function (key, item) {
 					var imagen;
 					if (item.imagenes.vEvidencia == null){
-						imagen="project.jpg";
+						imagen="project_No_borrar.jpg";
 					}else{
 						imagen=item.imagenes.vEvidencia;
 					}
@@ -281,7 +281,7 @@ function mostrar_procesos(valorBuscar, pagina,IdDependencia) {
 				$.each(response.compromisos, function (key, item) {
 					var imagen;
 					if (item.imagenes.vEvidencia == null){
-						imagen="project.jpg";
+						imagen="project_No_borrar.jpg";
 					}else{
 						imagen=item.imagenes.vEvidencia;
 					}
@@ -389,7 +389,7 @@ function mostrar_procesos(valorBuscar, pagina,IdDependencia) {
 				$.each(response.compromisos, function (key, item) {
 					var imagen;
 					if (item.imagenes.vEvidencia == null){
-						imagen="project.jpg";
+						imagen="project_No_borrar.jpg";
 					}else{
 						imagen=item.imagenes.vEvidencia;
 					}
@@ -501,7 +501,7 @@ function mostrar_iniciar(valorBuscar, pagina,id_dependencia) {
 				$.each(response.compromisos, function (key, item) {
 					var imagen;
 					if (item.imagenes.vEvidencia == null){
-						imagen="project.jpg";
+						imagen="project_No_borrar.jpg";
 					}else{
 						imagen=item.imagenes.vEvidencia;
 					}
@@ -608,7 +608,7 @@ function mostrar_iniciar(valorBuscar, pagina,id_dependencia) {
 				$.each(response.compromisos, function (key, item) {
 					var imagen;
 					if (item.imagenes.vEvidencia == null){
-						imagen="project.jpg";
+						imagen="project_No_borrar.jpg";
 					}else{
 						imagen=item.imagenes.vEvidencia;
 					}

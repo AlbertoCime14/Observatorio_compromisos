@@ -84,5 +84,5 @@ defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
-define('RUTA_ARCHIVOS_IMAGENES','http://localhost/observatorio/archivos/documentosImages/');
-define('RUTA_ARCHIVOS_DOCUMENTOS','http://localhost/observatorio/archivos/documentosOffice/');
+define('RUTA_ARCHIVOS_IMAGENES','http://localhost/SIGOv2/archivos/documentosImages/');
+define('RUTA_ARCHIVOS_DOCUMENTOS','http://localhost/SIGOv2/archivos/documentosOffice/');
