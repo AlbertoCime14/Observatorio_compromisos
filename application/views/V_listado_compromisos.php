@@ -48,7 +48,7 @@ include 'application/views/masterpage/navagacionnavb.php';
 			<div class="form-row">
 				<div class="form-group col-lg-4">
 					<label class="font-weight-bold text-dark">Búsqueda por palabra clave</label>
-					<input name="busqueda" type="text" value="" id="busqueda" onkeyup="buscar_datos()" class="form-control">
+					<input onkeypress="return soloLetras(event)" name="busqueda" type="text" value="" id="busqueda" onkeyup="buscar_datos()" class="form-control">
 				</div>
 				<div class="form-group col-lg-4">
 					<label class="font-weight-bold text-dark">Por número de compromiso</label>

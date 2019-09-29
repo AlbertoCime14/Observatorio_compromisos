@@ -165,7 +165,14 @@ include 'application/views/masterpage/navagacionnavb.php';
 
 																}
 															} else {
-																echo '<label style="margin-top: 120px; margin-left: 120px;font-size: 22px"><strong>Sin imágenes disponibles </strong></label>';
+
+																echo '<div class="owl-item active"
+																				 style="width: 500px; margin-right: 10px;">
+																				<div>
+																					<img style="height: 160px" alt="" class="img-fluid rounded"
+																						 src="' . RUTA_ARCHIVOS_IMAGENES . 'Sin_imagen_no_borrar.jpg">
+																				</div>
+																			</div>';
 															}
 															?>
 														</div>

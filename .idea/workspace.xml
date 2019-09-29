@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5fd08836-e397-48df-8e8f-7c10f2487fae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Control_pagina.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Control_pagina.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_descripcion_compromiso.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/V_index_compromiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_index_compromiso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/V_listado_compromisos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compromisos/listado_compromisos.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +90,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SIGOv2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -210,6 +212,7 @@
       <workItem from="1569522094300" duration="33000" />
       <workItem from="1569629662092" duration="1327000" />
       <workItem from="1569691296091" duration="11985000" />
+      <workItem from="1569776916100" duration="2924000" />
     </task>
     <servers />
   </component>

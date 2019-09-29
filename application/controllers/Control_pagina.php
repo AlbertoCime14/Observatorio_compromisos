@@ -59,8 +59,8 @@ class Control_pagina extends CI_Controller
 		$str1=strlen($nombre);
 		//echo $str1; 443
 
-		if ($str1 >250){
-			$titulo = substr($nombre, 0,-250);
+		if ($str1 >200){
+			$titulo = substr($nombre, 0,200);
 		}else{
 			$titulo =$nombre;
 		}

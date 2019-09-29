@@ -30,22 +30,25 @@ include 'application/views/masterpage/navagacionnavb.php';
 					} else {
 						$imagen = $compromiso['imagenes']['vEvidencia'];
 					}
-					$str=strlen($compromiso['vDescripcion']);
 
-					if ($str >145){
-						$descripcion = substr($compromiso['vDescripcion'], 0,-300);
-					}else{
-						$descripcion = $compromiso['vDescripcion'];
-					}
 
 					$str1=strlen($compromiso['vCompromiso']);
 					//echo $str1; 443
 
-					if ($str1 >155){
-						$titulo = substr($compromiso['vCompromiso'], 0,-315);
+					if ($str1 >130){
+						$titulo = substr($compromiso['vCompromiso'], 0,130);
 					}else{
 						$titulo =$compromiso['vCompromiso'];
 					}
+
+					$str=strlen($compromiso['vDescripcion']);
+
+					if ($str >150){
+						$descripcion = substr($compromiso['vDescripcion'], 0,150);
+					}else{
+						$descripcion = $compromiso['vDescripcion'];
+					}
+
 					echo '<li class="slide-overlay slide-overlay-gradient slide-overlay-level-9" data-transition="fade">
 					<img src="' . RUTA_ARCHIVOS_IMAGENES . '' . $imagen . '"
 						 alt=""
